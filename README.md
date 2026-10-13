@@ -1,5 +1,7 @@
 # S&P 500 Tracker & Analysis
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://alfredo-sp500-tracker.streamlit.app/)
+
 Sector weights, 1d/1w/1m/YTD returns, movers, momentum + volatility scores, 52-week-range position, a correlation
 heatmap for any basket, a watchlist with (mocked) webhook alerts and CSV export, in one Streamlit dashboard that **always
 renders**: it ships with a bundled demo snapshot and upgrades symbol-by-symbol to live data as a scheduled GitHub Action
@@ -12,7 +14,7 @@ refreshes it.
 > (`scripts/make_snapshot.py`) attached to *real* company names, so e.g. a "+130% YTD" figure is not a real result.
 > The UI shows a persistent SIMULATED banner and badge. Not investment advice. No trading features.
 
-**Live demo:** _<!-- LIVE_DEMO_URL -->(add Streamlit Cloud URL after deploy)_
+**Live demo:** https://alfredo-sp500-tracker.streamlit.app/ (SIMULATED prices; verified with a headless-browser click-through, see `docs/live-demo.png`)
 
 ## Architecture
 
