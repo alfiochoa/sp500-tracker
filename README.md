@@ -14,7 +14,11 @@ refreshes it.
 > (`scripts/make_snapshot.py`) attached to *real* company names, so e.g. a "+130% YTD" figure is not a real result.
 > The UI shows a persistent SIMULATED banner and badge. Not investment advice. No trading features.
 
-**Live demo:** https://alfredo-sp500-tracker.streamlit.app/ (SIMULATED prices; verified with a headless-browser click-through, see `docs/live-demo.png`)
+**Live demo:** https://alfredo-sp500-tracker.streamlit.app/ (live universe shown below: real Twelve Data closes for the symbols refreshed so far, the rest SIMULATED; verified with a headless-browser click-through)
+
+![live universe](docs/live-demo.png)
+
+> Live coverage grows ~40 symbols per scheduled run (8 runs per weekday, free-tier limits); full coverage in a few days.
 
 ## Architecture
 
