@@ -179,7 +179,6 @@ def load_dashboard_prices(snapshot: SnapshotProvider | None = None, live: LiveFi
             base = base.reindex(base.index.union(lw.index)).sort_index()
             for s in lw.columns:
                 base[s] = lw[s]
-            base = base.ffill(limit=3)
             source[list(lw.columns)] = "live"
             meta["live_through"] = str(lw.index.max().date())
     return base, source, meta

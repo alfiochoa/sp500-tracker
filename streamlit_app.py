@@ -1,6 +1,8 @@
 """S&P 500 Tracker & Analysis - Streamlit dashboard. Reference/demo data; not investment advice."""
 from __future__ import annotations
 
+from pathlib import Path
+
 import plotly.graph_objects as go
 import streamlit as st
 
@@ -37,26 +39,37 @@ h3{font-size:1.05rem!important;font-weight:600!important}
             unsafe_allow_html=True)
 
 
-@st.cache_data(show_spinner="Loading data...")
-def load():
+DATA = Path(__file__).resolve().parent / "data"
+
+
+def _sig() -> tuple:
+    """(mtime, size) of the data files: part of the cache key so a refresh commit is picked up."""
+    out = []
+    for f in (DATA / "live_prices.csv.gz", DATA / "constituents.csv", DATA / "snapshot" / "prices.csv.gz"):
+        st_ = f.stat() if f.exists() else None
+        out.append((f.name, st_.st_mtime_ns if st_ else 0, st_.st_size if st_ else 0))
+    return tuple(out)
+
+
+@st.cache_data(show_spinner="Loading data...", ttl=3600)
+def load(sig: tuple):
     cons = load_constituents(max_age_days=10**6)  # the app never hits the network; the scheduled job refreshes
     px, source, meta = load_dashboard_prices()
     cons = cons[cons.symbol.isin(px.columns)].reset_index(drop=True)
     return cons, px, source, meta, SnapshotProvider().market_caps()
 
 
-cons, px, source, meta, caps = load()
-ret, sc = an.returns_table(px), an.scores(px)
-as_of = str(px.index[-1].date())
+cons, px_all, source, meta, caps = load(_sig())
 n_live = int((source == "live").sum())
+n_demo = len(source) - n_live
 
 
-def style(fig: go.Figure, h: int = 380, wm_bottom: bool = False, **kw) -> go.Figure:
+def style(fig: go.Figure, h: int = 380, wm_bottom: bool = False, wm: str = "", **kw) -> go.Figure:
     fig.update_layout(height=h, margin=dict(l=4, r=12, t=8 if wm_bottom else 34, b=28 if wm_bottom else 4), paper_bgcolor="rgba(0,0,0,0)",
                       plot_bgcolor="rgba(0,0,0,0)", font=dict(color=P["muted"], size=12), showlegend=False, **kw)
-    if sim:
-        fig.add_annotation(text="SIMULATED DEMO DATA", xref="paper", yref="paper", x=1, y=0 if wm_bottom else 1.0, yshift=-18 if wm_bottom else 24, showarrow=False,
-                           font={"color": "#eb9a00", "size": 11}, xanchor="right")
+    if True:
+        fig.add_annotation(text=wm or ("SIMULATED DEMO DATA" if sim else "LIVE DATA · Twelve Data"), xref="paper", yref="paper", x=1, y=0 if wm_bottom else 1.0, yshift=-18 if wm_bottom else 24, showarrow=False,
+                           font={"color": "#eb9a00" if (sim and not wm) else P["muted"], "size": 11}, xanchor="right")
     return fig
 
 
@@ -72,24 +85,35 @@ def bar_h(labels, values, title_x, colors):
 
 
 st.title("S&P 500 Tracker")
-n_demo = len(source) - n_live
-sim = n_demo > 0
-if n_live == 0:
-    live_note = "Live mode is OFF: no live data file yet (needs the TWELVE_DATA_API_KEY secret and the scheduled refresh workflow)."
-    scope = ""
-else:
-    live_note = f"Live prices cover {n_live} of {len(source)} symbols; the rest are SIMULATED and marked in the Screener."
-    scope = f" for {n_demo} of {len(source)} symbols"
-if sim:
-    st.markdown(f'<div class="sim"><b>SIMULATED</b> demo prices{scope} - not real market data. '
-                f"Company list is scraped from Wikipedia.<br><small>{live_note}</small></div>", unsafe_allow_html=True)
+M = len(source)
+if n_demo:
+    if n_live == 0:
+        head = "<b>SIMULATED</b> demo prices - not real market data. Company list is scraped from Wikipedia."
+        note = "Live mode is OFF: no live data file yet (needs the TWELVE_DATA_API_KEY secret and the scheduled refresh workflow)."
+    else:
+        through = meta.get("live_through", "?")
+        head = (f"<b>Live prices cover {n_live} of {M} symbols</b> (real daily closes via Twelve Data, through {through}). "
+                f"The other {n_demo} use <b>SIMULATED</b> demo prices - not real market data. "
+                "Company list is scraped from Wikipedia.")
+        note = "Live and simulated symbols are never ranked together: choose a price universe below."
+    st.markdown(f'<div class="sim">{head}<br><small>{note}</small></div>', unsafe_allow_html=True)
+
+opts = ([f"Live prices ({n_live} symbols)"] if n_live else []) + ([f"Simulated prices ({n_demo} symbols)"] if n_demo else [])
+view = st.radio("Price universe", opts, horizontal=True) if len(opts) > 1 else opts[0]
+sim = view.startswith("Simulated")
+syms = list(source[source == ("demo" if sim else "live")].index)
+px = px_all[syms].dropna(how="all").ffill(limit=3)
+cons_all, cons = cons, cons[cons.symbol.isin(syms)].reset_index(drop=True)
+ret, sc = an.returns_table(px), an.scores(px)
+as_of = str(px.index[-1].date())
+tag = ("SIMULATED" if sim else "LIVE") + f", {len(syms)} symbols"
 st.markdown(
-    f'<span class="pill">Prices as of {as_of}</span>'
+    f'<span class="pill {"warn" if sim else ""}">{tag}</span><span class="pill">Prices as of {as_of}</span>'
     f'<span class="pill">Reference only · not investment advice</span>', unsafe_allow_html=True)
 
 adv = int((ret["1d"] > 0).sum())
 k = st.columns(4)
-k[0].metric("Constituents", len(cons))
+k[0].metric("Symbols in this view", f"{len(cons)} of {len(cons_all)}")
 k[1].metric("Advancers / decliners (1d)", f"{adv} / {len(ret) - adv}")
 k[2].metric("Median 1d return", f"{ret['1d'].median():+.2f}%")
 k[3].metric("Median YTD return", f"{ret['YTD'].median():+.1f}%")
@@ -99,16 +123,18 @@ t_over, t_mov, t_scr, t_cor, t_wl, t_about = st.tabs(
 
 with t_over:
     wm = st.radio("Sector weighting", ["Cap-weighted (illustrative caps)", "Equal-weighted"], horizontal=True)
-    d = an.sector_weights(cons, caps, "cap" if wm.startswith("Cap") else "equal")
-    ss = an.sector_summary(d, ret)
+    d = an.sector_weights(cons_all, caps, "cap" if wm.startswith("Cap") else "equal")
+    wts = d.groupby("sector").weight.sum().sort_values(ascending=False)
+    ss = an.sector_summary(d[d.symbol.isin(syms)], ret)
+    ss.index = [f"{i} (n={int(n)})" for i, n in zip(ss.index, ss.stocks)]
     a, b = st.columns([5, 6])
     with a:
-        st.markdown("### Sector weights")
-        fig = bar_h(ss.index, ss.weight, "w", BLUE if mode == "light" else "#3987e5")
+        st.markdown("### Sector weights (all 503, composition)")
+        fig = bar_h(wts.index, wts.values, "w", BLUE if mode == "light" else "#3987e5")
         fig.update_xaxes(ticksuffix="%")
-        st.plotly_chart(style(fig, 400), width="stretch", config={"displayModeBar": False})
+        st.plotly_chart(style(fig, 400, wm="ILLUSTRATIVE CAPS · all 503 symbols"), width="stretch", config={"displayModeBar": False})
     with b:
-        st.markdown("### Sector returns (weight-averaged, %)")
+        st.markdown(f"### Sector returns (%) · {tag}")
         z = ss[["1d", "1w", "1m", "YTD"]]
         lim = float(max(abs(z.values.min()), abs(z.values.max()), 1))
         fig = go.Figure(go.Heatmap(z=z.values, x=list(z.columns), y=list(z.index), colorscale=DIV, zmid=0, zmin=-lim,
@@ -118,7 +144,7 @@ with t_over:
         fig.update_yaxes(autorange="reversed", tickfont=dict(color=P["ink"], size=11))
         fig.update_xaxes(side="top", tickfont=dict(color=P["ink"]))
         st.plotly_chart(style(fig, 420, wm_bottom=True), width="stretch", config={"displayModeBar": False})
-    st.caption("Blue = up, red = down. Weights come from illustrative market caps bundled with the demo snapshot.")
+    st.caption("Blue = up, red = down. Weights are illustrative caps for all 503 names; returns cover only the chosen price universe (n = symbols per sector).")
 
 with t_mov:
     per = st.radio("Period", ["1d", "1w", "1m", "YTD"], horizontal=True, key="per")
@@ -126,7 +152,7 @@ with t_mov:
     a, b = st.columns(2)
     for col, df, title, c in ((a, top, "Top 10", P["pos"]), (b, bot, "Bottom 10", P["neg"])):
         with col:
-            st.markdown(f"### {title} · {per}")
+            st.markdown(f"### {title} · {per} · {tag}")
             fig = bar_h(df.index, df[per], "%", c)
             st.plotly_chart(style(fig, 360), width="stretch", config={"displayModeBar": False})
 
@@ -135,7 +161,7 @@ with t_scr:
     f1, f2 = st.columns([2, 3])
     secs = f1.multiselect("Sector", sorted(cons.sector.unique()))
     q = f2.text_input("Search symbol or name", placeholder="e.g. NVDA or Visa")
-    exp = an.to_export(cons, ret, sc, source)
+    exp = an.to_export(cons, ret, sc, source[syms])
     exp["data_source"] = exp["data_source"].map({"demo": "SIMULATED", "live": "live"})
     if secs:
         exp = exp[exp.sector.isin(secs)]
@@ -155,7 +181,8 @@ with t_scr:
 
 with t_cor:
     st.markdown("### Correlation of daily returns for a basket")
-    default = [s for s in ["AAPL", "MSFT", "NVDA", "AMZN", "JPM", "XOM", "JNJ", "PG", "HD", "NEE"] if s in cons.symbol.values]
+    default = ([s for s in ["AAPL", "MSFT", "NVDA", "AMZN", "JPM", "XOM", "JNJ", "PG", "HD", "NEE"] if s in cons.symbol.values]
+               or sorted(cons.symbol)[:8])
     basket = st.multiselect("Basket (2-25 symbols)", sorted(cons.symbol), default=default, max_selections=25)
     win = st.select_slider("Window (trading days)", [21, 63, 126, 252], value=126)
     if len(basket) >= 2:
@@ -172,7 +199,7 @@ with t_cor:
 with t_wl:
     st.markdown("### Watchlist & alerts (webhook is mocked)")
     a, b = st.columns([3, 2])
-    wl = a.multiselect("Watchlist", sorted(cons.symbol), default=[s for s in ["AAPL", "NVDA", "TSLA", "JPM", "XOM", "PG"] if s in cons.symbol.values])
+    wl = a.multiselect("Watchlist", sorted(cons.symbol), default=([s for s in ["AAPL", "NVDA", "TSLA", "JPM", "XOM", "PG"] if s in cons.symbol.values] or sorted(cons.symbol)[:6]))
     r1, r2, r3 = b.columns(3)
     rules = Rules(r1.number_input("Move ≥ %", 0.5, 20.0, 2.5, 0.5), r2.number_input("Near high ≥", 50, 100, 95), r3.number_input("Near low ≤", 0, 50, 5))
     alerts = evaluate(wl, ret, sc, rules)
@@ -198,6 +225,6 @@ with t_about:
 
 ### Limitations
 Not investment advice; no trading features. Demo prices are synthetic. Live data covers only the symbols the scheduled
-job has refreshed so far; the rest stay demo and are labelled. Scores are descriptive statistics, not forecasts.
+job has refreshed so far; the rest stay SIMULATED, and the two sets are never ranked together (pick a price universe). Scores are descriptive statistics, not forecasts.
 Prices as of **{as_of}**.
 """)

@@ -7,8 +7,13 @@ from sp500 import analytics as an
 from sp500.alerts import MockWebhook, Rules, evaluate
 from sp500.constituents import StructureChanged, detect_breakage, load_constituents, parse_table
 from sp500.http import RateLimiter
-from sp500.providers import SnapshotProvider, TwelveDataProvider, YahooProvider, load_dashboard_prices, rotate
+from sp500.providers import LiveFileProvider, SnapshotProvider, TwelveDataProvider, YahooProvider, load_dashboard_prices, rotate
 from sp500.store import Store
+
+
+def demo_only():
+    """Snapshot only, ignoring any committed live file (hermetic)."""
+    return load_dashboard_prices(live=LiveFileProvider("/nonexistent/live.csv.gz"))
 
 
 def _table_html(n=500, drop=None):
@@ -49,13 +54,13 @@ def test_constituents_failure_falls_back_to_cache(tmp_path):
 
 
 def test_snapshot_is_valid_and_complete():
-    px, src, meta = load_dashboard_prices()
+    px, src, meta = demo_only()
     assert px.shape[1] >= 480 and len(px) >= 250
     assert (src == "demo").all() and "SIMULATED" in meta["label"]
 
 
 def test_analytics_shapes_and_ranges():
-    px, _, _ = load_dashboard_prices()
+    px, _, _ = demo_only()
     ret, sc = an.returns_table(px), an.scores(px)
     assert list(ret.columns) == ["1d", "1w", "1m", "YTD"]
     assert sc.range_pos.between(0, 100).all() and sc.momentum.between(0, 100).all()
@@ -67,7 +72,7 @@ def test_analytics_shapes_and_ranges():
 
 def test_sector_weights_sum_to_100():
     cons = pd.read_csv("data/constituents.csv", keep_default_na=False)
-    px, _, _ = load_dashboard_prices()
+    px, _, _ = demo_only()
     d = an.sector_weights(cons, SnapshotProvider().market_caps(), "cap")
     assert d.weight.sum() == pytest.approx(100)
     assert an.sector_summary(d, an.returns_table(px)).weight.sum() == pytest.approx(100)
@@ -147,7 +152,6 @@ def test_rate_limiter_spaces_calls():
 
 
 def test_live_file_overrides_demo(tmp_path):
-    from sp500.providers import LiveFileProvider
     f = tmp_path / "live.csv.gz"
     pd.DataFrame({"symbol": ["AAPL"] * 3, "date": ["2026-10-08", "2026-10-09", "2026-10-12"],
                   "close": [1.0, 2.0, 3.0]}).to_csv(f, index=False)

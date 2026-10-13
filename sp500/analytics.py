@@ -52,7 +52,7 @@ def sector_weights(cons: pd.DataFrame, caps: pd.Series | None, mode: str = "cap"
 
 def sector_summary(d: pd.DataFrame, ret: pd.DataFrame) -> pd.DataFrame:
     """Per-sector weight, count and weight-averaged returns (%)."""
-    j = d.set_index("symbol").join(ret)
+    j = d.set_index("symbol").join(ret).dropna(subset=list(ret.columns))
     rows = {}
     for sec, g in j.groupby("sector"):
         w = g.weight / g.weight.sum()
