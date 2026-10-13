@@ -32,7 +32,7 @@ def main() -> int:
     setup_logging()
     key = os.environ.get("TWELVE_DATA_API_KEY", "")
     if not key:
-        print("TWELVE_DATA_API_KEY not set - skipping live refresh (demo snapshot remains in use).")
+        print("::warning::TWELVE_DATA_API_KEY is not set - LIVE MODE IS OFF. No live data fetched; the dashboard keeps showing SIMULATED demo prices.")
         return 0
     cons = load_constituents(ROOT / "data/constituents.csv", refresh=not a.no_constituents, max_age_days=7)
     symbols = sorted(cons.symbol)

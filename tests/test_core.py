@@ -51,7 +51,7 @@ def test_constituents_failure_falls_back_to_cache(tmp_path):
 def test_snapshot_is_valid_and_complete():
     px, src, meta = load_dashboard_prices()
     assert px.shape[1] >= 480 and len(px) >= 250
-    assert (src == "demo").all() and "DEMO" in meta["label"]
+    assert (src == "demo").all() and "SIMULATED" in meta["label"]
 
 
 def test_analytics_shapes_and_ranges():

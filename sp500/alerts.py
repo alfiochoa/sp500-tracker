@@ -39,7 +39,7 @@ class MockWebhook:
     log_path: Path | None = None
 
     def send(self, alerts: list[dict], as_of: str) -> dict:
-        body = {"text": f"{len(alerts)} watchlist alert(s) - demo data as of {as_of}",
+        body = {"text": f"{len(alerts)} watchlist alert(s) - SIMULATED demo prices as of {as_of}",
                 "alerts": alerts, "sent_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "disclaimer": "Informational only. Not investment advice."}
         self.outbox.append(body)

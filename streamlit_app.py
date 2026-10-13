@@ -26,10 +26,15 @@ h1{font-size:1.75rem!important;font-weight:650!important;letter-spacing:-.01em;m
 h3{font-size:1.05rem!important;font-weight:600!important}
 .pill{display:inline-block;padding:.18rem .6rem;border-radius:999px;font-size:.78rem;margin:0 .35rem .35rem 0;
  border:1px solid rgba(128,128,128,.35)}
+.sim{border:2px solid #eb9a00;background:SIMBG;color:SIMINK;border-radius:10px;padding:.45rem .8rem;margin:.2rem 0 .5rem;font-size:.92rem;line-height:1.3}
+[data-testid=stElementContainer]:has(.sim){position:sticky;top:3.2rem;z-index:50}
+.sim small{font-size:.78rem}
+.sim b{letter-spacing:.04em}
 .pill.warn{background:rgba(235,160,0,.16);border-color:rgba(235,160,0,.5)}
 [data-testid=stMetricValue]{font-size:1.45rem}
 @media(max-width:640px){.block-container{padding:1.2rem .8rem}h1{font-size:1.4rem!important}}
-</style>""", unsafe_allow_html=True)
+</style>""".replace("SIMBG", "#faeed2" if mode == "light" else "#3d3216").replace("SIMINK", P["ink"]),
+            unsafe_allow_html=True)
 
 
 @st.cache_data(show_spinner="Loading data...")
@@ -46,9 +51,12 @@ as_of = str(px.index[-1].date())
 n_live = int((source == "live").sum())
 
 
-def style(fig: go.Figure, h: int = 380, **kw) -> go.Figure:
-    fig.update_layout(height=h, margin=dict(l=4, r=12, t=8, b=4), paper_bgcolor="rgba(0,0,0,0)",
+def style(fig: go.Figure, h: int = 380, wm_bottom: bool = False, **kw) -> go.Figure:
+    fig.update_layout(height=h, margin=dict(l=4, r=12, t=8 if wm_bottom else 34, b=28 if wm_bottom else 4), paper_bgcolor="rgba(0,0,0,0)",
                       plot_bgcolor="rgba(0,0,0,0)", font=dict(color=P["muted"], size=12), showlegend=False, **kw)
+    if sim:
+        fig.add_annotation(text="SIMULATED DEMO DATA", xref="paper", yref="paper", x=1, y=0 if wm_bottom else 1.0, yshift=-18 if wm_bottom else 24, showarrow=False,
+                           font={"color": "#eb9a00", "size": 11}, xanchor="right")
     return fig
 
 
@@ -64,9 +72,18 @@ def bar_h(labels, values, title_x, colors):
 
 
 st.title("S&P 500 Tracker")
-live_txt = f"{n_live} of {len(source)} symbols live" if n_live else "no live feed configured"
+n_demo = len(source) - n_live
+sim = n_demo > 0
+if n_live == 0:
+    live_note = "Live mode is OFF: no live data file yet (needs the TWELVE_DATA_API_KEY secret and the scheduled refresh workflow)."
+    scope = ""
+else:
+    live_note = f"Live prices cover {n_live} of {len(source)} symbols; the rest are SIMULATED and marked in the Screener."
+    scope = f" for {n_demo} of {len(source)} symbols"
+if sim:
+    st.markdown(f'<div class="sim"><b>SIMULATED</b> demo prices{scope} - not real market data. '
+                f"Company list is scraped from Wikipedia.<br><small>{live_note}</small></div>", unsafe_allow_html=True)
 st.markdown(
-    f'<span class="pill warn">{"LIVE + DEMO MIX" if n_live else "DEMO DATA"} · {live_txt if n_live else "synthetic snapshot, not real quotes"}</span>'
     f'<span class="pill">Prices as of {as_of}</span>'
     f'<span class="pill">Reference only · not investment advice</span>', unsafe_allow_html=True)
 
@@ -100,7 +117,7 @@ with t_over:
                                    hovertemplate="%{y} · %{x}: %{z:+.2f}%<extra></extra>"))
         fig.update_yaxes(autorange="reversed", tickfont=dict(color=P["ink"], size=11))
         fig.update_xaxes(side="top", tickfont=dict(color=P["ink"]))
-        st.plotly_chart(style(fig, 400), width="stretch", config={"displayModeBar": False})
+        st.plotly_chart(style(fig, 420, wm_bottom=True), width="stretch", config={"displayModeBar": False})
     st.caption("Blue = up, red = down. Weights come from illustrative market caps bundled with the demo snapshot.")
 
 with t_mov:
@@ -114,22 +131,24 @@ with t_mov:
             st.plotly_chart(style(fig, 360), width="stretch", config={"displayModeBar": False})
 
 with t_scr:
-    st.markdown("### Screener: momentum, volatility, 52-week range")
+    st.markdown("### Screener: momentum, volatility, 52-week range" + (" · <span class='pill warn'>SIMULATED prices</span>" if sim else ""), unsafe_allow_html=True)
     f1, f2 = st.columns([2, 3])
     secs = f1.multiselect("Sector", sorted(cons.sector.unique()))
     q = f2.text_input("Search symbol or name", placeholder="e.g. NVDA or Visa")
     exp = an.to_export(cons, ret, sc, source)
+    exp["data_source"] = exp["data_source"].map({"demo": "SIMULATED", "live": "live"})
     if secs:
         exp = exp[exp.sector.isin(secs)]
     if q:
         exp = exp[exp.symbol.str.contains(q, case=False) | exp["name"].str.contains(q, case=False)]
     st.dataframe(exp.sort_values("momentum", ascending=False), hide_index=True, height=420, width="stretch",
-                 column_order=["symbol", "name", "sector", "price", "1d", "1w", "1m", "YTD", "momentum", "volatility", "range_pos"],
+                 column_order=["symbol", "name", "sector", "price", "data_source", "1d", "1w", "1m", "YTD", "momentum", "volatility", "range_pos"],
                  column_config={
                      "momentum": st.column_config.ProgressColumn("Momentum (0-100)", min_value=0, max_value=100, format="%.0f"),
                      "range_pos": st.column_config.ProgressColumn("52w range pos.", min_value=0, max_value=100, format="%.0f"),
                      "volatility": st.column_config.NumberColumn("Vol 60d ann. %", format="%.1f"),
-                     "price": st.column_config.NumberColumn("Price", format="%.2f")})
+                     "price": st.column_config.NumberColumn("Price", format="%.2f"),
+                     "data_source": st.column_config.TextColumn("Prices")})
     st.download_button("Download CSV", exp.to_csv(index=False), f"sp500_screen_{as_of}.csv", "text/csv")
     st.caption("Momentum = percentile of 6-month return skipping the latest week. Volatility = 60-day annualised. "
                "Range position: 0 = 52-week low, 100 = 52-week high.")
@@ -159,6 +178,8 @@ with t_wl:
     alerts = evaluate(wl, ret, sc, rules)
     if alerts:
         st.dataframe(alerts, hide_index=True, width="stretch")
+        if sim:
+            st.caption("Alerts are computed on SIMULATED demo prices.")
     else:
         st.success("No rules triggered for this watchlist.")
     if st.button("Send to mock webhook", disabled=not alerts):

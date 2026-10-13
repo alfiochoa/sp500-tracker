@@ -36,7 +36,7 @@ def main() -> None:
     pd.DataFrame({"symbol": list(caps), "market_cap_b": list(caps.values())}).to_csv(
         ROOT / "data/snapshot/market_caps.csv", index=False)
     (ROOT / "data/snapshot/meta.json").write_text(json.dumps({
-        "label": "DEMO SNAPSHOT - synthetic prices, not real market data", "as_of": AS_OF,
+        "label": "SIMULATED demo prices - not real market data", "as_of": AS_OF,
         "generator": "scripts/make_snapshot.py (seeded)", "market_caps": "illustrative orders of magnitude"}, indent=2))
     print("snapshot written", len(closes), "symbols", file=sys.stderr)
 

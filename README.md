@@ -7,8 +7,10 @@ refreshes it.
 
 ![dashboard](docs/screenshot.png)
 
-> **Reference / demo data only. Not investment advice. No trading features.** Demo prices are *synthetic*
-> (seeded random walks, `scripts/make_snapshot.py`), clearly labelled in the UI with an "as of" timestamp.
+> **SIMULATED demo prices - not real market data. Company list is scraped from Wikipedia.**
+> Returns, movers, scores and alerts you see without a live feed are computed on seeded random walks
+> (`scripts/make_snapshot.py`) attached to *real* company names, so e.g. a "+130% YTD" figure is not a real result.
+> The UI shows a persistent SIMULATED banner and badge. Not investment advice. No trading features.
 
 **Live demo:** _<!-- LIVE_DEMO_URL -->(add Streamlit Cloud URL after deploy)_
 
@@ -34,7 +36,7 @@ flowchart LR
 |---|---|---|
 | Wikipedia "List of S&P 500 companies" | constituents, sectors | CC BY-SA 4.0, attribution shown in the app and here. MediaWiki API with an identifying User-Agent; HTML fallback only if `robots.txt` allows it; cached 7 days. |
 | [Twelve Data](https://twelvedata.com) free tier | daily closes | Free key in `TWELVE_DATA_API_KEY`; 8 req/min and 800/day respected by rate limiting and by rotating ~40 symbols per run across runs. Check their terms before redistributing data. |
-| Bundled snapshot | tests, CI, offline demo | Synthetic, generated here. |
+| Bundled snapshot | tests, CI, offline demo | **SIMULATED** prices, generated here; the symbols/names/sectors are the real Wikipedia list (verified identical to the live table). |
 | Yahoo (optional) | `YahooProvider(enabled=True)` | **Off by default.** Unofficial endpoint; Yahoo's ToS restricts automated use. Personal/educational use only; never enabled in CI or the demo. |
 
 Market-cap weights are *illustrative orders of magnitude* in the snapshot, not index-provider weights.
@@ -49,7 +51,7 @@ TWELVE_DATA_API_KEY=... python scripts/refresh.py --batch 40   # optional live r
 ```
 
 Live refresh in GitHub: add repo secret `TWELVE_DATA_API_KEY`; `.github/workflows/refresh.yml` runs 8x per weekday, commits
-`data/live_prices.csv.gz` + `data/refresh_state.json`. Without the secret it exits cleanly.
+`data/live_prices.csv.gz` + `data/refresh_state.json`. Without the secret it exits cleanly with a `::warning::` that live mode is off, and the app keeps showing the SIMULATED banner.
 
 ## Engineering notes
 
