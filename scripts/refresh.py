@@ -39,6 +39,7 @@ def universe_symbols(which: str) -> list[str]:
 def main(argv=None, now: datetime | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--universe", choices=["ranking", "candidates"], default="ranking")
+    ap.add_argument("--target-date", help="fetch up to this close date (YYYY-MM-DD) instead of the last completed session")
     ap.add_argument("--force", action="store_true", help="run even if the market is closed today (manual use)")
     a = ap.parse_args(argv)
     setup_logging()
@@ -54,7 +55,7 @@ def main(argv=None, now: datetime | None = None) -> int:
     if not symbols:
         print("::warning::data/ranking.csv not built yet (scripts/build_ranking.py); nothing to refresh.")
         return 0
-    target = last_complete_trading_day(now)
+    target = date.fromisoformat(a.target_date) if a.target_date else last_complete_trading_day(now)
     old = pd.read_csv(LIVE_FILE) if LIVE_FILE.exists() else pd.DataFrame(columns=["symbol", "date", "close"])
     old = old[old.date <= target.isoformat()]
     last = old.groupby("symbol").date.max().to_dict()

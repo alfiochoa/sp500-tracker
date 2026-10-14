@@ -5,6 +5,7 @@ on:
   schedule: [{ cron: "0 14 1 1,4,7,10 *" }]
   workflow_dispatch:
     inputs:
+      target_date: { description: "Close date to rank on (YYYY-MM-DD, empty = last completed session); use an older date to avoid re-fetching a new day", type: string, default: "" }
       skip_sec: { description: "Reuse data/ranking_candidates.csv instead of re-querying SEC EDGAR", type: boolean, default: false }
 concurrency: refresh
 permissions: { contents: write }
@@ -22,7 +23,7 @@ jobs:
         run: python scripts/build_ranking.py sec
       - name: Real closes for the candidates (budget-limited)
         env: { TWELVE_DATA_API_KEY: "${{ secrets.TWELVE_DATA_API_KEY }}" }
-        run: python scripts/refresh.py --universe candidates --force
+        run: python scripts/refresh.py --universe candidates --force ${{ inputs.target_date && format('--target-date {0}', inputs.target_date) || '' }}
       - name: Close on the public-float date for companies without a fresh share count (a few credits)
         env: { TWELVE_DATA_API_KEY: "${{ secrets.TWELVE_DATA_API_KEY }}" }
         run: python scripts/build_ranking.py anchor
