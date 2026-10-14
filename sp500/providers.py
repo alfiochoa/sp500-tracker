@@ -89,12 +89,13 @@ class TwelveDataProvider(PriceProvider):
     def __init__(self, api_key: str, store: Store | None = None, session=None, limiter: RateLimiter | None = None):
         if not api_key:
             raise ValueError("TWELVE_DATA_API_KEY is required")
-        self._key, self.store = api_key, store
+        self._key, self.store, self.last_code = api_key, store, None
         self.session = session or make_session()
         self.limiter = limiter or RateLimiter(self.PER_MIN)
 
     def fetch_one(self, symbol: str, days: int) -> list[PriceBar]:
         self.limiter.wait()
+        self.last_code = None
         try:  # never let the key leak through exception text / logs
             r = self.session.get(self.URL, params={"symbol": symbol, "interval": "1day", "outputsize": days,
                                                    "apikey": self._key}, timeout=20)
@@ -104,7 +105,8 @@ class TwelveDataProvider(PriceProvider):
             log.warning("event=fetch_failed provider=twelvedata symbol=%s err=%s", symbol, type(e).__name__)
             return []
         if payload.get("status") == "error" or "values" not in payload:
-            log.warning("event=provider_error provider=twelvedata symbol=%s code=%s", symbol, payload.get("code"))
+            self.last_code = payload.get("code")
+            log.warning("event=provider_error provider=twelvedata symbol=%s code=%s", symbol, self.last_code)
             return []
         bars = []
         for v in reversed(payload["values"]):

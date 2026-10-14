@@ -78,9 +78,18 @@ def phase_anchor() -> int:
     if unresolved and not key:
         print("::warning::TWELVE_DATA_API_KEY not set; cannot fetch float-date closes for", unresolved)
         return 0
-    used = 0
+    from sp500.guard import AccountGuard, UsageUnavailable, fetch_usage
+    guard, used = AccountGuard(lambda: fetch_usage(key)), 0
+    if unresolved:
+        try:
+            allowed = guard.start(len(unresolved))
+        except UsageUnavailable as e:
+            print(f"::warning::Twelve Data api_usage unavailable ({e}); failing closed, no anchor credits spent.")
+            return 0
+    else:
+        allowed = 0
     for r in cand[cand.symbol.isin(unresolved)].itertuples():
-        if remaining(state, today) - used <= 0 or not isinstance(r.public_float_date, str):
+        if used >= allowed or remaining(state, today) - used <= 0 or not isinstance(r.public_float_date, str):
             continue
         bars = TwelveDataProvider(key).fetch_one(r.symbol, 450)
         used += 1
@@ -88,6 +97,7 @@ def phase_anchor() -> int:
         if prior:
             rows.append({"symbol": r.symbol, "float_date": r.public_float_date, "date": prior[-1].date.isoformat(), "close": prior[-1].close})
     if used:
+        guard.finish()
         (DATA / "refresh_state.json").write_text(json.dumps(record_usage(state, today, used)))
     pd.DataFrame(rows, columns=["symbol", "float_date", "date", "close"]).to_csv(DATA / "float_anchor_prices.csv", index=False)
     print(f"anchors for {len(rows)}/{len(unresolved)} unresolved symbols; credits used {used}")

@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from sp500.budget import DAILY_CAP, HISTORY_DAYS, load_state, plan_fetch, record_usage, remaining
 from sp500.calendar import last_complete_trading_day, market_open_today, trading_days_between
+from sp500.guard import CHUNK, MINUTE_WAIT, AccountGuard, UsageUnavailable, fetch_usage
 from sp500.http import setup_logging
 from sp500.providers import LIVE_FILE, TwelveDataProvider
 
@@ -36,7 +37,9 @@ def universe_symbols(which: str) -> list[str]:
     return sorted(pd.read_csv(f).symbol)
 
 
-def main(argv=None, now: datetime | None = None) -> int:
+def main(argv=None, now: datetime | None = None, guard: AccountGuard | None = None, sleep=None) -> int:
+    import time
+    sleep = sleep or time.sleep
     ap = argparse.ArgumentParser()
     ap.add_argument("--universe", choices=["ranking", "candidates"], default="ranking")
     ap.add_argument("--target-date", help="fetch up to this close date (YYYY-MM-DD) instead of the last completed session")
@@ -68,12 +71,38 @@ def main(argv=None, now: datetime | None = None) -> int:
     print(f"target close {target}; {len(symbols) - stale}/{len(symbols)} fresh; fetching {len(plan)} (budget left {budget}/{DAILY_CAP})")
     if not plan:
         return 0
+    guard = guard or AccountGuard(lambda: fetch_usage(key))
+    try:
+        allowed = guard.start(len(plan))
+    except UsageUnavailable as e:  # fail closed: spend nothing, keep the previous data
+        print(f"::warning::Twelve Data api_usage unavailable ({e}); failing closed, no credits spent, previous data kept.")
+        return 0
+    if allowed <= 0:
+        print("::warning::account guard: no credits may be spent now (daily cap 560 or per-minute limit busy); previous data kept.")
+        return 0
+    plan = plan[:allowed]
     p = TwelveDataProvider(key)
-    frames, got = [old], 0
-    for sym in plan:
+    frames, got, spent = [old], 0, 0
+    for i, sym in enumerate(plan):
+        if i and i % CHUNK == 0:
+            try:
+                if guard.allow(spent) < min(CHUNK, len(plan) - i):
+                    print("::warning::account guard: stopping early (shared daily cap reached).")
+                    break
+            except UsageUnavailable:
+                print("::warning::api_usage unavailable mid-run; stopping (fail closed).")
+                break
         have = last_dates[sym]
         days = HISTORY_DAYS if have is None else min(HISTORY_DAYS, trading_days_between(have, target) + 5)
         bars = p.fetch_one(sym, days)
+        spent += 1
+        if not bars and p.last_code == 429:  # minute/daily limit hit (the other project may be running): wait once, retry once
+            sleep(MINUTE_WAIT)
+            bars = p.fetch_one(sym, days)
+            spent += 1
+            if not bars and p.last_code == 429:
+                print("::warning::rate limit still hit after waiting; keeping data fetched so far.")
+                break
         if bars:
             got += 1
             frames.append(pd.DataFrame([(b.symbol, b.date.isoformat(), b.close) for b in bars], columns=["symbol", "date", "close"]))
@@ -83,11 +112,12 @@ def main(argv=None, now: datetime | None = None) -> int:
         df = df[df.symbol.isin(symbols)]
     df = df.groupby("symbol", group_keys=False).tail(HISTORY_DAYS)
     df.to_csv(LIVE_FILE, index=False, compression={"method": "gzip", "mtime": 0})
-    STATE.write_text(json.dumps(record_usage(state, today, len(plan))))
+    STATE.write_text(json.dumps(record_usage(state, today, spent)))
+    guard.finish()
     fresh = int((df.groupby("symbol").date.max().reindex(symbols) >= target.isoformat()).sum())
     STATUS.write_text(json.dumps({"refreshed_at": now.isoformat(timespec="seconds"), "target_close": target.isoformat(),
-                                  "symbols": len(symbols), "fresh": fresh, "fetched": got, "credits_used_run": len(plan)}))
-    print(f"fetched {got}/{len(plan)}; fresh {fresh}/{len(symbols)}")
+                                  "symbols": len(symbols), "fresh": fresh, "fetched": got, "credits_used_run": spent}))
+    print(f"fetched {got}/{spent}; fresh {fresh}/{len(symbols)}")
     return 0
 
 
