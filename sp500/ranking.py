@@ -8,6 +8,7 @@ of non-affiliates, reported once a year) is used only to pick a generous candida
 """
 from __future__ import annotations
 
+import json
 import logging
 import time
 from dataclasses import dataclass
@@ -56,12 +57,35 @@ def latest_by_end(facts: list[dict]) -> tuple[int, str] | None:
     return int(latest["val"]), latest["end"]
 
 
-def latest_public_float(facts: list[dict]) -> float | None:
+def latest_public_float(facts: list[dict]) -> tuple[float, str] | None:
+    """(aggregate market value of non-affiliate equity in USD, as-of date) from the latest 10-K."""
     rows = [f for f in facts if f.get("form") in FORMS and f.get("val", 0) > 0]
     if not rows:
         return None
     latest = max(rows, key=lambda f: (f["end"], f["filed"]))
-    return float(latest["val"])
+    return float(latest["val"]), latest["end"]
+
+
+SHARE_BASES = [  # (label, taxonomy, tag), in order of preference
+    ("cover_page", "dei", "EntityCommonStockSharesOutstanding"),
+    ("balance_sheet", "us-gaap", "CommonStockSharesOutstanding"),
+    ("diluted_weighted_avg", "us-gaap", "WeightedAverageNumberOfDilutedSharesOutstanding"),
+    ("basic_weighted_avg", "us-gaap", "WeightedAverageNumberOfSharesOutstandingBasic"),
+]
+MAX_SHARES_AGE_DAYS = 200   # the latest 10-Q/10-K is at most ~4 months old; older figures are treated as stale and ignored
+
+
+def choose_shares(options: dict[str, tuple[int, str]], as_of: date, max_age_days: int = MAX_SHARES_AGE_DAYS):
+    """First fresh share count in the order of SHARE_BASES, as (basis, shares, end date) or None.
+
+    Many multi-class companies (Visa, Berkshire...) only have a non-dimensional cover figure from years ago:
+    those stale values are rejected instead of silently producing a tiny market cap.
+    """
+    for basis, _, _ in SHARE_BASES:
+        o = options.get(basis)
+        if o and 0 <= (as_of - date.fromisoformat(o[1])).days <= max_age_days:
+            return basis, int(o[0]), o[1]
+    return None
 
 
 class SecClient:
@@ -101,6 +125,16 @@ class SecClient:
         return self._facts_cache[1]
 
 
+def share_options(client: SecClient, cik: int) -> dict[str, tuple[int, str]]:
+    out: dict[str, tuple[int, str]] = {}
+    for basis, taxonomy, tag in SHARE_BASES:
+        facts = client.concept(cik, tag, taxonomy)
+        r = latest_cover_shares(facts) if basis == "cover_page" else latest_by_end(facts)
+        if r:
+            out[basis] = r
+    return out
+
+
 @dataclass
 class Candidate:
     symbol: str
@@ -134,7 +168,8 @@ def collect_sec(symbols: list[str], client: SecClient) -> tuple[pd.DataFrame, li
         if sh is None:
             missing.append(sym)
             continue
-        rows.append({"symbol": sym, "cik": cik, "shares": sh[0], "shares_date": sh[1], "shares_basis": basis, "public_float_usd": fl})
+        rows.append({"symbol": sym, "cik": cik, "shares": sh[0], "shares_date": sh[1], "shares_basis": basis,
+                     "public_float_usd": fl[0] if fl else None, "public_float_date": fl[1] if fl else None})
     return pd.DataFrame(rows), missing
 
 
@@ -149,6 +184,28 @@ def pick_candidates(sec: pd.DataFrame, n: int = CANDIDATES) -> pd.DataFrame:
 def common_price_date(last_dates: dict[str, date]) -> date:
     """The latest date for which every candidate has a close."""
     return min(last_dates.values())
+
+
+def resolve_shares(cand: pd.DataFrame, as_of: date, anchors: dict[str, float] | None = None) -> tuple[pd.DataFrame, list[str]]:
+    """Attach shares/shares_basis/shares_date from each candidate's `share_options` JSON; second value = unresolved symbols.
+
+    A company with no fresh share count (typically multi-class: Visa, Berkshire...) falls back to an *estimate*:
+    implied shares = SEC public float / close on the float's as-of date (`anchors`: symbol -> that close). It counts only
+    non-affiliate shares, so it understates companies with large insider holdings; it is labelled `public_float_proxy`.
+    """
+    rows, unresolved = [], []
+    for r in cand.to_dict("records"):
+        opts = {k: (v[0], v[1]) for k, v in json.loads(r["share_options"]).items()}
+        ch = choose_shares(opts, as_of)
+        if ch is None:
+            fl, a = r.get("public_float_usd"), (anchors or {}).get(r["symbol"])
+            if a and pd.notna(fl) and fl:
+                ch = ("public_float_proxy", int(fl / a), str(r.get("public_float_date")))
+            else:
+                unresolved.append(r["symbol"])
+                continue
+        rows.append({**r, "shares_basis": ch[0], "shares": ch[1], "shares_date": ch[2]})
+    return pd.DataFrame(rows), unresolved
 
 
 def rank_by_market_cap(cand: pd.DataFrame, closes: pd.DataFrame, as_of: date, top_n: int = TOP_N) -> pd.DataFrame:

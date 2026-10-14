@@ -23,6 +23,9 @@ jobs:
       - name: Real closes for the candidates (budget-limited)
         env: { TWELVE_DATA_API_KEY: "${{ secrets.TWELVE_DATA_API_KEY }}" }
         run: python scripts/refresh.py --universe candidates --force
+      - name: Close on the public-float date for companies without a fresh share count (a few credits)
+        env: { TWELVE_DATA_API_KEY: "${{ secrets.TWELVE_DATA_API_KEY }}" }
+        run: python scripts/build_ranking.py anchor
       - name: Rank (fails loudly if any candidate still lacks real closes)
         id: rank
         continue-on-error: true

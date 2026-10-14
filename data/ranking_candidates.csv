@@ -1,310 +1,310 @@
-symbol,cik,shares,shares_date,shares_basis,public_float_usd,name,sector,float_rank
-NWSA,1564708,579000000,2013-06-30,balance_sheet,,News Corp (Class A),Communication Services,0.0
-SKYD,2041610,1071666977,2025-11-05,cover_page,,Skydance Corporation,Communication Services,0.0
-NWS,1564708,579000000,2013-06-30,balance_sheet,,News Corp (Class B),Communication Services,0.0
-XOM,2115436,4111911960,2026-06-30,cover_page,,ExxonMobil,Energy,0.0
-FOX,1754301,1,2019-03-18,cover_page,,Fox Corporation (Class B),Communication Services,0.0
-FOXA,1754301,1,2019-03-18,cover_page,,Fox Corporation (Class A),Communication Services,0.0
-FDXF,2082247,149518133,2026-08-03,cover_page,,FedEx Freight,Industrials,0.0
-HONA,2089271,316952725,2026-07-25,cover_page,,Honeywell Aerospace,Industrials,0.0
-AOS,91142,75732188,2015-08-05,cover_page,,A. O. Smith,Industrials,0.0
-NVDA,1045810,24100000000,2026-08-21,cover_page,4000000000000.0,Nvidia,Information Technology,1.0
-MSFT,789019,7425545491,2026-07-23,cover_page,3600000000000.0,Microsoft,Information Technology,2.0
-AAPL,320193,14594180000,2026-07-17,cover_page,3253431000000.0,Apple Inc.,Information Technology,3.0
-AMZN,1018724,10786313572,2026-07-22,cover_page,2118061430046.0,Amazon,Consumer Discretionary,4.0
-GOOG,1652044,12230000000,2026-06-30,balance_sheet,1900000000000.0,Alphabet Inc. (Class C),Communication Services,5.0
-GOOGL,1652044,12230000000,2026-06-30,balance_sheet,1900000000000.0,Alphabet Inc. (Class A),Communication Services,6.0
-META,1326801,2565000000,2026-06-30,diluted_weighted_avg,1600000000000.0,Meta Platforms,Communication Services,7.0
-AVGO,1730168,4773629865,2026-08-28,cover_page,939200000000.0,Broadcom,Information Technology,8.0
-BRK.B,1067983,941481,2011-04-29,cover_page,902700000000.0,Berkshire Hathaway,Financials,9.0
-TSLA,1318605,3949547394,2026-07-16,cover_page,892930000000.0,"Tesla, Inc.",Consumer Discretionary,10.0
-LLY,59478,941357065,2026-08-03,cover_page,807887000000.0,Lilly (Eli),Health Care,11.0
-JPM,19617,2658186195,2026-06-30,cover_page,794433813496.0,JPMorgan Chase,Financials,12.0
-V,1403161,469280842,2010-01-27,cover_page,601100000000.0,Visa Inc.,Financials,13.0
-NFLX,1065280,4163939676,2026-06-30,cover_page,565657747980.0,Netflix,Communication Services,14.0
-MA,1141391,122530193,2010-10-27,cover_page,505000000000.0,Mastercard,Financials,15.0
-COST,909832,443129349,2026-09-29,cover_page,451600000000.0,Costco,Consumer Staples,16.0
-WMT,104169,7933746241,2026-08-26,cover_page,391703475732.0,Walmart,Consumer Staples,17.0
-HD,354950,997689626,2026-08-18,cover_page,371800000000.0,Home Depot (The),Consumer Discretionary,18.0
-MU,723125,1131423212,2026-10-02,cover_page,368100000000.0,Micron Technology,Information Technology,19.0
-JNJ,200406,2409898597,2026-07-17,cover_page,367000000000.0,Johnson & Johnson,Health Care,20.0
-BAC,70858,6992748365,2026-07-30,cover_page,351903673230.0,Bank of America,Financials,21.0
-ORCL,1341439,3023736000,2026-09-07,cover_page,346760150000.0,Oracle Corporation,Information Technology,22.0
-PG,80424,2324433060,2026-07-31,cover_page,333000000000.0,Procter & Gamble,Consumer Staples,23.0
-ABBV,1551152,1767117285,2026-07-27,cover_page,325061294916.0,AbbVie,Health Care,24.0
-KO,21344,4302482418,2026-04-28,cover_page,300552956545.0,Coca-Cola Company (The),Consumer Staples,25.0
-PLTR,1321655,2402897000,2026-06-30,balance_sheet,299300000000.0,Palantir Technologies,Information Technology,26.0
-CSCO,858877,3942586873,2026-08-27,cover_page,294500000000.0,Cisco,Information Technology,27.0
-PM,1413329,1558613439,2026-07-17,cover_page,283000000000.0,Philip Morris International,Consumer Staples,28.0
-UNH,731766,897594847,2026-07-31,cover_page,281907836350.0,UnitedHealth Group,Health Care,29.0
-IBM,51143,942134390,2026-06-30,cover_page,274500000000.0,IBM,Information Technology,30.0
-GE,40545,1037562513,2026-06-30,cover_page,270200000000.0,GE Aerospace,Industrials,31.0
-WFC,72971,3023999336,2026-07-17,cover_page,257300000000.0,Wells Fargo,Financials,32.0
-CVX,93410,1975771274,2026-06-30,cover_page,247400000000.0,Chevron Corporation,Energy,33.0
-AMD,2488,1632475042,2026-07-29,cover_page,232300000000.0,Advanced Micro Devices,Information Technology,34.0
-ABT,1800,1741812429,2026-03-31,cover_page,232169255381.0,Abbott Laboratories,Health Care,35.0
-AXP,4962,675309833,2026-07-14,cover_page,221800000000.0,American Express,Financials,36.0
-LIN,1707925,460980163,2026-06-30,cover_page,220000000000.0,Linde plc,Materials,37.0
-ACN,1467373,637016143,2010-03-19,cover_page,218315987018.0,Accenture,Information Technology,38.0
-MS,895421,1570566292,2026-07-31,cover_page,217968854713.0,Morgan Stanley,Financials,39.0
-GS,886982,291171408,2026-07-17,cover_page,213200000000.0,Goldman Sachs,Financials,40.0
-MCD,63908,707641531,2026-06-30,cover_page,208464334129.0,McDonald's,Consumer Discretionary,41.0
-T,732717,6852385650,2026-07-16,cover_page,207000000000.0,AT&T,Communication Services,42.0
-MRK,310158,2467171638,2026-07-31,cover_page,198051000000.0,Merck & Co.,Health Care,43.0
-RTX,101829,1347758144,2026-06-30,cover_page,195405729090.0,RTX Corporation,Industrials,44.0
-ISRG,1035267,353278038,2026-07-16,cover_page,193900000000.0,Intuitive Surgical,Health Care,45.0
-CRM,1108524,823000000,2026-08-20,cover_page,191800000000.0,Salesforce,Information Technology,46.0
-TXN,97476,913247686,2026-07-15,cover_page,188509303179.0,Texas Instruments,Information Technology,47.0
-UBER,1543151,2042560121,2026-07-31,cover_page,187600000000.0,Uber,Industrials,48.0
-BKNG,1075531,751380500,2026-07-27,cover_page,187400000000.0,Booking Holdings,Consumer Discretionary,49.0
-VZ,732712,4154775202,2026-06-30,cover_page,182400000000.0,Verizon,Communication Services,50.0
-CAT,18230,459674889,2026-06-30,cover_page,180900000000.0,Caterpillar Inc.,Industrials,51.0
-PEP,77476,1362741092,2026-10-01,cover_page,179000000000.0,PepsiCo,Consumer Staples,52.0
-LRCX,707549,1251321000,2026-08-04,cover_page,178309002956.0,Lam Research,Information Technology,53.0
-DIS,1744489,1726686902,2026-07-29,cover_page,176600000000.0,Walt Disney Company (The),Communication Services,54.0
-NOW,1373715,1034000000,2026-06-30,cover_page,175700000000.0,ServiceNow,Information Technology,55.0
-QCOM,804328,1050000000,2026-07-27,cover_page,167900000000.0,Qualcomm,Information Technology,56.0
-SPGI,64040,296000000,2026-04-24,cover_page,161000000000.0,S&P Global,Financials,57.0
-KLAC,319201,1306546783,2026-08-03,cover_page,159300000000.0,KLA Corporation,Information Technology,58.0
-BLK,2012383,154926181,2025-04-30,cover_page,159000000000.0,BlackRock,Financials,59.0
-BSX,885725,1449229526,2026-07-30,cover_page,158700000000.0,Boston Scientific,Health Care,60.0
-BA,12927,790370020,2026-07-21,cover_page,158300000000.0,Boeing,Industrials,61.0
-SCHW,316709,1729335714,2026-07-31,cover_page,156300000000.0,Charles Schwab Corporation,Financials,62.0
-C,831001,1749319009,2026-01-31,cover_page,156200000000.0,Citigroup,Financials,63.0
-PGR,80661,581371770,2026-07-02,cover_page,155911082530.0,Progressive Corporation,Financials,64.0
-TMO,97745,369747286,2026-06-27,cover_page,154038987000.0,Thermo Fisher Scientific,Health Care,65.0
-AMGN,318154,540632005,2026-07-30,cover_page,150100000000.0,Amgen,Health Care,66.0
-HON,773840,316940010,2026-06-30,cover_page,145300000000.0,Honeywell Technologies,Industrials,67.0
-ADBE,796343,389200000,2026-09-18,cover_page,144940000000.0,Adobe Inc.,Information Technology,68.0
-SYK,310764,383573046,2026-06-30,cover_page,144306436547.0,Stryker Corporation,Health Care,69.0
-GEV,1996810,266333581,2026-06-30,cover_page,144000000000.0,GE Vernova,Industrials,70.0
-NEE,753308,2085341456,2026-03-31,cover_page,142860484569.0,NextEra Energy,Utilities,71.0
-TJX,109198,1099974061,2026-08-21,cover_page,140000000000.0,TJX Companies,Consumer Discretionary,72.0
-ETN,1551182,388400000,2026-06-30,cover_page,139000000000.0,Eaton Corporation,Industrials,73.0
-PFE,78003,5699673589,2026-07-29,cover_page,138000000000.0,Pfizer,Health Care,74.0
-UNP,100885,594075498,2026-07-17,cover_page,136100000000.0,Union Pacific Corporation,Industrials,75.0
-INTU,896878,267236000,2026-08-31,cover_page,135600000000.0,Intuit,Information Technology,76.0
-COF,927628,613484836,2026-06-30,cover_page,135200000000.0,Capital One,Financials,77.0
-CMCSA,1166691,2063073161,2009-12-31,cover_page,130745000000.0,Comcast,Communication Services,78.0
-LOW,60667,561054019,2026-08-25,cover_page,126900000000.0,Lowe's,Consumer Discretionary,79.0
-DHR,313616,702986054,2026-07-16,cover_page,125900000000.0,Danaher Corporation,Health Care,80.0
-DE,315189,269625412,2026-08-02,cover_page,124313866554.0,Deere & Company,Industrials,81.0
-PANW,1327567,818000000,2026-08-31,cover_page,123400000000.0,Palo Alto Networks,Information Technology,82.0
-AMAT,6951,793597443,2026-07-26,cover_page,121318219350.0,Applied Materials,Information Technology,83.0
-MDT,1613103,1279137890,2026-08-28,cover_page,120100000000.0,Medtronic,Health Care,84.0
-CB,896159,387860106,2026-04-21,cover_page,115000000000.0,Chubb Limited,Financials,85.0
-VRTX,875320,253460924,2026-07-31,cover_page,113400000000.0,Vertex Pharmaceuticals,Health Care,86.0
-TMUS,1283699,1072671613,2026-07-17,cover_page,112400000000.0,T-Mobile US,Communication Services,87.0
-COP,1163165,1201337479,2026-06-30,cover_page,112000000000.0,ConocoPhillips,Energy,88.0
-SBUX,829224,1140000000,2026-07-23,cover_page,111000000000.0,Starbucks,Consumer Discretionary,89.0
-PH,76334,126047469,2026-07-31,cover_page,110763388251.0,Parker Hannifin,Industrials,90.0
-CRWD,1535527,1023934842,2026-08-20,cover_page,109300000000.0,CrowdStrike,Information Technology,91.0
-BX,1393818,750625114,2026-07-31,cover_page,108900000000.0,Blackstone Inc.,Financials,92.0
-MRSH,62709,477211268,2026-07-16,cover_page,107422546097.0,Marsh McLennan,Financials,93.0
-LMT,936468,230790753,2026-07-20,cover_page,106500000000.0,Lockheed Martin,Industrials,94.0
-APH,820313,1232983457,2026-07-28,cover_page,106029000000.0,Amphenol,Information Technology,95.0
-ANET,1596532,1261224648,2026-07-30,cover_page,105600000000.0,Arista Networks,Information Technology,96.0
-ICE,1571949,561394487,2026-07-27,cover_page,104400000000.0,Intercontinental Exchange,Financials,97.0
-ADP,8670,397262737,2026-07-31,cover_page,103569897016.0,Automatic Data Processing,Industrials,98.0
-AMT,1053507,465960048,2026-07-21,cover_page,103400000000.0,American Tower,Real Estate,99.0
-GILD,882095,1239955155,2026-07-31,cover_page,103200000000.0,Gilead Sciences,Health Care,100.0
-APP,1751008,335291000,2026-06-30,balance_sheet,102700000000.0,AppLovin,Communication Services,101.0
-WELL,766704,705914450,2026-04-24,cover_page,102303567000.0,Welltower,Real Estate,102.0
-SO,92122,1127301098,2026-03-31,cover_page,101000000000.0,Southern Company,Utilities,103.0
-CEG,1868275,354307379,2026-07-31,cover_page,100560269473.0,Constellation Energy,Utilities,104.0
-INTC,50863,5044000000,2026-07-17,cover_page,99300000000.0,Intel,Information Technology,105.0
-CME,1156375,66643583,2010-02-17,cover_page,98900000000.0,CME Group,Financials,106.0
-MO,764180,1669743926,2026-07-22,cover_page,98000000000.0,Altria,Consumer Staples,107.0
-PLD,1045609,932338000,2026-04-28,cover_page,97322102425.0,Prologis,Real Estate,108.0
-TT,1466258,220023177,2026-07-24,cover_page,97200000000.0,Trane Technologies,Industrials,109.0
-MCK,927653,116590363,2026-07-31,cover_page,95300000000.0,McKesson,Health Care,110.0
-BMY,14272,2042714656,2026-07-22,cover_page,94188864457.0,Bristol Myers Squibb,Health Care,111.0
-FISV,798354,531766721,2026-07-31,cover_page,93881636110.0,Fiserv,Financials,112.0
-WM,823768,399715184,2026-07-24,cover_page,92000000000.0,Waste Management,Industrials,113.0
-DUK,1326160,779596217,2026-04-30,cover_page,91703190830.0,Duke Energy,Utilities,114.0
-KKR,1404912,897635601,2026-08-05,cover_page,91100000000.0,KKR & Co.,Financials,115.0
-DASH,1792789,440833000,2026-06-30,diluted_weighted_avg,90800000000.0,DoorDash,Consumer Discretionary,116.0
-CI,1739940,264240486,2026-07-24,cover_page,88000000000.0,Cigna,Health Care,117.0
-ELV,1156039,216869290,2026-07-10,cover_page,87349478366.0,Elevance Health,Health Care,118.0
-MDLZ,1103982,1743809975,2010-06-30,balance_sheet,87100000000.0,Mondelez International,Consumer Staples,119.0
-MCO,1059556,173200000,2026-06-30,cover_page,87000000000.0,Moody's Corporation,Financials,120.0
-CVS,64803,1278970369,2026-07-29,cover_page,86382523283.0,CVS Health,Health Care,121.0
-SHW,89800,242758151,2026-06-30,cover_page,85532942889.0,Sherwin-Williams,Materials,122.0
-CDNS,813672,271799000,2025-12-31,balance_sheet,83968000000.0,Cadence Design Systems,Information Technology,123.0
-ADI,6281,484565465,2026-08-01,cover_page,81121000000.0,Analog Devices,Information Technology,124.0
-MMM,66740,515722417,2026-06-30,cover_page,81100000000.0,3M,Industrials,125.0
-NKE,320187,855351589,2015-07-17,cover_page,80529120635.0,"Nike, Inc.",Consumer Discretionary,126.0
-RCL,884887,267452084,2026-07-24,cover_page,79100000000.0,Royal Caribbean Group,Consumer Discretionary,127.0
-EQIX,1101239,98671686,2026-07-28,cover_page,77800000000.0,Equinix,Real Estate,128.0
-RSG,1060391,306212978,2026-07-30,cover_page,77000000000.0,Republic Services,Industrials,129.0
-AON,315293,212125434,2026-07-28,cover_page,76965213677.0,Aon plc,Financials,130.0
-TDG,1260221,55276525,2026-07-31,cover_page,76426902522.0,TransDigm Group,Industrials,131.0
-HWM,4281,398801399,2026-08-03,cover_page,75000000000.0,Howmet Aerospace,Industrials,132.0
-CTAS,723254,397075093,2026-09-30,cover_page,74381019287.0,Cintas,Industrials,133.0
-UPS,1090727,713924267,2010-02-17,cover_page,74239665022.0,United Parcel Service,Industrials,134.0
-COIN,1679788,263782000,2026-06-30,balance_sheet,74200000000.0,Coinbase,Financials,135.0
-CL,21665,797172829,2026-06-30,cover_page,73400000000.0,Colgate-Palmolive,Consumer Staples,136.0
-PNC,713676,398943667,2026-07-20,cover_page,73200000000.0,PNC Financial Services,Financials,137.0
-ITW,49826,284800000,2026-06-30,cover_page,71900000000.0,Illinois Tool Works,Industrials,138.0
-NOC,1133421,142063026,2026-07-16,cover_page,71500000000.0,Northrop Grumman,Industrials,139.0
-HOOD,1783879,232609957,2021-06-30,balance_sheet,71300000000.0,Robinhood Markets,Financials,140.0
-PYPL,1633917,882105493,2026-04-29,cover_page,71300000000.0,PayPal,Financials,141.0
-AJG,354190,256300000,2026-06-30,cover_page,71117000000.0,Arthur J. Gallagher & Co.,Financials,142.0
-USB,36104,1558051446,2026-07-31,cover_page,70500000000.0,U.S. Bancorp,Financials,143.0
-GD,40533,270389759,2025-12-31,balance_sheet,69581612877.0,General Dynamics,Industrials,144.0
-ZTS,1555280,413223602,2026-07-31,cover_page,69233000000.0,Zoetis,Health Care,145.0
-WMB,107263,1223167472,2026-07-30,cover_page,67728227765.0,Williams Companies,Energy,146.0
-ECL,31462,280328603,2026-06-30,cover_page,67088288734.0,Ecolab,Materials,147.0
-APD,2969,222685530,2026-06-30,cover_page,65600000000.0,Air Products,Materials,148.0
-BDX,10795,272386800,2026-06-30,cover_page,65472902857.0,Becton Dickinson,Health Care,149.0
-VST,1692819,335635195,2026-08-03,cover_page,65311459773.0,Vistra Corp.,Utilities,150.0
-EOG,821189,524529176,2026-07-28,cover_page,65231000000.0,EOG Resources,Energy,151.0
-STX,1137789,226644518,2026-07-31,cover_page,65000000000.0,Seagate Technology,Information Technology,152.0
-FDX,1048911,236581188,2026-07-16,cover_page,64600000000.0,FedEx,Industrials,153.0
-ADSK,769397,209000000,2026-08-21,cover_page,64500000000.0,Autodesk,Information Technology,154.0
-BNY,1390777,678504142,2026-06-30,cover_page,64230991381.0,BNY Mellon,Financials,155.0
-MRVL,1835632,876900000,2026-08-21,cover_page,64119895583.0,Marvell Technology,Information Technology,156.0
-NEM,1164727,1053692271,2026-07-16,cover_page,64108664771.0,Newmont,Materials,157.0
-CMG,1058090,1265418000,2026-07-24,cover_page,64000000000.0,Chipotle Mexican Grill,Consumer Discretionary,158.0
-ORLY,898173,808960792,2026-08-03,cover_page,63300585790.0,O'Reilly Automotive,Consumer Discretionary,159.0
-HCA,860730,221839800,2026-04-27,cover_page,63269000000.0,HCA Healthcare,Health Care,160.0
-AXON,1069183,81237415,2026-07-31,cover_page,62200000000.0,Axon Enterprise,Industrials,161.0
-FCX,831259,1436017523,2026-07-31,cover_page,61900000000.0,Freeport-McMoRan,Materials,162.0
-CRH,849395,665284511,2026-07-20,cover_page,61825009498.0,CRH plc,Materials,163.0
-HLT,1585689,225064910,2026-07-23,cover_page,61525000000.0,Hilton Worldwide,Consumer Discretionary,164.0
-EMR,32604,557800000,2026-06-30,cover_page,61500000000.0,Emerson Electric,Industrials,165.0
-MAR,1048286,260766288,2026-07-27,cover_page,61232412426.0,Marriott International,Consumer Discretionary,166.0
-CSX,277948,1852474917,2026-06-30,cover_page,61000000000.0,CSX Corporation,Industrials,167.0
-MSI,68505,165493788,2026-07-31,cover_page,61000000000.0,Motorola Solutions,Information Technology,168.0
-ROP,882835,98900874,2026-07-28,cover_page,60800000000.0,Roper Technologies,Information Technology,169.0
-TRV,86312,208575022,2026-07-10,cover_page,59986121526.0,Travelers Companies (The),Financials,170.0
-SNPS,883241,191636646,2026-08-24,cover_page,59300000000.0,Synopsys,Information Technology,171.0
-DLR,1297996,351406070,2026-04-29,cover_page,59000000000.0,Digital Realty,Real Estate,172.0
-CARR,1783180,830580423,2026-04-15,cover_page,58500000000.0,Carrier Global,Industrials,173.0
-APO,1858681,590543159,2026-08-05,cover_page,58394760022.0,Apollo Global Management,Financials,174.0
-AZO,866787,16325355,2026-06-05,cover_page,57759306497.0,AutoZone,Consumer Discretionary,175.0
-NSC,702165,224608373,2026-06-30,cover_page,57481458868.0,Norfolk Southern,Industrials,176.0
-KMI,1506307,2226802089,2026-07-23,cover_page,57054291328.0,Kinder Morgan,Energy,177.0
-FTNT,1262039,733713653,2026-07-28,cover_page,56846175983.0,Fortinet,Information Technology,178.0
-MNST,865752,979525882,2026-07-31,cover_page,56505471480.0,Monster Beverage,Consumer Staples,179.0
-ABNB,1559720,602000000,2026-06-30,diluted_weighted_avg,56200000000.0,Airbnb,Consumer Discretionary,180.0
-AEP,4904,544104955,2026-05-05,cover_page,56119786438.0,American Electric Power,Utilities,181.0
-AFL,4977,501343298,2026-07-28,cover_page,56035389963.0,Aflac,Financials,182.0
-PWR,1050915,150343393,2026-07-27,cover_page,55800000000.0,Quanta Services,Industrials,183.0
-TFC,92230,1221626188,2026-06-30,cover_page,55400000000.0,Truist Financial,Financials,184.0
-REGN,872589,93955110,2012-07-13,cover_page,54800000000.0,Regeneron Pharmaceuticals,Health Care,185.0
-NXPI,1413447,252471079,2026-04-24,cover_page,54700000000.0,NXP Semiconductors,Information Technology,186.0
-MET,1099219,635476927,2026-07-31,cover_page,53600000000.0,MetLife,Financials,187.0
-ALL,899051,252857950,2026-07-16,cover_page,52830000000.0,Allstate,Financials,188.0
-JCI,833444,935500000,2016-09-02,balance_sheet,52600000000.0,Johnson Controls,Industrials,189.0
-O,726728,946218033,2026-07-30,cover_page,52600000000.0,Realty Income,Real Estate,190.0
-SPG,1063761,283301181,2009-09-30,cover_page,52048000000.0,Simon Property Group,Real Estate,191.0
-OKE,1039684,630369667,2026-07-27,cover_page,51100000000.0,Oneok,Energy,192.0
-MPC,1510295,280824763,2026-07-30,cover_page,50600000000.0,Marathon Petroleum,Energy,193.0
-AMP,820027,88333219,2026-07-24,cover_page,50300000000.0,Ameriprise Financial,Financials,194.0
-WDAY,1327811,220000000,2018-11-30,cover_page,49500000000.0,"Workday, Inc.",Information Technology,195.0
-SRE,1032208,653690046,2026-05-04,cover_page,49400000000.0,Sempra,Utilities,196.0
-PCAR,75362,526364953,2026-07-24,cover_page,49010000000.0,Paccar,Industrials,197.0
-VRT,1674101,384988173,2026-07-27,cover_page,48225235174.0,Vertiv,Industrials,198.0
-D,715957,879455403,2026-04-24,cover_page,48200000000.0,Dominion Energy,Utilities,199.0
-PSX,1534701,399020916,2026-06-30,cover_page,48200000000.0,Phillips 66,Energy,200.0
-CAH,721371,232575728,2026-07-31,cover_page,48192692777.0,Cardinal Health,Health Care,201.0
-FAST,815556,1147497573,2026-07-10,cover_page,48111881160.0,Fastenal,Industrials,202.0
-AIG,5272,522893169,2026-07-31,cover_page,47910000000.0,American International Group,Financials,203.0
-WDC,106040,360540944,2026-08-07,cover_page,47690000000.0,Western Digital,Information Technology,204.0
-TTWO,946581,186980443,2026-07-27,cover_page,47087317833.0,Take-Two Interactive,Communication Services,205.0
-GM,1467858,877451541,2026-07-10,cover_page,47000000000.0,General Motors,Consumer Discretionary,206.0
-KR,56873,590588700,2026-09-15,cover_page,46100000000.0,Kroger,Consumer Staples,207.0
-LHX,202058,186214616,2026-07-24,cover_page,46020545333.0,L3Harris,Industrials,208.0
-EW,1099800,576400000,2026-07-31,cover_page,45899189298.0,Edwards Lifesciences,Health Care,209.0
-SLB,87347,1484143231,2026-06-30,cover_page,45580000000.0,Schlumberger,Energy,210.0
-TGT,27419,454296736,2026-08-21,cover_page,45284343058.0,Target Corporation,Consumer Staples,211.0
-CMI,26172,137664487,2026-06-30,cover_page,45100000000.0,Cummins,Industrials,212.0
-GLW,24741,861388331,2026-07-24,cover_page,45000000000.0,Corning Inc.,Information Technology,213.0
-KDP,1418135,1360826038,2026-08-10,cover_page,44800000000.0,Keurig Dr Pepper,Consumer Staples,214.0
-CCI,1051470,425455439,2026-08-03,cover_page,44700000000.0,Crown Castle,Real Estate,215.0
-PSA,1393311,175621134,2026-07-21,cover_page,44239441000.0,Public Storage,Real Estate,216.0
-EXC,1109357,1023208142,2026-03-31,cover_page,43835664870.0,Exelon,Utilities,217.0
-CVNA,1690820,740174000,2026-06-30,diluted_weighted_avg,43800000000.0,Carvana,Consumer Discretionary,218.0
-ROST,745732,319453110,2026-08-14,cover_page,43685150538.0,Ross Stores,Consumer Discretionary,219.0
-MSCI,1408198,72700000,2026-07-14,cover_page,43149826814.0,MSCI,Financials,220.0
-DDOG,1561550,78180606,2018-12-31,balance_sheet,43000000000.0,Datadog,Information Technology,221.0
-IDXX,874716,78781116,2026-07-31,cover_page,42899749759.0,Idexx Laboratories,Health Care,222.0
-FERG,2011641,193452717,2026-08-03,cover_page,42870902857.0,Ferguson Enterprises,Industrials,223.0
-KMB,55785,332579038,2026-07-28,cover_page,42800000000.0,Kimberly-Clark,Consumer Staples,224.0
-URI,1067701,62646557,2026-04-20,cover_page,42700000000.0,United Rentals,Industrials,225.0
-VEEV,1393052,161908850,2026-08-25,cover_page,42600000000.0,Veeva Systems,Health Care,226.0
-VRSK,1442145,131021840,2026-04-24,cover_page,42587525686.0,Verisk Analytics,Industrials,227.0
-FIS,1136893,515705917,2026-07-31,cover_page,42560250917.0,Fidelity National Information Services,Financials,228.0
-F,37996,3727332952,2011-04-28,cover_page,42411872532.0,Ford Motor Company,Consumer Discretionary,229.0
-TEL,1385157,289513228,2026-07-20,cover_page,42200000000.0,TE Connectivity,Information Technology,230.0
-PEG,788784,498420030,2026-07-20,cover_page,41911658020.0,Public Service Enterprise Group,Utilities,231.0
-AME,1037868,229261244,2026-07-28,cover_page,41800000000.0,Ametek,Industrials,232.0
-VLO,1035002,287927461,2026-07-24,cover_page,41800000000.0,Valero Energy,Energy,233.0
-CBRE,1138118,289575298,2026-07-27,cover_page,41500000000.0,CBRE Group,Real Estate,234.0
-OXY,797468,999637371,2026-07-31,cover_page,41400000000.0,Occidental Petroleum,Energy,235.0
-GWW,277135,47100942,2026-07-28,cover_page,41053116330.0,W. W. Grainger,Industrials,236.0
-YUM,1041061,272901085,2026-07-30,cover_page,41000000000.0,Yum! Brands,Consumer Discretionary,237.0
-NDAQ,1120193,558977372,2026-07-16,cover_page,40600000000.0,"Nasdaq, Inc.",Financials,238.0
-SNDK,2023554,146419001,2026-08-07,cover_page,40500000000.0,Sandisk,Information Technology,239.0
-XEL,72903,624634306,2026-07-28,cover_page,40260845645.0,Xcel Energy,Utilities,240.0
-KVUE,1944048,1920773467,2026-07-31,cover_page,39600000000.0,Kenvue,Consumer Staples,241.0
-XYZ,1512673,597702000,2026-06-30,diluted_weighted_avg,39400000000.0,"Block, Inc.",Financials,242.0
-DELL,1571996,640000000,2026-07-31,balance_sheet,39200000000.0,Dell Technologies,Information Technology,243.0
-DHI,882184,279701267,2026-07-16,cover_page,39000000000.0,D. R. Horton,Consumer Discretionary,244.0
-OTIS,1781335,380669339,2026-07-15,cover_page,38824474742.0,Otis Worldwide,Industrials,245.0
-CTSH,1058290,473869469,2026-04-24,cover_page,38100000000.0,Cognizant,Information Technology,246.0
-COR,1140859,190827165,2026-07-31,cover_page,37887695618.0,Cencora,Health Care,247.0
-PRU,1137774,345000000,2026-07-31,cover_page,37810000000.0,Prudential Financial,Financials,248.0
-BKR,1701605,992674071,2026-07-23,cover_page,37733037083.0,Baker Hughes,Energy,249.0
-PCG,1004980,2680110496,2026-07-15,cover_page,37246000000.0,PG&E Corporation,Utilities,250.0
-CHTR,1091667,270927828,2016-06-30,cover_page,37100000000.0,Charter Communications,Communication Services,251.0
-ETR,65984,457832070,2026-03-31,cover_page,37100000000.0,Entergy,Utilities,252.0
-TRGP,1389170,214431021,2026-07-31,cover_page,37012700000.0,Targa Resources,Energy,253.0
-ED,1047862,368529705,2026-04-30,cover_page,36200000000.0,Consolidated Edison,Utilities,254.0
-FICO,814547,21597635,2026-07-17,cover_page,36060682209.0,Fair Isaac,Information Technology,255.0
-HIG,874766,270872002,2026-07-22,cover_page,36000000000.0,Hartford (The),Financials,256.0
-PAYX,723531,355980473,2026-08-31,cover_page,35959981648.0,Paychex,Industrials,257.0
-CPRT,900075,926330452,2026-09-25,cover_page,35722169296.0,Copart,Industrials,258.0
-SYY,96021,479096016,2026-08-04,cover_page,35217557254.0,Sysco,Consumer Staples,259.0
-RMD,943819,144252306,2026-08-10,cover_page,34917180979.0,ResMed|,Health Care,260.0
-EQT,33213,625516000,2026-07-14,cover_page,34700000000.0,EQT Corporation,Energy,261.0
-COHR,820318,195832246,2026-08-10,cover_page,34498305389.0,Coherent Corp.,Information Technology,262.0
-VMC,1396009,129754885,2026-04-21,cover_page,34416549004.0,Vulcan Materials Company,Materials,263.0
-VICI,1705696,1101077562,2026-07-28,cover_page,34400000000.0,Vici Properties,Real Estate,264.0
-GRMN,1121788,192856206,2026-04-24,cover_page,34219000000.0,Garmin,Consumer Discretionary,265.0
-DXCM,1093557,377360765,2026-07-23,cover_page,34200000000.0,Dexcom,Health Care,266.0
-EBAY,1065088,445000000,2026-07-31,cover_page,34086444146.0,eBay Inc.,Consumer Discretionary,267.0
-GEHC,1932393,456654068,2024-06-30,balance_sheet,34000000000.0,GE HealthCare,Health Care,268.0
-MCHP,827054,543008691,2026-07-28,cover_page,34000000000.0,Microchip Technology,Information Technology,269.0
-CSGP,1057352,405197588,2026-07-27,cover_page,33900000000.0,CoStar Group,Real Estate,270.0
-WEC,783325,325849383,2026-06-30,cover_page,33500000000.0,WEC Energy Group,Utilities,271.0
-ACGL,947484,341229126,2026-07-30,cover_page,33000000000.0,Arch Capital Group,Financials,272.0
-IR,1699150,387999429,2026-07-24,cover_page,33000000000.0,Ingersoll Rand,Industrials,273.0
-EFX,33185,117484896,2026-07-10,cover_page,32108903494.0,Equifax,Industrials,274.0
-DAL,27904,657912380,2026-09-30,cover_page,32100000000.0,Delta Air Lines,Industrials,275.0
-BRO,79282,334610357,2026-07-24,cover_page,31616025136.0,Brown & Brown,Financials,276.0
-NUE,73309,226875676,2026-07-04,cover_page,31440000000.0,Nucor,Materials,277.0
-WAB,943452,168910851,2026-07-17,cover_page,31100000000.0,Wabtec,Industrials,278.0
-XYL,1524472,233486812,2026-07-24,cover_page,31000000000.0,Xylem Inc.,Industrials,279.0
-EXR,1289490,211269558,2026-07-24,cover_page,30991880775.0,Extra Space Storage,Real Estate,280.0
-ODFL,878927,207356622,2026-07-31,cover_page,30418290020.0,Old Dominion,Industrials,281.0
-STT,93751,274701765,2026-07-28,cover_page,30310000000.0,State Street Corporation,Financials,282.0
-IT,749251,63148976,2026-07-31,cover_page,30300000000.0,Gartner,Information Technology,283.0
-WTW,1140536,92871937,2026-07-27,cover_page,29918279975.0,Willis Towers Watson,Financials,284.0
-IRM,1020569,297702812,2026-07-24,cover_page,29800000000.0,Iron Mountain,Real Estate,285.0
-MTB,36270,144416262,2026-07-31,cover_page,29618092321.0,M&T Bank,Financials,286.0
-HUM,49071,120061500,2026-03-31,cover_page,29182689695.0,Humana,Health Care,287.0
-ROK,1024478,111048676,2026-06-30,cover_page,29100000000.0,Rockwell Automation,Industrials,288.0
-MLM,916076,60065839,2026-07-27,cover_page,28822918628.0,Martin Marietta Materials,Materials,289.0
-VTR,740260,512946359,2026-07-28,cover_page,28600000000.0,Ventas,Real Estate,290.0
-RJF,720005,192361711,2026-08-03,cover_page,28106525241.0,Raymond James Financial,Financials,291.0
-DTE,936340,208028313,2026-03-31,cover_page,27300000000.0,DTE Energy,Utilities,292.0
-CNC,1071739,493995000,2026-07-24,cover_page,26700000000.0,Centene Corporation,Health Care,293.0
-NRG,1013871,210210483,2026-07-31,cover_page,26643647974.0,NRG Energy,Utilities,294.0
-A,1090872,281928854,2026-08-26,cover_page,26600000000.0,Agilent Technologies,Health Care,295.0
-TPR,1116132,199391678,2026-07-31,cover_page,26530000000.0,"Tapestry, Inc.",Consumer Discretionary,296.0
-IQV,1478242,166900000,2026-04-30,cover_page,26500000000.0,IQVIA,Health Care,297.0
-EL,1001250,364800000,2026-06-30,diluted_weighted_avg,26000000000.0,Estée Lauder Companies (The),Consumer Staples,298.0
-AEE,1002910,276843251,2026-07-30,cover_page,25948493142.0,Ameren,Utilities,299.0
-BR,1383312,114021798,2026-07-31,cover_page,25945139278.0,Broadridge Financial Solutions,Industrials,300.0
+symbol,cik,public_float_usd,name,sector,float_rank,share_options,public_float_date
+NWSA,1564708,,News Corp (Class A),Communication Services,0.0,"{""balance_sheet"": [579000000, ""2013-06-30""], ""diluted_weighted_avg"": [558400000, ""2026-06-30""], ""basic_weighted_avg"": [556500000, ""2026-06-30""]}",
+SKYD,2041610,,Skydance Corporation,Communication Services,0.0,"{""cover_page"": [1071666977, ""2025-11-05""], ""balance_sheet"": [1000, ""2025-06-30""], ""diluted_weighted_avg"": [1119000000, ""2026-06-30""], ""basic_weighted_avg"": [1113000000, ""2026-06-30""]}",
+NWS,1564708,,News Corp (Class B),Communication Services,0.0,"{""balance_sheet"": [579000000, ""2013-06-30""], ""diluted_weighted_avg"": [558400000, ""2026-06-30""], ""basic_weighted_avg"": [556500000, ""2026-06-30""]}",
+XOM,2115436,,ExxonMobil,Energy,0.0,"{""cover_page"": [4111911960, ""2026-06-30""], ""balance_sheet"": [4112000000, ""2026-06-30""], ""basic_weighted_avg"": [4188000000, ""2026-06-30""]}",
+FOX,1754301,,Fox Corporation (Class B),Communication Services,0.0,"{""cover_page"": [1, ""2019-03-18""], ""diluted_weighted_avg"": [439000000, ""2026-06-30""], ""basic_weighted_avg"": [435000000, ""2026-03-31""]}",
+FOXA,1754301,,Fox Corporation (Class A),Communication Services,0.0,"{""cover_page"": [1, ""2019-03-18""], ""diluted_weighted_avg"": [439000000, ""2026-06-30""], ""basic_weighted_avg"": [435000000, ""2026-03-31""]}",
+FDXF,2082247,,FedEx Freight,Industrials,0.0,"{""cover_page"": [149518133, ""2026-08-03""], ""balance_sheet"": [149505248, ""2026-05-31""], ""diluted_weighted_avg"": [149505248, ""2026-05-31""], ""basic_weighted_avg"": [149505248, ""2026-05-31""]}",
+HONA,2089271,,Honeywell Aerospace,Industrials,0.0,"{""cover_page"": [316952725, ""2026-07-25""]}",
+AOS,91142,,A. O. Smith,Industrials,0.0,"{""cover_page"": [75732188, ""2015-08-05""], ""diluted_weighted_avg"": [138511483, ""2026-06-30""], ""basic_weighted_avg"": [137717039, ""2026-06-30""]}",
+NVDA,1045810,4000000000000.0,Nvidia,Information Technology,1.0,"{""cover_page"": [24100000000, ""2026-08-21""], ""balance_sheet"": [24304000000, ""2026-01-25""], ""diluted_weighted_avg"": [24338000000, ""2026-07-26""], ""basic_weighted_avg"": [24238000000, ""2026-07-26""]}",2025-07-25
+MSFT,789019,3600000000000.0,Microsoft,Information Technology,2.0,"{""cover_page"": [7425545491, ""2026-07-23""], ""balance_sheet"": [7427000000, ""2026-06-30""], ""diluted_weighted_avg"": [7453000000, ""2026-06-30""], ""basic_weighted_avg"": [7429000000, ""2026-06-30""]}",2025-12-31
+AAPL,320193,3253431000000.0,Apple Inc.,Information Technology,3.0,"{""cover_page"": [14594180000, ""2026-07-17""], ""balance_sheet"": [14608963000, ""2026-06-27""], ""diluted_weighted_avg"": [14750302000, ""2026-06-27""], ""basic_weighted_avg"": [14692515000, ""2026-06-27""]}",2025-03-28
+AMZN,1018724,2118061430046.0,Amazon,Consumer Discretionary,4.0,"{""cover_page"": [10786313572, ""2026-07-22""], ""balance_sheet"": [10783000000, ""2026-06-30""], ""diluted_weighted_avg"": [10889000000, ""2026-06-30""], ""basic_weighted_avg"": [10756000000, ""2026-06-30""]}",2025-06-30
+GOOG,1652044,1900000000000.0,Alphabet Inc. (Class C),Communication Services,5.0,"{""balance_sheet"": [12230000000, ""2026-06-30""], ""diluted_weighted_avg"": [12274000000, ""2026-06-30""], ""basic_weighted_avg"": [12125000000, ""2026-06-30""]}",2025-06-30
+GOOGL,1652044,1900000000000.0,Alphabet Inc. (Class A),Communication Services,6.0,"{""balance_sheet"": [12230000000, ""2026-06-30""], ""diluted_weighted_avg"": [12274000000, ""2026-06-30""], ""basic_weighted_avg"": [12125000000, ""2026-06-30""]}",2025-06-30
+META,1326801,1600000000000.0,Meta Platforms,Communication Services,7.0,"{""diluted_weighted_avg"": [2565000000, ""2026-06-30""], ""basic_weighted_avg"": [2538000000, ""2026-06-30""]}",2025-06-30
+AVGO,1730168,939200000000.0,Broadcom,Information Technology,8.0,"{""cover_page"": [4773629865, ""2026-08-28""], ""balance_sheet"": [4774000000, ""2026-08-02""], ""diluted_weighted_avg"": [4884000000, ""2026-08-02""], ""basic_weighted_avg"": [4752000000, ""2026-08-02""]}",2025-05-02
+BRK.B,1067983,902700000000.0,Berkshire Hathaway,Financials,9.0,"{""cover_page"": [941481, ""2011-04-29""], ""basic_weighted_avg"": [1643118, ""2015-09-30""]}",2025-06-30
+TSLA,1318605,892930000000.0,"Tesla, Inc.",Consumer Discretionary,10.0,"{""cover_page"": [3949547394, ""2026-07-16""], ""balance_sheet"": [3949000000, ""2026-06-30""], ""diluted_weighted_avg"": [3538000000, ""2026-06-30""], ""basic_weighted_avg"": [3235000000, ""2026-06-30""]}",2025-06-30
+LLY,59478,807887000000.0,Lilly (Eli),Health Care,11.0,"{""cover_page"": [941357065, ""2026-08-03""], ""diluted_weighted_avg"": [894800000, ""2026-06-30""], ""basic_weighted_avg"": [893500000, ""2026-06-30""]}",2025-06-30
+JPM,19617,794433813496.0,JPMorgan Chase,Financials,12.0,"{""cover_page"": [2658186195, ""2026-06-30""], ""balance_sheet"": [2696200000, ""2025-12-31""], ""diluted_weighted_avg"": [2707200000, ""2026-06-30""], ""basic_weighted_avg"": [2703100000, ""2026-06-30""]}",2025-06-30
+V,1403161,601100000000.0,Visa Inc.,Financials,13.0,"{""cover_page"": [469280842, ""2010-01-27""]}",2025-03-31
+NFLX,1065280,565657747980.0,Netflix,Communication Services,14.0,"{""cover_page"": [4163939676, ""2026-06-30""], ""balance_sheet"": [4163939676, ""2026-06-30""], ""diluted_weighted_avg"": [4279776000, ""2026-06-30""], ""basic_weighted_avg"": [4205952000, ""2026-06-30""]}",2025-06-30
+MA,1141391,505000000000.0,Mastercard,Financials,15.0,"{""cover_page"": [122530193, ""2010-10-27""], ""diluted_weighted_avg"": [888000000, ""2026-06-30""], ""basic_weighted_avg"": [887000000, ""2026-06-30""]}",2025-06-30
+COST,909832,451600000000.0,Costco,Consumer Staples,16.0,"{""cover_page"": [443129349, ""2026-09-29""], ""balance_sheet"": [443266000, ""2026-08-30""], ""diluted_weighted_avg"": [444427000, ""2026-08-30""], ""basic_weighted_avg"": [443953000, ""2026-08-30""]}",2026-02-15
+WMT,104169,391703475732.0,Walmart,Consumer Staples,17.0,"{""cover_page"": [7933746241, ""2026-08-26""], ""balance_sheet"": [3418000000, ""2012-01-31""], ""diluted_weighted_avg"": [7989000000, ""2026-07-31""], ""basic_weighted_avg"": [7962000000, ""2026-07-31""]}",2025-07-31
+HD,354950,371800000000.0,Home Depot (The),Consumer Discretionary,18.0,"{""cover_page"": [997689626, ""2026-08-18""], ""balance_sheet"": [998000000, ""2026-08-02""], ""diluted_weighted_avg"": [996000000, ""2026-08-02""], ""basic_weighted_avg"": [994000000, ""2026-08-02""]}",2025-08-01
+MU,723125,368100000000.0,Micron Technology,Information Technology,19.0,"{""cover_page"": [1131423212, ""2026-10-02""], ""balance_sheet"": [1131000000, ""2026-09-03""], ""diluted_weighted_avg"": [1143000000, ""2026-09-03""], ""basic_weighted_avg"": [1127000000, ""2026-09-03""]}",2026-02-26
+JNJ,200406,367000000000.0,Johnson & Johnson,Health Care,20.0,"{""cover_page"": [2409898597, ""2026-07-17""], ""diluted_weighted_avg"": [2443900000, ""2026-06-28""], ""basic_weighted_avg"": [2408100000, ""2026-06-28""]}",2025-06-29
+BAC,70858,351903673230.0,Bank of America,Financials,21.0,"{""cover_page"": [6992748365, ""2026-07-30""], ""balance_sheet"": [7017967460, ""2026-06-30""], ""diluted_weighted_avg"": [7356200000, ""2026-06-30""], ""basic_weighted_avg"": [7203500000, ""2026-06-30""]}",2025-06-30
+ORCL,1341439,346760150000.0,Oracle Corporation,Information Technology,22.0,"{""cover_page"": [3023736000, ""2026-09-07""], ""balance_sheet"": [3024000000, ""2026-08-31""], ""diluted_weighted_avg"": [3000000000, ""2026-08-31""], ""basic_weighted_avg"": [2966000000, ""2026-08-31""]}",2026-05-31
+PG,80424,333000000000.0,Procter & Gamble,Consumer Staples,23.0,"{""cover_page"": [2324433060, ""2026-07-31""], ""diluted_weighted_avg"": [2422500000, ""2026-06-30""], ""basic_weighted_avg"": [2333700000, ""2026-06-30""]}",2025-12-31
+ABBV,1551152,325061294916.0,AbbVie,Health Care,24.0,"{""cover_page"": [1767117285, ""2026-07-27""], ""diluted_weighted_avg"": [1773000000, ""2026-06-30""], ""basic_weighted_avg"": [1769000000, ""2026-06-30""]}",2025-06-30
+KO,21344,300552956545.0,Coca-Cola Company (The),Consumer Staples,25.0,"{""cover_page"": [4302482418, ""2026-04-28""], ""diluted_weighted_avg"": [4314000000, ""2026-04-03""], ""basic_weighted_avg"": [4302000000, ""2026-04-03""]}",2025-06-27
+PLTR,1321655,299300000000.0,Palantir Technologies,Information Technology,26.0,"{""balance_sheet"": [2402897000, ""2026-06-30""], ""diluted_weighted_avg"": [2569826000, ""2026-06-30""], ""basic_weighted_avg"": [2396861000, ""2026-06-30""]}",2025-06-30
+CSCO,858877,294500000000.0,Cisco,Information Technology,27.0,"{""cover_page"": [3942586873, ""2026-08-27""], ""balance_sheet"": [3946000000, ""2026-07-25""], ""diluted_weighted_avg"": [3987000000, ""2026-07-25""], ""basic_weighted_avg"": [3953000000, ""2026-07-25""]}",2026-01-23
+PM,1413329,283000000000.0,Philip Morris International,Consumer Staples,28.0,"{""cover_page"": [1558613439, ""2026-07-17""], ""balance_sheet"": [1801783490, ""2010-12-31""], ""diluted_weighted_avg"": [1560000000, ""2026-06-30""], ""basic_weighted_avg"": [1558000000, ""2026-06-30""]}",2025-06-30
+UNH,731766,281907836350.0,UnitedHealth Group,Health Care,29.0,"{""cover_page"": [897594847, ""2026-07-31""], ""balance_sheet"": [905000000, ""2026-06-30""], ""diluted_weighted_avg"": [908000000, ""2026-06-30""], ""basic_weighted_avg"": [905000000, ""2026-06-30""]}",2025-06-30
+IBM,51143,274500000000.0,IBM,Information Technology,30.0,"{""cover_page"": [942134390, ""2026-06-30""], ""balance_sheet"": [936952129, ""2025-12-31""], ""diluted_weighted_avg"": [952697295, ""2026-06-30""], ""basic_weighted_avg"": [939862828, ""2026-06-30""]}",2025-06-30
+GE,40545,270200000000.0,GE Aerospace,Industrials,31.0,"{""cover_page"": [1037562513, ""2026-06-30""], ""balance_sheet"": [1037562513, ""2026-06-30""], ""diluted_weighted_avg"": [1050000000, ""2026-06-30""], ""basic_weighted_avg"": [1043000000, ""2026-06-30""]}",2025-06-30
+WFC,72971,257300000000.0,Wells Fargo,Financials,32.0,"{""cover_page"": [3023999336, ""2026-07-17""], ""balance_sheet"": [3028500000, ""2026-06-30""], ""diluted_weighted_avg"": [3096000000, ""2026-06-30""], ""basic_weighted_avg"": [3061900000, ""2026-06-30""]}",2025-06-30
+CVX,93410,247400000000.0,Chevron Corporation,Energy,33.0,"{""cover_page"": [1975771274, ""2026-06-30""], ""diluted_weighted_avg"": [1980464000, ""2026-06-30""], ""basic_weighted_avg"": [1974979000, ""2026-06-30""]}",2025-06-30
+AMD,2488,232300000000.0,Advanced Micro Devices,Information Technology,34.0,"{""cover_page"": [1632475042, ""2026-07-29""], ""balance_sheet"": [1632000000, ""2026-06-27""], ""diluted_weighted_avg"": [1655000000, ""2026-06-27""], ""basic_weighted_avg"": [1631000000, ""2026-06-27""]}",2024-06-28
+ABT,1800,232169255381.0,Abbott Laboratories,Health Care,35.0,"{""cover_page"": [1741812429, ""2026-03-31""], ""diluted_weighted_avg"": [1747073000, ""2026-03-31""], ""basic_weighted_avg"": [1742480000, ""2026-03-31""]}",2025-06-30
+AXP,4962,221800000000.0,American Express,Financials,36.0,"{""cover_page"": [675309833, ""2026-07-14""], ""balance_sheet"": [675000000, ""2026-06-30""], ""diluted_weighted_avg"": [682000000, ""2026-06-30""], ""basic_weighted_avg"": [681000000, ""2026-06-30""]}",2025-06-30
+LIN,1707925,220000000000.0,Linde plc,Materials,37.0,"{""cover_page"": [460980163, ""2026-06-30""], ""balance_sheet"": [508680879, ""2021-12-31""], ""diluted_weighted_avg"": [465299000, ""2026-06-30""], ""basic_weighted_avg"": [463284000, ""2026-06-30""]}",2025-06-30
+ACN,1467373,218315987018.0,Accenture,Information Technology,38.0,"{""cover_page"": [637016143, ""2010-03-19""], ""diluted_weighted_avg"": [621337104, ""2026-05-31""], ""basic_weighted_avg"": [616153379, ""2026-05-31""]}",2025-02-28
+MS,895421,217968854713.0,Morgan Stanley,Financials,39.0,"{""cover_page"": [1570566292, ""2026-07-31""], ""balance_sheet"": [1571931108, ""2026-06-30""], ""diluted_weighted_avg"": [1573000000, ""2026-06-30""], ""basic_weighted_avg"": [1558000000, ""2026-06-30""]}",2025-06-30
+GS,886982,213200000000.0,Goldman Sachs,Financials,40.0,"{""cover_page"": [291171408, ""2026-07-17""], ""balance_sheet"": [291442355, ""2026-06-30""], ""diluted_weighted_avg"": [306500000, ""2026-06-30""], ""basic_weighted_avg"": [301900000, ""2026-06-30""]}",2025-06-30
+MCD,63908,208464334129.0,McDonald's,Consumer Discretionary,41.0,"{""cover_page"": [707641531, ""2026-06-30""], ""diluted_weighted_avg"": [712, ""2026-06-30""], ""basic_weighted_avg"": [709, ""2026-06-30""]}",2025-06-30
+T,732717,207000000000.0,AT&T,Communication Services,42.0,"{""cover_page"": [6852385650, ""2026-07-16""], ""diluted_weighted_avg"": [6987000000, ""2026-06-30""], ""basic_weighted_avg"": [6977000000, ""2026-06-30""]}",2025-06-30
+MRK,310158,198051000000.0,Merck & Co.,Health Care,43.0,"{""cover_page"": [2467171638, ""2026-07-31""], ""diluted_weighted_avg"": [2471000000, ""2026-06-30""], ""basic_weighted_avg"": [2471000000, ""2026-06-30""]}",2025-06-30
+RTX,101829,195405729090.0,RTX Corporation,Industrials,44.0,"{""cover_page"": [1347758144, ""2026-06-30""], ""balance_sheet"": [1381700, ""2009-12-31""], ""diluted_weighted_avg"": [1364700000, ""2026-06-30""], ""basic_weighted_avg"": [1349200000, ""2026-06-30""]}",2025-06-30
+ISRG,1035267,193900000000.0,Intuitive Surgical,Health Care,45.0,"{""cover_page"": [353278038, ""2026-07-16""], ""balance_sheet"": [353900000, ""2026-06-30""], ""diluted_weighted_avg"": [358500000, ""2026-06-30""], ""basic_weighted_avg"": [354500000, ""2026-06-30""]}",2025-06-30
+CRM,1108524,191800000000.0,Salesforce,Information Technology,46.0,"{""cover_page"": [823000000, ""2026-08-20""], ""balance_sheet"": [929000000, ""2026-01-31""], ""diluted_weighted_avg"": [845000000, ""2026-07-31""], ""basic_weighted_avg"": [844000000, ""2026-07-31""]}",2025-07-31
+TXN,97476,188509303179.0,Texas Instruments,Information Technology,47.0,"{""cover_page"": [913247686, ""2026-07-15""], ""diluted_weighted_avg"": [917000000, ""2026-06-30""], ""basic_weighted_avg"": [911000000, ""2026-06-30""]}",2025-06-30
+UBER,1543151,187600000000.0,Uber,Industrials,48.0,"{""cover_page"": [2042560121, ""2026-07-31""], ""balance_sheet"": [2039994000, ""2026-06-30""], ""diluted_weighted_avg"": [2060763000, ""2026-06-30""], ""basic_weighted_avg"": [2044279000, ""2026-06-30""]}",2025-06-30
+BKNG,1075531,187400000000.0,Booking Holdings,Consumer Discretionary,49.0,"{""cover_page"": [751380500, ""2026-07-27""], ""diluted_weighted_avg"": [782000000, ""2026-06-30""], ""basic_weighted_avg"": [779000000, ""2026-06-30""]}",2025-06-30
+VZ,732712,182400000000.0,Verizon,Communication Services,50.0,"{""cover_page"": [4154775202, ""2026-06-30""], ""diluted_weighted_avg"": [4190000000, ""2026-06-30""], ""basic_weighted_avg"": [4186000000, ""2026-06-30""]}",2025-06-30
+CAT,18230,180900000000.0,Caterpillar Inc.,Industrials,51.0,"{""cover_page"": [459674889, ""2026-06-30""], ""balance_sheet"": [459700000, ""2026-06-30""], ""diluted_weighted_avg"": [464300000, ""2026-06-30""], ""basic_weighted_avg"": [462000000, ""2026-06-30""]}",2025-12-31
+PEP,77476,179000000000.0,PepsiCo,Consumer Staples,52.0,"{""cover_page"": [1362741092, ""2026-10-01""], ""diluted_weighted_avg"": [1369000000, ""2026-09-05""], ""basic_weighted_avg"": [1366000000, ""2026-09-05""]}",2025-06-13
+LRCX,707549,178309002956.0,Lam Research,Information Technology,53.0,"{""cover_page"": [1251321000, ""2026-08-04""], ""balance_sheet"": [1251278000, ""2026-06-28""], ""diluted_weighted_avg"": [1261102000, ""2026-06-28""], ""basic_weighted_avg"": [1255079000, ""2026-06-28""]}",2025-12-28
+DIS,1744489,176600000000.0,Walt Disney Company (The),Communication Services,54.0,"{""cover_page"": [1726686902, ""2026-07-29""], ""balance_sheet"": [1900000000, ""2025-09-27""], ""diluted_weighted_avg"": [1769000000, ""2026-06-27""], ""basic_weighted_avg"": [1763000000, ""2026-06-27""]}",2025-03-29
+NOW,1373715,175700000000.0,ServiceNow,Information Technology,55.0,"{""cover_page"": [1034000000, ""2026-06-30""], ""balance_sheet"": [1033862000, ""2026-06-30""], ""diluted_weighted_avg"": [1037206000, ""2026-06-30""], ""basic_weighted_avg"": [1033234000, ""2026-06-30""]}",2025-06-30
+QCOM,804328,167900000000.0,Qualcomm,Information Technology,56.0,"{""cover_page"": [1050000000, ""2026-07-27""], ""balance_sheet"": [1057000000, ""2026-06-28""], ""diluted_weighted_avg"": [1073000000, ""2026-06-28""], ""basic_weighted_avg"": [1064000000, ""2026-06-28""]}",2025-03-28
+SPGI,64040,161000000000.0,S&P Global,Financials,57.0,"{""cover_page"": [296000000, ""2026-04-24""], ""balance_sheet"": [296000000, ""2026-03-31""], ""diluted_weighted_avg"": [297600000, ""2026-03-31""], ""basic_weighted_avg"": [297300000, ""2026-03-31""]}",2025-06-30
+KLAC,319201,159300000000.0,KLA Corporation,Information Technology,58.0,"{""cover_page"": [1306546783, ""2026-08-03""], ""balance_sheet"": [1306983000, ""2026-06-30""], ""diluted_weighted_avg"": [1319633000, ""2026-06-30""], ""basic_weighted_avg"": [1311516000, ""2026-06-30""]}",2025-12-31
+BLK,2012383,159000000000.0,BlackRock,Financials,59.0,"{""cover_page"": [154926181, ""2025-04-30""], ""balance_sheet"": [154996807, ""2026-06-30""], ""diluted_weighted_avg"": [164823915, ""2026-06-30""], ""basic_weighted_avg"": [155230412, ""2026-06-30""]}",2025-06-30
+BSX,885725,158700000000.0,Boston Scientific,Health Care,60.0,"{""cover_page"": [1449229526, ""2026-07-30""], ""balance_sheet"": [1399310972, ""2020-03-31""], ""diluted_weighted_avg"": [1484900000, ""2026-06-30""], ""basic_weighted_avg"": [1477600000, ""2026-06-30""]}",2025-06-30
+BA,12927,158300000000.0,Boeing,Industrials,61.0,"{""cover_page"": [790370020, ""2026-07-21""], ""balance_sheet"": [1012261159, ""2025-12-31""], ""diluted_weighted_avg"": [789200000, ""2026-06-30""], ""basic_weighted_avg"": [789200000, ""2026-06-30""]}",2025-06-30
+SCHW,316709,156300000000.0,Charles Schwab Corporation,Financials,62.0,"{""cover_page"": [1729335714, ""2026-07-31""], ""diluted_weighted_avg"": [1745000000, ""2026-06-30""], ""basic_weighted_avg"": [1740000000, ""2026-06-30""]}",2025-06-30
+C,831001,156200000000.0,Citigroup,Financials,63.0,"{""cover_page"": [1749319009, ""2026-01-31""], ""balance_sheet"": [29049601000, ""2010-09-30""], ""diluted_weighted_avg"": [1873100000, ""2025-12-31""], ""basic_weighted_avg"": [1832000000, ""2025-12-31""]}",2025-06-30
+PGR,80661,155911082530.0,Progressive Corporation,Financials,64.0,"{""cover_page"": [581371770, ""2026-07-02""], ""diluted_weighted_avg"": [585600000, ""2026-06-30""], ""basic_weighted_avg"": [584300000, ""2026-06-30""]}",2025-06-30
+TMO,97745,154038987000.0,Thermo Fisher Scientific,Health Care,65.0,"{""cover_page"": [369747286, ""2026-06-27""], ""diluted_weighted_avg"": [372000000, ""2026-06-27""], ""basic_weighted_avg"": [372000000, ""2026-06-27""]}",2025-06-27
+AMGN,318154,150100000000.0,Amgen,Health Care,66.0,"{""cover_page"": [540632005, ""2026-07-30""], ""balance_sheet"": [540600000, ""2026-06-30""], ""diluted_weighted_avg"": [544000000, ""2026-06-30""], ""basic_weighted_avg"": [540000000, ""2026-06-30""]}",2025-06-30
+HON,773840,145300000000.0,Honeywell Technologies,Industrials,67.0,"{""cover_page"": [316940010, ""2026-06-30""], ""balance_sheet"": [316900000, ""2026-06-30""], ""diluted_weighted_avg"": [319000000, ""2026-06-30""], ""basic_weighted_avg"": [317200000, ""2026-06-30""]}",2025-06-30
+ADBE,796343,144940000000.0,Adobe Inc.,Information Technology,68.0,"{""cover_page"": [389200000, ""2026-09-18""], ""balance_sheet"": [391000000, ""2026-08-28""], ""diluted_weighted_avg"": [402900000, ""2026-08-28""], ""basic_weighted_avg"": [402500000, ""2026-08-28""]}",2025-05-30
+SYK,310764,144306436547.0,Stryker Corporation,Health Care,69.0,"{""cover_page"": [383573046, ""2026-06-30""], ""balance_sheet"": [374000000, ""2018-06-30""], ""diluted_weighted_avg"": [386200000, ""2026-06-30""], ""basic_weighted_avg"": [383200000, ""2026-06-30""]}",2025-06-30
+GEV,1996810,144000000000.0,GE Vernova,Industrials,70.0,"{""cover_page"": [266333581, ""2026-06-30""], ""balance_sheet"": [266333581, ""2026-06-30""], ""diluted_weighted_avg"": [271000000, ""2026-06-30""], ""basic_weighted_avg"": [268000000, ""2026-06-30""]}",2025-06-30
+NEE,753308,142860484569.0,NextEra Energy,Utilities,71.0,"{""cover_page"": [2085341456, ""2026-03-31""], ""balance_sheet"": [2085000000, ""2026-03-31""], ""diluted_weighted_avg"": [2092400000, ""2026-03-31""], ""basic_weighted_avg"": [2082500000, ""2026-03-31""]}",2025-06-30
+TJX,109198,140000000000.0,TJX Companies,Consumer Discretionary,72.0,"{""cover_page"": [1099974061, ""2026-08-21""], ""balance_sheet"": [1101167677, ""2026-08-01""], ""diluted_weighted_avg"": [1118000000, ""2026-08-01""], ""basic_weighted_avg"": [1105000000, ""2026-08-01""]}",2025-08-02
+ETN,1551182,139000000000.0,Eaton Corporation,Industrials,73.0,"{""cover_page"": [388400000, ""2026-06-30""], ""balance_sheet"": [388400000, ""2026-06-30""], ""diluted_weighted_avg"": [389400000, ""2026-06-30""], ""basic_weighted_avg"": [388400000, ""2026-06-30""]}",2025-06-30
+PFE,78003,138000000000.0,Pfizer,Health Care,74.0,"{""cover_page"": [5699673589, ""2026-07-29""], ""diluted_weighted_avg"": [5733000000, ""2026-06-28""], ""basic_weighted_avg"": [5695000000, ""2026-06-28""]}",2025-06-29
+UNP,100885,136100000000.0,Union Pacific Corporation,Industrials,75.0,"{""cover_page"": [594075498, ""2026-07-17""], ""balance_sheet"": [593957035, ""2026-06-30""], ""diluted_weighted_avg"": [593800000, ""2026-06-30""], ""basic_weighted_avg"": [593200000, ""2026-06-30""]}",2025-06-30
+INTU,896878,135600000000.0,Intuit,Information Technology,76.0,"{""cover_page"": [267236000, ""2026-08-31""], ""balance_sheet"": [268384000, ""2026-07-31""], ""diluted_weighted_avg"": [277000000, ""2026-07-31""], ""basic_weighted_avg"": [276000000, ""2026-07-31""]}",2026-01-30
+COF,927628,135200000000.0,Capital One,Financials,77.0,"{""cover_page"": [613484836, ""2026-06-30""], ""balance_sheet"": [613484836, ""2026-06-30""], ""diluted_weighted_avg"": [622300000, ""2026-06-30""], ""basic_weighted_avg"": [621500000, ""2026-06-30""]}",2025-06-30
+CMCSA,1166691,130745000000.0,Comcast,Communication Services,78.0,"{""cover_page"": [2063073161, ""2009-12-31""], ""diluted_weighted_avg"": [3593000000, ""2026-06-30""], ""basic_weighted_avg"": [3580000000, ""2026-06-30""]}",2025-06-30
+LOW,60667,126900000000.0,Lowe's,Consumer Discretionary,79.0,"{""cover_page"": [561054019, ""2026-08-25""], ""balance_sheet"": [561000000, ""2026-07-31""], ""diluted_weighted_avg"": [560000000, ""2026-07-31""], ""basic_weighted_avg"": [559000000, ""2026-07-31""]}",2025-08-01
+DHR,313616,125900000000.0,Danaher Corporation,Health Care,80.0,"{""cover_page"": [702986054, ""2026-07-16""], ""balance_sheet"": [702900000, ""2026-06-26""], ""diluted_weighted_avg"": [709400000, ""2026-06-26""], ""basic_weighted_avg"": [706600000, ""2026-06-26""]}",2025-06-30
+DE,315189,124313866554.0,Deere & Company,Industrials,81.0,"{""cover_page"": [269625412, ""2026-08-02""], ""balance_sheet"": [270400000, ""2025-11-02""], ""diluted_weighted_avg"": [270800000, ""2026-08-02""], ""basic_weighted_avg"": [270100000, ""2026-08-02""]}",2025-04-25
+PANW,1327567,123400000000.0,Palo Alto Networks,Information Technology,82.0,"{""cover_page"": [818000000, ""2026-08-31""], ""balance_sheet"": [815000000, ""2026-07-31""], ""diluted_weighted_avg"": [764000000, ""2026-07-31""], ""basic_weighted_avg"": [749000000, ""2026-07-31""]}",2026-01-31
+AMAT,6951,121318219350.0,Applied Materials,Information Technology,83.0,"{""cover_page"": [793597443, ""2026-07-26""], ""balance_sheet"": [793000000, ""2025-10-26""], ""diluted_weighted_avg"": [799000000, ""2026-07-26""], ""basic_weighted_avg"": [794000000, ""2026-07-26""]}",2025-04-27
+MDT,1613103,120100000000.0,Medtronic,Health Care,84.0,"{""cover_page"": [1279137890, ""2026-08-28""], ""balance_sheet"": [1280046863, ""2026-07-31""], ""diluted_weighted_avg"": [1285100000, ""2026-07-31""], ""basic_weighted_avg"": [1279800000, ""2026-07-31""]}",2025-10-24
+CB,896159,115000000000.0,Chubb Limited,Financials,85.0,"{""cover_page"": [387860106, ""2026-04-21""], ""balance_sheet"": [388495580, ""2026-03-31""], ""diluted_weighted_avg"": [394599504, ""2026-03-31""], ""basic_weighted_avg"": [390485934, ""2026-03-31""]}",2025-06-30
+VRTX,875320,113400000000.0,Vertex Pharmaceuticals,Health Care,86.0,"{""cover_page"": [253460924, ""2026-07-31""], ""balance_sheet"": [253347555, ""2026-06-30""], ""diluted_weighted_avg"": [255700000, ""2026-06-30""], ""basic_weighted_avg"": [253900000, ""2026-06-30""]}",2025-06-30
+TMUS,1283699,112400000000.0,T-Mobile US,Communication Services,87.0,"{""cover_page"": [1072671613, ""2026-07-17""], ""balance_sheet"": [1074817571, ""2026-06-30""], ""diluted_weighted_avg"": [1092356249, ""2026-06-30""], ""basic_weighted_avg"": [1090922014, ""2026-06-30""]}",2025-06-30
+COP,1163165,112000000000.0,ConocoPhillips,Energy,88.0,"{""cover_page"": [1201337479, ""2026-06-30""], ""diluted_weighted_avg"": [1219492000, ""2026-06-30""], ""basic_weighted_avg"": [1218715000, ""2026-06-30""]}",2025-06-30
+SBUX,829224,111000000000.0,Starbucks,Consumer Discretionary,89.0,"{""cover_page"": [1140000000, ""2026-07-23""], ""balance_sheet"": [1136900000, ""2025-09-28""], ""diluted_weighted_avg"": [1143000000, ""2026-06-28""], ""basic_weighted_avg"": [1139000000, ""2026-06-28""]}",2025-03-30
+PH,76334,110763388251.0,Parker Hannifin,Industrials,90.0,"{""cover_page"": [126047469, ""2026-07-31""], ""diluted_weighted_avg"": [128100000, ""2026-06-30""], ""basic_weighted_avg"": [126300000, ""2026-06-30""]}",2025-12-31
+CRWD,1535527,109300000000.0,CrowdStrike,Information Technology,91.0,"{""cover_page"": [1023934842, ""2026-08-20""], ""balance_sheet"": [48127000, ""2019-04-30""], ""diluted_weighted_avg"": [1038033000, ""2026-07-31""], ""basic_weighted_avg"": [1017225000, ""2026-07-31""]}",2025-07-31
+BX,1393818,108900000000.0,Blackstone Inc.,Financials,92.0,"{""cover_page"": [750625114, ""2026-07-31""], ""balance_sheet"": [752601287, ""2026-06-30""], ""diluted_weighted_avg"": [793137073, ""2026-06-30""], ""basic_weighted_avg"": [792647549, ""2026-06-30""]}",2025-06-30
+MRSH,62709,107422546097.0,Marsh McLennan,Financials,93.0,"{""cover_page"": [477211268, ""2026-07-16""], ""balance_sheet"": [478000000, ""2026-06-30""], ""diluted_weighted_avg"": [484000000, ""2026-06-30""], ""basic_weighted_avg"": [482000000, ""2026-06-30""]}",2025-06-30
+LMT,936468,106500000000.0,Lockheed Martin,Industrials,94.0,"{""cover_page"": [230790753, ""2026-07-20""], ""balance_sheet"": [229000000, ""2025-12-31""], ""diluted_weighted_avg"": [231100000, ""2026-06-28""], ""basic_weighted_avg"": [230100000, ""2026-06-28""]}",2025-06-27
+APH,820313,106029000000.0,Amphenol,Information Technology,95.0,"{""cover_page"": [1232983457, ""2026-07-28""], ""balance_sheet"": [1226600000, ""2025-12-31""], ""diluted_weighted_avg"": [1289400000, ""2026-06-30""], ""basic_weighted_avg"": [1229700000, ""2026-06-30""]}",2025-06-30
+ANET,1596532,105600000000.0,Arista Networks,Information Technology,96.0,"{""cover_page"": [1261224648, ""2026-07-30""], ""balance_sheet"": [1261200000, ""2026-06-30""], ""diluted_weighted_avg"": [1274900000, ""2026-06-30""], ""basic_weighted_avg"": [1258900000, ""2026-06-30""]}",2025-06-30
+ICE,1571949,104400000000.0,Intercontinental Exchange,Financials,97.0,"{""cover_page"": [561394487, ""2026-07-27""], ""balance_sheet"": [561000000, ""2026-06-30""], ""diluted_weighted_avg"": [568000000, ""2026-06-30""], ""basic_weighted_avg"": [566000000, ""2026-06-30""]}",2025-06-30
+ADP,8670,103569897016.0,Automatic Data Processing,Industrials,98.0,"{""cover_page"": [397262737, ""2026-07-31""], ""balance_sheet"": [397800000, ""2026-06-30""], ""diluted_weighted_avg"": [403300000, ""2026-06-30""], ""basic_weighted_avg"": [402300000, ""2026-06-30""]}",2025-12-31
+AMT,1053507,103400000000.0,American Tower,Real Estate,99.0,"{""cover_page"": [465960048, ""2026-07-21""], ""balance_sheet"": [465959000, ""2026-06-30""], ""diluted_weighted_avg"": [466578000, ""2026-06-30""], ""basic_weighted_avg"": [466068000, ""2026-06-30""]}",2025-06-30
+GILD,882095,103200000000.0,Gilead Sciences,Health Care,100.0,"{""cover_page"": [1239955155, ""2026-07-31""], ""balance_sheet"": [1241000000, ""2026-06-30""], ""diluted_weighted_avg"": [1243000000, ""2026-06-30""], ""basic_weighted_avg"": [1243000000, ""2026-06-30""]}",2025-06-30
+APP,1751008,102700000000.0,AppLovin,Communication Services,101.0,"{""balance_sheet"": [335291000, ""2026-06-30""], ""diluted_weighted_avg"": [337875000, ""2026-06-30""], ""basic_weighted_avg"": [336595000, ""2026-06-30""]}",2025-06-30
+WELL,766704,102303567000.0,Welltower,Real Estate,102.0,"{""cover_page"": [705914450, ""2026-04-24""], ""balance_sheet"": [704686814, ""2026-03-31""], ""diluted_weighted_avg"": [726255000, ""2026-03-31""], ""basic_weighted_avg"": [699837000, ""2026-03-31""]}",2025-06-30
+SO,92122,101000000000.0,Southern Company,Utilities,103.0,"{""cover_page"": [1127301098, ""2026-03-31""], ""diluted_weighted_avg"": [1128000000, ""2026-03-31""], ""basic_weighted_avg"": [1124000000, ""2026-03-31""]}",2025-06-30
+CEG,1868275,100560269473.0,Constellation Energy,Utilities,104.0,"{""cover_page"": [354307379, ""2026-07-31""], ""balance_sheet"": [355000000, ""2026-06-30""], ""diluted_weighted_avg"": [357000000, ""2026-06-30""], ""basic_weighted_avg"": [357000000, ""2026-06-30""]}",2025-06-30
+INTC,50863,99300000000.0,Intel,Information Technology,105.0,"{""cover_page"": [5044000000, ""2026-07-17""], ""balance_sheet"": [5043000000, ""2026-06-27""], ""diluted_weighted_avg"": [5108000000, ""2026-06-27""], ""basic_weighted_avg"": [5108000000, ""2026-06-27""]}",2025-06-27
+CME,1156375,98900000000.0,CME Group,Financials,106.0,"{""cover_page"": [66643583, ""2010-02-17""], ""diluted_weighted_avg"": [362233000, ""2026-06-30""], ""basic_weighted_avg"": [360005000, ""2026-06-30""]}",2025-06-30
+MO,764180,98000000000.0,Altria,Consumer Staples,107.0,"{""cover_page"": [1669743926, ""2026-07-22""], ""balance_sheet"": [1674318297, ""2025-12-31""], ""diluted_weighted_avg"": [1672000000, ""2026-06-30""], ""basic_weighted_avg"": [1672000000, ""2026-06-30""]}",2025-06-30
+PLD,1045609,97322102425.0,Prologis,Real Estate,108.0,"{""cover_page"": [932338000, ""2026-04-28""], ""balance_sheet"": [932283000, ""2026-03-31""], ""diluted_weighted_avg"": [957561000, ""2026-03-31""], ""basic_weighted_avg"": [931261000, ""2026-03-31""]}",2025-06-30
+TT,1466258,97200000000.0,Trane Technologies,Industrials,109.0,"{""cover_page"": [220023177, ""2026-07-24""], ""balance_sheet"": [249000000, ""2024-12-31""], ""diluted_weighted_avg"": [222800000, ""2026-06-30""], ""basic_weighted_avg"": [221300000, ""2026-06-30""]}",2025-06-30
+MCK,927653,95300000000.0,McKesson,Health Care,110.0,"{""cover_page"": [116590363, ""2026-07-31""], ""diluted_weighted_avg"": [119200000, ""2026-06-30""], ""basic_weighted_avg"": [118700000, ""2026-06-30""]}",2025-09-30
+BMY,14272,94188864457.0,Bristol Myers Squibb,Health Care,111.0,"{""cover_page"": [2042714656, ""2026-07-22""], ""diluted_weighted_avg"": [2048000000, ""2026-06-30""], ""basic_weighted_avg"": [2040000000, ""2026-06-30""]}",2025-06-30
+FISV,798354,93881636110.0,Fiserv,Financials,112.0,"{""cover_page"": [531766721, ""2026-07-31""], ""diluted_weighted_avg"": [534500000, ""2026-06-30""], ""basic_weighted_avg"": [533400000, ""2026-06-30""]}",2025-06-30
+WM,823768,92000000000.0,Waste Management,Industrials,113.0,"{""cover_page"": [399715184, ""2026-07-24""], ""balance_sheet"": [400000000, ""2026-06-30""], ""diluted_weighted_avg"": [403300000, ""2026-06-30""], ""basic_weighted_avg"": [402300000, ""2026-06-30""]}",2025-06-30
+DUK,1326160,91703190830.0,Duke Energy,Utilities,114.0,"{""cover_page"": [779596217, ""2026-04-30""], ""balance_sheet"": [778000000, ""2026-03-31""], ""diluted_weighted_avg"": [779000000, ""2026-03-31""], ""basic_weighted_avg"": [778000000, ""2026-03-31""]}",2025-06-30
+KKR,1404912,91100000000.0,KKR & Co.,Financials,115.0,"{""cover_page"": [897635601, ""2026-08-05""], ""balance_sheet"": [897776609, ""2026-06-30""]}",2025-06-30
+DASH,1792789,90800000000.0,DoorDash,Consumer Discretionary,116.0,"{""diluted_weighted_avg"": [440833000, ""2026-06-30""], ""basic_weighted_avg"": [434924000, ""2026-06-30""]}",2025-06-30
+CI,1739940,88000000000.0,Cigna,Health Care,117.0,"{""cover_page"": [264240486, ""2026-07-24""], ""balance_sheet"": [263464000, ""2025-12-31""], ""diluted_weighted_avg"": [263990000, ""2026-06-30""]}",2025-06-30
+ELV,1156039,87349478366.0,Elevance Health,Health Care,118.0,"{""cover_page"": [216869290, ""2026-07-10""], ""balance_sheet"": [216841146, ""2026-06-30""], ""diluted_weighted_avg"": [219100000, ""2026-06-30""], ""basic_weighted_avg"": [218400000, ""2026-06-30""]}",2025-06-30
+MDLZ,1103982,87100000000.0,Mondelez International,Consumer Staples,119.0,"{""cover_page"": [1283649766, ""2026-04-24""], ""balance_sheet"": [1743809975, ""2010-06-30""], ""diluted_weighted_avg"": [1286000000, ""2026-03-31""], ""basic_weighted_avg"": [1283000000, ""2026-03-31""]}",2025-06-30
+MCO,1059556,87000000000.0,Moody's Corporation,Financials,120.0,"{""cover_page"": [173200000, ""2026-06-30""], ""diluted_weighted_avg"": [175900000, ""2026-06-30""], ""basic_weighted_avg"": [175500000, ""2026-06-30""]}",2025-06-30
+CVS,64803,86382523283.0,CVS Health,Health Care,121.0,"{""cover_page"": [1278970369, ""2026-07-29""], ""balance_sheet"": [1278000000, ""2026-06-30""], ""diluted_weighted_avg"": [1283000000, ""2026-06-30""], ""basic_weighted_avg"": [1276000000, ""2026-06-30""]}",2025-06-30
+SHW,89800,85532942889.0,Sherwin-Williams,Materials,122.0,"{""cover_page"": [242758151, ""2026-06-30""], ""balance_sheet"": [242800000, ""2026-06-30""], ""diluted_weighted_avg"": [247100000, ""2026-06-30""], ""basic_weighted_avg"": [244800000, ""2026-06-30""]}",2025-06-30
+CDNS,813672,83968000000.0,Cadence Design Systems,Information Technology,123.0,"{""cover_page"": [275816000, ""2026-03-31""], ""balance_sheet"": [271799000, ""2025-12-31""], ""diluted_weighted_avg"": [273725000, ""2026-03-31""], ""basic_weighted_avg"": [272061000, ""2026-03-31""]}",2025-06-30
+ADI,6281,81121000000.0,Analog Devices,Information Technology,124.0,"{""cover_page"": [484565465, ""2026-08-01""], ""balance_sheet"": [484565465, ""2026-08-01""], ""diluted_weighted_avg"": [490317000, ""2026-08-01""], ""basic_weighted_avg"": [487500000, ""2026-08-01""]}",2025-05-03
+MMM,66740,81100000000.0,3M,Industrials,125.0,"{""cover_page"": [515722417, ""2026-06-30""], ""balance_sheet"": [515722417, ""2026-06-30""], ""diluted_weighted_avg"": [527600000, ""2026-06-30""], ""basic_weighted_avg"": [524400000, ""2026-06-30""]}",2025-06-30
+NKE,320187,80529120635.0,"Nike, Inc.",Consumer Discretionary,126.0,"{""cover_page"": [855351589, ""2015-07-17""], ""diluted_weighted_avg"": [1484200000, ""2026-08-31""], ""basic_weighted_avg"": [1483600000, ""2026-08-31""]}",2025-11-28
+RCL,884887,79100000000.0,Royal Caribbean Group,Consumer Discretionary,127.0,"{""cover_page"": [267452084, ""2026-07-24""], ""diluted_weighted_avg"": [270000000, ""2026-06-30""], ""basic_weighted_avg"": [269000000, ""2026-06-30""]}",2025-06-30
+EQIX,1101239,77800000000.0,Equinix,Real Estate,128.0,"{""cover_page"": [98671686, ""2026-07-28""], ""balance_sheet"": [98671000, ""2026-06-30""], ""diluted_weighted_avg"": [98931000, ""2026-06-30""], ""basic_weighted_avg"": [98516000, ""2026-06-30""]}",2025-06-30
+RSG,1060391,77000000000.0,Republic Services,Industrials,129.0,"{""cover_page"": [306212978, ""2026-07-30""], ""balance_sheet"": [354400000, ""2020-09-30""], ""diluted_weighted_avg"": [308451000, ""2026-06-30""], ""basic_weighted_avg"": [308292000, ""2026-06-30""]}",2025-06-30
+AON,315293,76965213677.0,Aon plc,Financials,130.0,"{""cover_page"": [212125434, ""2026-07-28""], ""balance_sheet"": [269800000, ""2015-12-31""], ""diluted_weighted_avg"": [214600000, ""2026-06-30""], ""basic_weighted_avg"": [213800000, ""2026-06-30""]}",2025-06-30
+TDG,1260221,76426902522.0,TransDigm Group,Industrials,131.0,"{""cover_page"": [55276525, ""2026-07-31""], ""balance_sheet"": [52157225, ""2012-09-30""], ""diluted_weighted_avg"": [57900000, ""2026-06-27""], ""basic_weighted_avg"": [57900000, ""2026-06-27""]}",2025-03-28
+HWM,4281,75000000000.0,Howmet Aerospace,Industrials,132.0,"{""cover_page"": [398801399, ""2026-08-03""], ""balance_sheet"": [400000000, ""2026-06-30""], ""diluted_weighted_avg"": [402000000, ""2026-06-30""], ""basic_weighted_avg"": [400000000, ""2026-06-30""]}",2025-06-30
+CTAS,723254,74381019287.0,Cintas,Industrials,133.0,"{""cover_page"": [397075093, ""2026-09-30""], ""balance_sheet"": [399517000, ""2026-08-31""], ""diluted_weighted_avg"": [404290000, ""2026-08-31""], ""basic_weighted_avg"": [400137000, ""2026-08-31""]}",2025-11-30
+UPS,1090727,74239665022.0,United Parcel Service,Industrials,134.0,"{""cover_page"": [713924267, ""2010-02-17""], ""diluted_weighted_avg"": [851000000, ""2026-06-30""], ""basic_weighted_avg"": [850000000, ""2026-06-30""]}",2025-06-30
+COIN,1679788,74200000000.0,Coinbase,Financials,135.0,"{""balance_sheet"": [263782000, ""2026-06-30""], ""diluted_weighted_avg"": [264128000, ""2026-06-30""], ""basic_weighted_avg"": [264128000, ""2026-06-30""]}",2025-06-30
+CL,21665,73400000000.0,Colgate-Palmolive,Consumer Staples,136.0,"{""cover_page"": [797172829, ""2026-06-30""], ""balance_sheet"": [801239524, ""2025-12-31""], ""diluted_weighted_avg"": [803400000, ""2026-06-30""], ""basic_weighted_avg"": [800800000, ""2026-06-30""]}",2025-06-30
+PNC,713676,73200000000.0,PNC Financial Services,Financials,137.0,"{""cover_page"": [398943667, ""2026-07-20""], ""balance_sheet"": [523000000, ""2014-12-31""], ""diluted_weighted_avg"": [404000000, ""2026-06-30""], ""basic_weighted_avg"": [404000000, ""2026-06-30""]}",2025-06-30
+ITW,49826,71900000000.0,Illinois Tool Works,Industrials,138.0,"{""cover_page"": [284800000, ""2026-06-30""], ""balance_sheet"": [284800000, ""2026-06-30""], ""diluted_weighted_avg"": [288100000, ""2026-06-30""], ""basic_weighted_avg"": [287300000, ""2026-06-30""]}",2025-06-30
+NOC,1133421,71500000000.0,Northrop Grumman,Industrials,139.0,"{""cover_page"": [142063026, ""2026-07-16""], ""balance_sheet"": [142062680, ""2026-06-30""], ""diluted_weighted_avg"": [142400000, ""2026-06-30""], ""basic_weighted_avg"": [142100000, ""2026-06-30""]}",2025-06-30
+HOOD,1783879,71300000000.0,Robinhood Markets,Financials,140.0,"{""balance_sheet"": [232609957, ""2021-06-30""], ""diluted_weighted_avg"": [913000000, ""2026-06-30""], ""basic_weighted_avg"": [899000000, ""2026-06-30""]}",2025-06-30
+PYPL,1633917,71300000000.0,PayPal,Financials,141.0,"{""cover_page"": [882105493, ""2026-04-29""], ""balance_sheet"": [892000000, ""2026-03-31""], ""diluted_weighted_avg"": [920000000, ""2026-03-31""], ""basic_weighted_avg"": [913000000, ""2026-03-31""]}",2025-06-30
+AJG,354190,71117000000.0,Arthur J. Gallagher & Co.,Financials,142.0,"{""cover_page"": [256300000, ""2026-06-30""], ""balance_sheet"": [256300000, ""2026-06-30""], ""basic_weighted_avg"": [256900000, ""2026-06-30""]}",2025-06-30
+USB,36104,70500000000.0,U.S. Bancorp,Financials,143.0,"{""cover_page"": [1558051446, ""2026-07-31""], ""balance_sheet"": [1600000000, ""2025-12-31""], ""diluted_weighted_avg"": [1555000000, ""2026-06-30""], ""basic_weighted_avg"": [1554000000, ""2026-06-30""]}",2025-06-30
+GD,40533,69581612877.0,General Dynamics,Industrials,144.0,"{""cover_page"": [270430187, ""2026-04-05""], ""balance_sheet"": [270389759, ""2025-12-31""], ""diluted_weighted_avg"": [274129000, ""2026-04-05""], ""basic_weighted_avg"": [270173000, ""2026-04-05""]}",2025-06-29
+ZTS,1555280,69233000000.0,Zoetis,Health Care,145.0,"{""cover_page"": [413223602, ""2026-07-31""], ""balance_sheet"": [414154046, ""2026-06-30""], ""diluted_weighted_avg"": [420100000, ""2026-06-30""], ""basic_weighted_avg"": [419900000, ""2026-06-30""]}",2025-06-30
+WMB,107263,67728227765.0,Williams Companies,Energy,146.0,"{""cover_page"": [1223167472, ""2026-07-30""], ""diluted_weighted_avg"": [1226000000, ""2026-06-30""], ""basic_weighted_avg"": [1223000000, ""2026-06-30""]}",2025-06-30
+ECL,31462,67088288734.0,Ecolab,Materials,147.0,"{""cover_page"": [280328603, ""2026-06-30""], ""balance_sheet"": [280300000, ""2026-06-30""], ""diluted_weighted_avg"": [282900000, ""2026-06-30""], ""basic_weighted_avg"": [281300000, ""2026-06-30""]}",2025-06-30
+APD,2969,65600000000.0,Air Products,Materials,148.0,"{""cover_page"": [222685530, ""2026-06-30""], ""balance_sheet"": [222588256, ""2025-09-30""], ""diluted_weighted_avg"": [222800000, ""2026-06-30""], ""basic_weighted_avg"": [222800000, ""2026-06-30""]}",2025-03-31
+BDX,10795,65472902857.0,Becton Dickinson,Health Care,149.0,"{""cover_page"": [272386800, ""2026-06-30""], ""diluted_weighted_avg"": [281603000, ""2026-06-30""], ""basic_weighted_avg"": [280332000, ""2026-06-30""]}",2025-03-31
+VST,1692819,65311459773.0,Vistra Corp.,Utilities,150.0,"{""cover_page"": [335635195, ""2026-08-03""], ""balance_sheet"": [335961328, ""2026-06-30""], ""diluted_weighted_avg"": [340541176, ""2026-06-30""], ""basic_weighted_avg"": [337332362, ""2026-06-30""]}",2025-06-30
+EOG,821189,65231000000.0,EOG Resources,Energy,151.0,"{""cover_page"": [524529176, ""2026-07-28""], ""balance_sheet"": [271632000, ""2012-12-31""], ""diluted_weighted_avg"": [532000000, ""2026-06-30""], ""basic_weighted_avg"": [529000000, ""2026-06-30""]}",2025-06-30
+STX,1137789,65000000000.0,Seagate Technology,Information Technology,152.0,"{""cover_page"": [226644518, ""2026-07-31""], ""balance_sheet"": [226791724, ""2026-07-03""], ""diluted_weighted_avg"": [229000000, ""2026-07-03""], ""basic_weighted_avg"": [219000000, ""2026-07-03""]}",2024-12-27
+FDX,1048911,64600000000.0,FedEx,Industrials,153.0,"{""cover_page"": [236581188, ""2026-07-16""], ""diluted_weighted_avg"": [239000000, ""2026-05-31""], ""basic_weighted_avg"": [237000000, ""2026-05-31""]}",2025-11-30
+ADSK,769397,64500000000.0,Autodesk,Information Technology,154.0,"{""cover_page"": [209000000, ""2026-08-21""], ""balance_sheet"": [212000000, ""2026-01-31""], ""diluted_weighted_avg"": [212000000, ""2026-07-31""], ""basic_weighted_avg"": [211000000, ""2026-07-31""]}",2025-07-31
+BNY,1390777,64230991381.0,BNY Mellon,Financials,155.0,"{""cover_page"": [678504142, ""2026-06-30""], ""balance_sheet"": [688236337, ""2025-12-31""], ""diluted_weighted_avg"": [695514000, ""2026-06-30""], ""basic_weighted_avg"": [688759000, ""2026-06-30""]}",2025-06-30
+MRVL,1835632,64119895583.0,Marvell Technology,Information Technology,156.0,"{""cover_page"": [876900000, ""2026-08-21""], ""balance_sheet"": [847300000, ""2026-01-31""], ""diluted_weighted_avg"": [907100000, ""2026-08-01""], ""basic_weighted_avg"": [889600000, ""2026-08-01""]}",2025-08-01
+NEM,1164727,64108664771.0,Newmont,Materials,157.0,"{""cover_page"": [1053692271, ""2026-07-16""], ""balance_sheet"": [1089000000, ""2025-12-31""], ""diluted_weighted_avg"": [1077000000, ""2026-06-30""], ""basic_weighted_avg"": [1075000000, ""2026-06-30""]}",2025-06-30
+CMG,1058090,64000000000.0,Chipotle Mexican Grill,Consumer Discretionary,158.0,"{""cover_page"": [1265418000, ""2026-07-24""], ""diluted_weighted_avg"": [1290462000, ""2026-06-30""], ""basic_weighted_avg"": [1287792000, ""2026-06-30""]}",2025-06-30
+ORLY,898173,63300585790.0,O'Reilly Automotive,Consumer Discretionary,159.0,"{""cover_page"": [808960792, ""2026-08-03""], ""balance_sheet"": [816165813, ""2026-06-30""], ""diluted_weighted_avg"": [835661000, ""2026-06-30""], ""basic_weighted_avg"": [831853000, ""2026-06-30""]}",2025-06-30
+HCA,860730,63269000000.0,HCA Healthcare,Health Care,160.0,"{""cover_page"": [221839800, ""2026-04-27""], ""balance_sheet"": [222530900, ""2026-03-31""], ""diluted_weighted_avg"": [226652000, ""2026-03-31""], ""basic_weighted_avg"": [223588000, ""2026-03-31""]}",2025-06-30
+AXON,1069183,62200000000.0,Axon Enterprise,Industrials,161.0,"{""cover_page"": [81237415, ""2026-07-31""], ""balance_sheet"": [81235921, ""2026-06-30""], ""diluted_weighted_avg"": [82518000, ""2026-06-30""], ""basic_weighted_avg"": [80363000, ""2026-06-30""]}",2025-06-30
+FCX,831259,61900000000.0,Freeport-McMoRan,Materials,162.0,"{""cover_page"": [1436017523, ""2026-07-31""], ""balance_sheet"": [945000000, ""2011-12-31""], ""diluted_weighted_avg"": [1444000000, ""2026-06-30""], ""basic_weighted_avg"": [1439000000, ""2026-06-30""]}",2025-06-30
+CRH,849395,61825009498.0,CRH plc,Materials,163.0,"{""cover_page"": [665284511, ""2026-07-20""], ""balance_sheet"": [665895636, ""2026-06-30""], ""diluted_weighted_avg"": [670300000, ""2026-06-30""], ""basic_weighted_avg"": [667900000, ""2026-06-30""]}",2025-06-30
+HLT,1585689,61525000000.0,Hilton Worldwide,Consumer Discretionary,164.0,"{""cover_page"": [225064910, ""2026-07-23""], ""balance_sheet"": [225696464, ""2026-06-30""], ""diluted_weighted_avg"": [230000000, ""2026-06-30""], ""basic_weighted_avg"": [228000000, ""2026-06-30""]}",2025-06-30
+EMR,32604,61500000000.0,Emerson Electric,Industrials,165.0,"{""cover_page"": [557800000, ""2026-06-30""], ""balance_sheet"": [557800000, ""2026-06-30""], ""diluted_weighted_avg"": [562700000, ""2026-06-30""], ""basic_weighted_avg"": [560400000, ""2026-06-30""]}",2025-03-31
+MAR,1048286,61232412426.0,Marriott International,Consumer Discretionary,166.0,"{""cover_page"": [260766288, ""2026-07-27""], ""balance_sheet"": [265864771, ""2025-12-31""], ""diluted_weighted_avg"": [265700000, ""2026-06-30""], ""basic_weighted_avg"": [265000000, ""2026-06-30""]}",2025-06-30
+CSX,277948,61000000000.0,CSX Corporation,Industrials,167.0,"{""cover_page"": [1852474917, ""2026-06-30""], ""balance_sheet"": [1860000000, ""2025-12-31""], ""diluted_weighted_avg"": [1860000000, ""2026-06-30""], ""basic_weighted_avg"": [1858000000, ""2026-06-30""]}",2025-06-30
+MSI,68505,61000000000.0,Motorola Solutions,Information Technology,168.0,"{""cover_page"": [165493788, ""2026-07-31""], ""balance_sheet"": [165500000, ""2026-07-04""], ""diluted_weighted_avg"": [167600000, ""2026-07-04""], ""basic_weighted_avg"": [165800000, ""2026-07-04""]}",2025-06-27
+ROP,882835,60800000000.0,Roper Technologies,Information Technology,169.0,"{""cover_page"": [98900874, ""2026-07-28""], ""balance_sheet"": [98900000, ""2026-06-30""], ""diluted_weighted_avg"": [102600000, ""2026-06-30""], ""basic_weighted_avg"": [102300000, ""2026-06-30""]}",2025-06-30
+TRV,86312,59986121526.0,Travelers Companies (The),Financials,170.0,"{""cover_page"": [208575022, ""2026-07-10""], ""balance_sheet"": [208600000, ""2026-06-30""], ""diluted_weighted_avg"": [216000000, ""2026-06-30""], ""basic_weighted_avg"": [212900000, ""2026-06-30""]}",2025-06-30
+SNPS,883241,59300000000.0,Synopsys,Information Technology,171.0,"{""cover_page"": [191636646, ""2026-08-24""], ""balance_sheet"": [191605000, ""2026-07-31""], ""diluted_weighted_avg"": [191981000, ""2026-07-31""], ""basic_weighted_avg"": [190858000, ""2026-07-31""]}",2025-04-30
+DLR,1297996,59000000000.0,Digital Realty,Real Estate,172.0,"{""cover_page"": [351406070, ""2026-04-29""], ""balance_sheet"": [348924000, ""2026-03-31""], ""diluted_weighted_avg"": [353254000, ""2026-03-31""], ""basic_weighted_avg"": [345013000, ""2026-03-31""]}",2025-06-30
+CARR,1783180,58500000000.0,Carrier Global,Industrials,173.0,"{""cover_page"": [830580423, ""2026-04-15""], ""balance_sheet"": [836141122, ""2025-12-31""], ""diluted_weighted_avg"": [842800000, ""2026-03-31""], ""basic_weighted_avg"": [835000000, ""2026-03-31""]}",2025-06-30
+APO,1858681,58394760022.0,Apollo Global Management,Financials,174.0,"{""cover_page"": [590543159, ""2026-08-05""], ""balance_sheet"": [575971752, ""2026-06-30""], ""diluted_weighted_avg"": [593298193, ""2026-06-30""], ""basic_weighted_avg"": [593298193, ""2026-06-30""]}",2025-06-30
+AZO,866787,57759306497.0,AutoZone,Consumer Discretionary,175.0,"{""cover_page"": [16325355, ""2026-06-05""], ""balance_sheet"": [24611000, ""2019-05-04""], ""diluted_weighted_avg"": [16974000, ""2026-05-09""], ""basic_weighted_avg"": [16564000, ""2026-05-09""]}",2025-02-15
+NSC,702165,57481458868.0,Norfolk Southern,Industrials,176.0,"{""cover_page"": [224608373, ""2026-06-30""], ""balance_sheet"": [224608373, ""2026-06-30""], ""diluted_weighted_avg"": [225000000, ""2026-06-30""], ""basic_weighted_avg"": [224500000, ""2026-06-30""]}",2025-06-30
+KMI,1506307,57054291328.0,Kinder Morgan,Energy,177.0,"{""cover_page"": [2226802089, ""2026-07-23""], ""balance_sheet"": [2224819927, ""2026-06-30""], ""diluted_weighted_avg"": [2225000000, ""2026-06-30""], ""basic_weighted_avg"": [2225000000, ""2026-06-30""]}",2025-06-30
+FTNT,1262039,56846175983.0,Fortinet,Information Technology,178.0,"{""cover_page"": [733713653, ""2026-07-28""], ""balance_sheet"": [733600000, ""2026-06-30""], ""diluted_weighted_avg"": [741300000, ""2026-06-30""], ""basic_weighted_avg"": [735900000, ""2026-06-30""]}",2025-06-30
+MNST,865752,56505471480.0,Monster Beverage,Consumer Staples,179.0,"{""cover_page"": [979525882, ""2026-07-31""], ""balance_sheet"": [979490000, ""2026-06-30""], ""diluted_weighted_avg"": [988456000, ""2026-06-30""], ""basic_weighted_avg"": [978487000, ""2026-06-30""]}",2025-06-30
+ABNB,1559720,56200000000.0,Airbnb,Consumer Discretionary,180.0,"{""diluted_weighted_avg"": [602000000, ""2026-06-30""], ""basic_weighted_avg"": [595000000, ""2026-06-30""]}",2025-06-30
+AEP,4904,56119786438.0,American Electric Power,Utilities,181.0,"{""cover_page"": [544104955, ""2026-05-05""], ""diluted_weighted_avg"": [547054104, ""2026-03-31""], ""basic_weighted_avg"": [542079269, ""2026-03-31""]}",2025-06-30
+AFL,4977,56035389963.0,Aflac,Financials,182.0,"{""cover_page"": [501343298, ""2026-07-28""], ""balance_sheet"": [502257000, ""2026-06-30""], ""diluted_weighted_avg"": [510150000, ""2026-06-30""], ""basic_weighted_avg"": [508572000, ""2026-06-30""]}",2025-06-30
+PWR,1050915,55800000000.0,Quanta Services,Industrials,183.0,"{""cover_page"": [150343393, ""2026-07-27""], ""balance_sheet"": [150273799, ""2026-06-30""], ""diluted_weighted_avg"": [152289000, ""2026-06-30""], ""basic_weighted_avg"": [149995000, ""2026-06-30""]}",2025-06-30
+TFC,92230,55400000000.0,Truist Financial,Financials,184.0,"{""cover_page"": [1221626188, ""2026-06-30""], ""balance_sheet"": [1221626000, ""2026-06-30""], ""diluted_weighted_avg"": [1252766000, ""2026-06-30""], ""basic_weighted_avg"": [1236682000, ""2026-06-30""]}",2025-06-30
+REGN,872589,54800000000.0,Regeneron Pharmaceuticals,Health Care,185.0,"{""cover_page"": [93955110, ""2012-07-13""], ""balance_sheet"": [94410423, ""2012-09-30""], ""diluted_weighted_avg"": [106800000, ""2026-06-30""], ""basic_weighted_avg"": [103400000, ""2026-06-30""]}",2025-06-30
+NXPI,1413447,54700000000.0,NXP Semiconductors,Information Technology,186.0,"{""cover_page"": [252471079, ""2026-04-24""], ""diluted_weighted_avg"": [253525000, ""2026-03-29""], ""basic_weighted_avg"": [252715000, ""2026-03-29""]}",2025-06-27
+MET,1099219,53600000000.0,MetLife,Financials,187.0,"{""cover_page"": [635476927, ""2026-07-31""], ""balance_sheet"": [637752080, ""2026-06-30""], ""diluted_weighted_avg"": [651300000, ""2026-06-30""], ""basic_weighted_avg"": [647300000, ""2026-06-30""]}",2025-06-30
+ALL,899051,52830000000.0,Allstate,Financials,188.0,"{""cover_page"": [252857950, ""2026-07-16""], ""balance_sheet"": [254000000, ""2026-06-30""], ""diluted_weighted_avg"": [260900000, ""2026-06-30""], ""basic_weighted_avg"": [257700000, ""2026-06-30""]}",2025-06-30
+JCI,833444,52600000000.0,Johnson Controls,Industrials,189.0,"{""cover_page"": [610115603, ""2026-03-31""], ""balance_sheet"": [935500000, ""2016-09-02""], ""diluted_weighted_avg"": [614000000, ""2026-03-31""], ""basic_weighted_avg"": [612000000, ""2026-03-31""]}",2025-03-31
+O,726728,52600000000.0,Realty Income,Real Estate,190.0,"{""cover_page"": [946218033, ""2026-07-30""], ""balance_sheet"": [946202000, ""2026-06-30""], ""diluted_weighted_avg"": [934435000, ""2026-06-30""], ""basic_weighted_avg"": [932133000, ""2026-06-30""]}",2025-06-30
+SPG,1063761,52048000000.0,Simon Property Group,Real Estate,191.0,"{""cover_page"": [283301181, ""2009-09-30""], ""balance_sheet"": [8000, ""2012-12-31""], ""diluted_weighted_avg"": [324457908, ""2026-06-30""], ""basic_weighted_avg"": [324457908, ""2026-06-30""]}",2025-06-30
+OKE,1039684,51100000000.0,Oneok,Energy,192.0,"{""cover_page"": [630369667, ""2026-07-27""], ""balance_sheet"": [630362380, ""2026-06-30""], ""diluted_weighted_avg"": [631800000, ""2026-06-30""], ""basic_weighted_avg"": [630800000, ""2026-06-30""]}",2025-06-30
+MPC,1510295,50600000000.0,Marathon Petroleum,Energy,193.0,"{""cover_page"": [280824763, ""2026-07-30""], ""balance_sheet"": [357000000, ""2011-12-31""], ""diluted_weighted_avg"": [292000000, ""2026-06-30""], ""basic_weighted_avg"": [291000000, ""2026-06-30""]}",2025-06-30
+AMP,820027,50300000000.0,Ameriprise Financial,Financials,194.0,"{""cover_page"": [88333219, ""2026-07-24""], ""balance_sheet"": [120607501, ""2020-06-30""], ""diluted_weighted_avg"": [93700000, ""2026-06-30""], ""basic_weighted_avg"": [92600000, ""2026-06-30""]}",2025-06-30
+WDAY,1327811,49500000000.0,"Workday, Inc.",Information Technology,195.0,"{""cover_page"": [220000000, ""2018-11-30""], ""balance_sheet"": [36000000, ""2012-01-31""], ""diluted_weighted_avg"": [250238000, ""2026-07-31""], ""basic_weighted_avg"": [249464000, ""2026-07-31""]}",2025-07-31
+SRE,1032208,49400000000.0,Sempra,Utilities,196.0,"{""cover_page"": [653690046, ""2026-05-04""], ""balance_sheet"": [653344198, ""2026-03-31""], ""diluted_weighted_avg"": [655488000, ""2026-03-31""], ""basic_weighted_avg"": [653589000, ""2026-03-31""]}",2025-06-30
+PCAR,75362,49010000000.0,Paccar,Industrials,197.0,"{""cover_page"": [526364953, ""2026-07-24""], ""diluted_weighted_avg"": [527500000, ""2026-06-30""], ""basic_weighted_avg"": [526800000, ""2026-06-30""]}",2025-06-30
+VRT,1674101,48225235174.0,Vertiv,Industrials,198.0,"{""cover_page"": [384988173, ""2026-07-27""], ""balance_sheet"": [384936985, ""2026-06-30""], ""diluted_weighted_avg"": [392511287, ""2026-06-30""], ""basic_weighted_avg"": [383742935, ""2026-06-30""]}",2025-06-30
+D,715957,48200000000.0,Dominion Energy,Utilities,199.0,"{""cover_page"": [879455403, ""2026-04-24""], ""balance_sheet"": [879000000, ""2026-03-31""], ""diluted_weighted_avg"": [880100000, ""2026-03-31""], ""basic_weighted_avg"": [878900000, ""2026-03-31""]}",2025-06-30
+PSX,1534701,48200000000.0,Phillips 66,Energy,200.0,"{""cover_page"": [399020916, ""2026-06-30""], ""diluted_weighted_avg"": [403472000, ""2026-06-30""], ""basic_weighted_avg"": [401493000, ""2026-06-30""]}",2025-06-30
+CAH,721371,48192692777.0,Cardinal Health,Health Care,201.0,"{""cover_page"": [232575728, ""2026-07-31""], ""diluted_weighted_avg"": [237000000, ""2026-06-30""], ""basic_weighted_avg"": [236000000, ""2026-06-30""]}",2025-12-31
+FAST,815556,48111881160.0,Fastenal,Industrials,202.0,"{""cover_page"": [1147497573, ""2026-07-10""], ""balance_sheet"": [1147494415, ""2026-06-30""], ""diluted_weighted_avg"": [1150590276, ""2026-06-30""], ""basic_weighted_avg"": [1147852954, ""2026-06-30""]}",2025-06-30
+AIG,5272,47910000000.0,American International Group,Financials,203.0,"{""cover_page"": [522893169, ""2026-07-31""], ""balance_sheet"": [524700000, ""2026-06-30""], ""diluted_weighted_avg"": [537846532, ""2026-06-30""], ""basic_weighted_avg"": [533775623, ""2026-06-30""]}",2025-06-30
+WDC,106040,47690000000.0,Western Digital,Information Technology,204.0,"{""cover_page"": [360540944, ""2026-08-07""], ""balance_sheet"": [361000000, ""2026-07-03""], ""diluted_weighted_avg"": [383000000, ""2026-07-03""], ""basic_weighted_avg"": [345000000, ""2026-07-03""]}",2026-01-02
+TTWO,946581,47087317833.0,Take-Two Interactive,Communication Services,205.0,"{""cover_page"": [186980443, ""2026-07-27""], ""balance_sheet"": [187000000, ""2026-06-30""], ""diluted_weighted_avg"": [170100000, ""2024-03-31""], ""basic_weighted_avg"": [186200000, ""2026-06-30""]}",2025-09-30
+GM,1467858,47000000000.0,General Motors,Consumer Discretionary,206.0,"{""cover_page"": [877451541, ""2026-07-10""], ""balance_sheet"": [877000000, ""2026-06-30""], ""diluted_weighted_avg"": [918000000, ""2026-06-30""], ""basic_weighted_avg"": [904000000, ""2026-06-30""]}",2025-06-30
+KR,56873,46100000000.0,Kroger,Consumer Staples,207.0,"{""cover_page"": [590588700, ""2026-09-15""], ""diluted_weighted_avg"": [612000000, ""2026-08-15""], ""basic_weighted_avg"": [610000000, ""2026-08-15""]}",2025-08-16
+LHX,202058,46020545333.0,L3Harris,Industrials,208.0,"{""cover_page"": [186214616, ""2026-07-24""], ""balance_sheet"": [186155804, ""2026-07-03""], ""diluted_weighted_avg"": [187700000, ""2026-07-03""], ""basic_weighted_avg"": [186500000, ""2026-07-03""]}",2025-06-27
+EW,1099800,45899189298.0,Edwards Lifesciences,Health Care,209.0,"{""cover_page"": [576400000, ""2026-07-31""], ""balance_sheet"": [576600000, ""2026-06-30""], ""diluted_weighted_avg"": [579200000, ""2026-06-30""], ""basic_weighted_avg"": [577800000, ""2026-06-30""]}",2025-06-30
+SLB,87347,45580000000.0,Schlumberger,Energy,210.0,"{""cover_page"": [1484143231, ""2026-06-30""], ""balance_sheet"": [1484000000, ""2026-06-30""], ""diluted_weighted_avg"": [1511000000, ""2026-06-30""], ""basic_weighted_avg"": [1494000000, ""2026-06-30""]}",2025-06-30
+TGT,27419,45284343058.0,Target Corporation,Consumer Staples,211.0,"{""cover_page"": [454296736, ""2026-08-21""], ""balance_sheet"": [454291461, ""2026-08-01""], ""diluted_weighted_avg"": [456200000, ""2026-08-01""], ""basic_weighted_avg"": [454100000, ""2026-08-01""]}",2025-08-01
+CMI,26172,45100000000.0,Cummins,Industrials,212.0,"{""cover_page"": [137664487, ""2026-06-30""], ""diluted_weighted_avg"": [138600000, ""2026-06-30""], ""basic_weighted_avg"": [138100000, ""2026-06-30""]}",2025-06-30
+GLW,24741,45000000000.0,Corning Inc.,Information Technology,213.0,"{""cover_page"": [861388331, ""2026-07-24""], ""diluted_weighted_avg"": [877000000, ""2026-06-30""], ""basic_weighted_avg"": [860000000, ""2026-06-30""]}",2025-06-30
+KDP,1418135,44800000000.0,Keurig Dr Pepper,Consumer Staples,214.0,"{""cover_page"": [1360826038, ""2026-08-10""], ""balance_sheet"": [1360776911, ""2026-06-30""], ""diluted_weighted_avg"": [1364200000, ""2026-06-30""], ""basic_weighted_avg"": [1359900000, ""2026-06-30""]}",2025-06-30
+CCI,1051470,44700000000.0,Crown Castle,Real Estate,215.0,"{""cover_page"": [425455439, ""2026-08-03""], ""balance_sheet"": [426000000, ""2026-06-30""], ""diluted_weighted_avg"": [436000000, ""2026-06-30""], ""basic_weighted_avg"": [434000000, ""2026-06-30""]}",2025-06-30
+PSA,1393311,44239441000.0,Public Storage,Real Estate,216.0,"{""cover_page"": [175621134, ""2026-07-21""], ""balance_sheet"": [175723561, ""2024-03-31""], ""diluted_weighted_avg"": [176455000, ""2026-06-30""], ""basic_weighted_avg"": [175540000, ""2026-06-30""]}",2025-06-30
+EXC,1109357,43835664870.0,Exelon,Utilities,217.0,"{""cover_page"": [1023208142, ""2026-03-31""], ""balance_sheet"": [1023000000, ""2026-03-31""], ""diluted_weighted_avg"": [1026000000, ""2026-03-31""], ""basic_weighted_avg"": [1024000000, ""2026-03-31""]}",2025-06-30
+CVNA,1690820,43800000000.0,Carvana,Consumer Discretionary,218.0,"{""diluted_weighted_avg"": [740174000, ""2026-06-30""], ""basic_weighted_avg"": [715728000, ""2026-06-30""]}",2025-06-30
+ROST,745732,43685150538.0,Ross Stores,Consumer Discretionary,219.0,"{""cover_page"": [319453110, ""2026-08-14""], ""balance_sheet"": [319668000, ""2026-08-01""], ""diluted_weighted_avg"": [320343000, ""2026-08-01""], ""basic_weighted_avg"": [318322000, ""2026-08-01""]}",2025-08-02
+MSCI,1408198,43149826814.0,MSCI,Financials,220.0,"{""cover_page"": [72700000, ""2026-07-14""], ""balance_sheet"": [72700000, ""2026-06-30""], ""diluted_weighted_avg"": [73100000, ""2026-06-30""], ""basic_weighted_avg"": [73000000, ""2026-06-30""]}",2025-06-30
+DDOG,1561550,43000000000.0,Datadog,Information Technology,221.0,"{""balance_sheet"": [78180606, ""2018-12-31""], ""diluted_weighted_avg"": [368271000, ""2026-06-30""], ""basic_weighted_avg"": [354771000, ""2026-06-30""]}",2025-06-30
+IDXX,874716,42899749759.0,Idexx Laboratories,Health Care,222.0,"{""cover_page"": [78781116, ""2026-07-31""], ""balance_sheet"": [78874000, ""2026-06-30""], ""diluted_weighted_avg"": [79742000, ""2026-06-30""], ""basic_weighted_avg"": [79299000, ""2026-06-30""]}",2025-06-30
+FERG,2011641,42870902857.0,Ferguson Enterprises,Industrials,223.0,"{""cover_page"": [193452717, ""2026-08-03""], ""diluted_weighted_avg"": [194400000, ""2026-06-30""], ""basic_weighted_avg"": [194100000, ""2026-06-30""]}",2025-06-30
+KMB,55785,42800000000.0,Kimberly-Clark,Consumer Staples,224.0,"{""cover_page"": [332579038, ""2026-07-28""], ""balance_sheet"": [332600000, ""2026-06-30""], ""diluted_weighted_avg"": [333300000, ""2026-06-30""], ""basic_weighted_avg"": [332100000, ""2026-06-30""]}",2025-06-30
+URI,1067701,42700000000.0,United Rentals,Industrials,225.0,"{""cover_page"": [62646557, ""2026-04-20""], ""balance_sheet"": [62730346, ""2026-03-31""], ""diluted_weighted_avg"": [63026000, ""2026-03-31""], ""basic_weighted_avg"": [62927000, ""2026-03-31""]}",2025-06-30
+VEEV,1393052,42600000000.0,Veeva Systems,Health Care,226.0,"{""cover_page"": [161908850, ""2026-08-25""], ""balance_sheet"": [161834760, ""2026-07-31""], ""diluted_weighted_avg"": [166072000, ""2026-07-31""], ""basic_weighted_avg"": [162836000, ""2026-07-31""]}",2025-07-31
+VRSK,1442145,42587525686.0,Verisk Analytics,Industrials,227.0,"{""cover_page"": [131021840, ""2026-04-24""], ""balance_sheet"": [131016125, ""2026-03-31""], ""diluted_weighted_avg"": [135222570, ""2026-03-31""], ""basic_weighted_avg"": [135020391, ""2026-03-31""]}",2025-06-30
+FIS,1136893,42560250917.0,Fidelity National Information Services,Financials,228.0,"{""cover_page"": [515705917, ""2026-07-31""], ""diluted_weighted_avg"": [517000000, ""2026-06-30""], ""basic_weighted_avg"": [516000000, ""2026-06-30""]}",2025-06-30
+F,37996,42411872532.0,Ford Motor Company,Consumer Discretionary,229.0,"{""cover_page"": [3727332952, ""2011-04-28""], ""diluted_weighted_avg"": [4071000000, ""2026-03-31""], ""basic_weighted_avg"": [3991000000, ""2026-03-31""]}",2025-06-30
+TEL,1385157,42200000000.0,TE Connectivity,Information Technology,230.0,"{""cover_page"": [289513228, ""2026-07-20""], ""diluted_weighted_avg"": [295000000, ""2026-06-26""], ""basic_weighted_avg"": [293000000, ""2026-06-26""]}",2025-03-28
+PEG,788784,41911658020.0,Public Service Enterprise Group,Utilities,231.0,"{""cover_page"": [498420030, ""2026-07-20""], ""balance_sheet"": [498000000, ""2025-12-31""], ""diluted_weighted_avg"": [499000000, ""2026-06-30""], ""basic_weighted_avg"": [498000000, ""2026-06-30""]}",2025-06-30
+AME,1037868,41800000000.0,Ametek,Industrials,232.0,"{""cover_page"": [229261244, ""2026-07-28""], ""balance_sheet"": [229000000, ""2025-12-31""], ""diluted_weighted_avg"": [229845000, ""2026-06-30""], ""basic_weighted_avg"": [228994000, ""2026-06-30""]}",2025-06-30
+VLO,1035002,41800000000.0,Valero Energy,Energy,233.0,"{""cover_page"": [287927461, ""2026-07-24""], ""diluted_weighted_avg"": [296000000, ""2026-06-30""], ""basic_weighted_avg"": [296000000, ""2026-06-30""]}",2025-06-30
+CBRE,1138118,41500000000.0,CBRE Group,Real Estate,234.0,"{""cover_page"": [289575298, ""2026-07-27""], ""balance_sheet"": [289848678, ""2026-06-30""], ""diluted_weighted_avg"": [295411671, ""2026-06-30""], ""basic_weighted_avg"": [293089123, ""2026-06-30""]}",2025-06-30
+OXY,797468,41400000000.0,Occidental Petroleum,Energy,235.0,"{""cover_page"": [999637371, ""2026-07-31""], ""balance_sheet"": [999708551, ""2026-06-30""], ""diluted_weighted_avg"": [1009800000, ""2026-06-30""], ""basic_weighted_avg"": [993700000, ""2026-06-30""]}",2025-06-30
+GWW,277135,41053116330.0,W. W. Grainger,Industrials,236.0,"{""cover_page"": [47100942, ""2026-07-28""], ""diluted_weighted_avg"": [47300000, ""2026-06-30""], ""basic_weighted_avg"": [47300000, ""2026-06-30""]}",2025-06-30
+YUM,1041061,41000000000.0,Yum! Brands,Consumer Discretionary,237.0,"{""cover_page"": [272901085, ""2026-07-30""], ""diluted_weighted_avg"": [278000000, ""2026-06-30""], ""basic_weighted_avg"": [276000000, ""2026-06-30""]}",2025-06-30
+NDAQ,1120193,40600000000.0,"Nasdaq, Inc.",Financials,238.0,"{""cover_page"": [558977372, ""2026-07-16""], ""balance_sheet"": [561990385, ""2026-06-30""], ""diluted_weighted_avg"": [569740974, ""2026-06-30""], ""basic_weighted_avg"": [565482880, ""2026-06-30""]}",2025-06-30
+SNDK,2023554,40500000000.0,Sandisk,Information Technology,239.0,"{""cover_page"": [146419001, ""2026-08-07""], ""balance_sheet"": [146000000, ""2026-07-03""], ""diluted_weighted_avg"": [155000000, ""2026-07-03""], ""basic_weighted_avg"": [147000000, ""2026-07-03""]}",2026-01-02
+XEL,72903,40260845645.0,Xcel Energy,Utilities,240.0,"{""cover_page"": [624634306, ""2026-07-28""], ""balance_sheet"": [624405747, ""2026-06-30""], ""diluted_weighted_avg"": [627000000, ""2026-06-30""], ""basic_weighted_avg"": [625000000, ""2026-06-30""]}",2025-06-30
+KVUE,1944048,39600000000.0,Kenvue,Consumer Staples,241.0,"{""cover_page"": [1920773467, ""2026-07-31""], ""balance_sheet"": [1920241102, ""2026-06-28""], ""diluted_weighted_avg"": [1922000000, ""2026-06-28""], ""basic_weighted_avg"": [1918000000, ""2026-06-28""]}",2025-06-27
+XYZ,1512673,39400000000.0,"Block, Inc.",Financials,242.0,"{""diluted_weighted_avg"": [597702000, ""2026-06-30""], ""basic_weighted_avg"": [597702000, ""2026-06-30""]}",2025-06-30
+DELL,1571996,39200000000.0,Dell Technologies,Information Technology,243.0,"{""balance_sheet"": [640000000, ""2026-07-31""], ""diluted_weighted_avg"": [654000000, ""2026-07-31""], ""basic_weighted_avg"": [647000000, ""2026-07-31""]}",2025-08-01
+DHI,882184,39000000000.0,D. R. Horton,Consumer Discretionary,244.0,"{""cover_page"": [279701267, ""2026-07-16""], ""balance_sheet"": [280730194, ""2026-06-30""], ""diluted_weighted_avg"": [288400000, ""2026-06-30""], ""basic_weighted_avg"": [287500000, ""2026-06-30""]}",2025-03-31
+OTIS,1781335,38824474742.0,Otis Worldwide,Industrials,245.0,"{""cover_page"": [380669339, ""2026-07-15""], ""balance_sheet"": [438600000, ""2024-12-31""], ""diluted_weighted_avg"": [386400000, ""2026-06-30""], ""basic_weighted_avg"": [385200000, ""2026-06-30""]}",2025-06-30
+CTSH,1058290,38100000000.0,Cognizant,Information Technology,246.0,"{""cover_page"": [473869469, ""2026-04-24""], ""balance_sheet"": [474000000, ""2026-03-31""], ""diluted_weighted_avg"": [477000000, ""2026-03-31""], ""basic_weighted_avg"": [477000000, ""2026-03-31""]}",2025-06-30
+COR,1140859,37887695618.0,Cencora,Health Care,247.0,"{""cover_page"": [190827165, ""2026-07-31""], ""balance_sheet"": [190826409, ""2026-06-30""], ""diluted_weighted_avg"": [194883000, ""2026-06-30""], ""basic_weighted_avg"": [193971000, ""2026-06-30""]}",2025-03-31
+PRU,1137774,37810000000.0,Prudential Financial,Financials,248.0,"{""cover_page"": [345000000, ""2026-07-31""], ""diluted_weighted_avg"": [348800000, ""2026-06-30""], ""basic_weighted_avg"": [347000000, ""2026-06-30""]}",2025-06-30
+BKR,1701605,37733037083.0,Baker Hughes,Energy,249.0,"{""cover_page"": [992674071, ""2026-07-23""], ""balance_sheet"": [100, ""2017-06-30""], ""diluted_weighted_avg"": [773000000, ""2021-06-30""]}",2025-06-30
+PCG,1004980,37246000000.0,PG&E Corporation,Utilities,250.0,"{""cover_page"": [2680110496, ""2026-07-15""], ""balance_sheet"": [2202366726, ""2026-06-30""], ""diluted_weighted_avg"": [2284000000, ""2026-06-30""], ""basic_weighted_avg"": [2201000000, ""2026-06-30""]}",2025-06-30
+CHTR,1091667,37100000000.0,Charter Communications,Communication Services,251.0,"{""cover_page"": [270927828, ""2016-06-30""], ""diluted_weighted_avg"": [123969262, ""2026-06-30""], ""basic_weighted_avg"": [122789924, ""2026-06-30""]}",2025-06-30
+ETR,65984,37100000000.0,Entergy,Utilities,252.0,"{""cover_page"": [457832070, ""2026-03-31""], ""diluted_weighted_avg"": [462510666, ""2026-03-31""], ""basic_weighted_avg"": [455717833, ""2026-03-31""]}",2025-06-30
+TRGP,1389170,37012700000.0,Targa Resources,Energy,253.0,"{""cover_page"": [214431021, ""2026-07-31""], ""balance_sheet"": [214422392, ""2026-06-30""], ""diluted_weighted_avg"": [215300000, ""2026-06-30""], ""basic_weighted_avg"": [214700000, ""2026-06-30""]}",2025-06-30
+ED,1047862,36200000000.0,Consolidated Edison,Utilities,254.0,"{""cover_page"": [368529705, ""2026-04-30""], ""balance_sheet"": [361000000, ""2025-12-31""], ""diluted_weighted_avg"": [364400000, ""2026-03-31""], ""basic_weighted_avg"": [363000000, ""2026-03-31""]}",2025-06-30
+FICO,814547,36060682209.0,Fair Isaac,Information Technology,255.0,"{""cover_page"": [21597635, ""2026-07-17""], ""balance_sheet"": [21597000, ""2026-06-30""], ""diluted_weighted_avg"": [23470000, ""2026-06-30""], ""basic_weighted_avg"": [23341000, ""2026-06-30""]}",2025-03-31
+HIG,874766,36000000000.0,Hartford (The),Financials,256.0,"{""cover_page"": [270872002, ""2026-07-22""], ""balance_sheet"": [326729000, ""2009-06-30""], ""diluted_weighted_avg"": [278100000, ""2026-06-30""], ""basic_weighted_avg"": [274700000, ""2026-06-30""]}",2025-06-30
+PAYX,723531,35959981648.0,Paychex,Industrials,257.0,"{""cover_page"": [355980473, ""2026-08-31""], ""balance_sheet"": [356000000, ""2026-08-31""], ""diluted_weighted_avg"": [356600000, ""2026-08-31""], ""basic_weighted_avg"": [355800000, ""2026-08-31""]}",2025-11-28
+CPRT,900075,35722169296.0,Copart,Industrials,258.0,"{""cover_page"": [926330452, ""2026-09-25""], ""balance_sheet"": [926298293, ""2026-07-31""], ""diluted_weighted_avg"": [956860000, ""2026-07-31""], ""basic_weighted_avg"": [949640000, ""2026-07-31""]}",2026-01-31
+SYY,96021,35217557254.0,Sysco,Consumer Staples,259.0,"{""cover_page"": [479096016, ""2026-08-04""], ""diluted_weighted_avg"": [480612203, ""2026-06-27""], ""basic_weighted_avg"": [479117877, ""2026-06-27""]}",2025-12-26
+RMD,943819,34917180979.0,ResMed|,Health Care,260.0,"{""cover_page"": [144252306, ""2026-08-10""], ""balance_sheet"": [144239563, ""2026-06-30""], ""diluted_weighted_avg"": [146054000, ""2026-06-30""], ""basic_weighted_avg"": [145523000, ""2026-06-30""]}",2025-12-31
+EQT,33213,34700000000.0,EQT Corporation,Energy,261.0,"{""cover_page"": [625516000, ""2026-07-14""], ""diluted_weighted_avg"": [629070000, ""2026-06-30""], ""basic_weighted_avg"": [625549000, ""2026-06-30""]}",2025-06-30
+COHR,820318,34498305389.0,Coherent Corp.,Information Technology,262.0,"{""cover_page"": [195832246, ""2026-08-10""], ""diluted_weighted_avg"": [195387000, ""2026-06-30""], ""basic_weighted_avg"": [177269000, ""2026-06-30""]}",2025-12-31
+VMC,1396009,34416549004.0,Vulcan Materials Company,Materials,263.0,"{""cover_page"": [129754885, ""2026-04-21""], ""balance_sheet"": [130300000, ""2026-03-31""], ""diluted_weighted_avg"": [131200000, ""2026-03-31""], ""basic_weighted_avg"": [130700000, ""2026-03-31""]}",2025-06-30
+VICI,1705696,34400000000.0,Vici Properties,Real Estate,264.0,"{""cover_page"": [1101077562, ""2026-07-28""], ""balance_sheet"": [1101074906, ""2026-06-30""], ""diluted_weighted_avg"": [1079442313, ""2026-06-30""], ""basic_weighted_avg"": [1079358468, ""2026-06-30""]}",2025-06-30
+GRMN,1121788,34219000000.0,Garmin,Consumer Discretionary,265.0,"{""cover_page"": [192856206, ""2026-04-24""], ""balance_sheet"": [192903000, ""2026-03-28""], ""diluted_weighted_avg"": [193565000, ""2026-03-28""], ""basic_weighted_avg"": [192674000, ""2026-03-28""]}",2025-06-27
+DXCM,1093557,34200000000.0,Dexcom,Health Care,266.0,"{""cover_page"": [377360765, ""2026-07-23""], ""balance_sheet"": [377400000, ""2026-06-30""], ""diluted_weighted_avg"": [391800000, ""2026-06-30""], ""basic_weighted_avg"": [383700000, ""2026-06-30""]}",2025-06-30
+EBAY,1065088,34086444146.0,eBay Inc.,Consumer Discretionary,267.0,"{""cover_page"": [445000000, ""2026-07-31""], ""balance_sheet"": [445000000, ""2026-06-30""], ""diluted_weighted_avg"": [457000000, ""2026-06-30""], ""basic_weighted_avg"": [447000000, ""2026-06-30""]}",2025-06-30
+GEHC,1932393,34000000000.0,GE HealthCare,Health Care,268.0,"{""cover_page"": [454891786, ""2026-04-22""], ""balance_sheet"": [456654068, ""2024-06-30""], ""diluted_weighted_avg"": [457000000, ""2026-03-31""], ""basic_weighted_avg"": [456000000, ""2026-03-31""]}",2025-06-30
+MCHP,827054,34000000000.0,Microchip Technology,Information Technology,269.0,"{""cover_page"": [543008691, ""2026-07-28""], ""balance_sheet"": [543008365, ""2026-06-30""], ""diluted_weighted_avg"": [550500000, ""2026-06-30""], ""basic_weighted_avg"": [542500000, ""2026-06-30""]}",2025-09-30
+CSGP,1057352,33900000000.0,CoStar Group,Real Estate,270.0,"{""cover_page"": [405197588, ""2026-07-27""], ""balance_sheet"": [417900000, ""2025-12-31""], ""diluted_weighted_avg"": [409100000, ""2026-06-30""], ""basic_weighted_avg"": [408500000, ""2026-06-30""]}",2025-06-30
+WEC,783325,33500000000.0,WEC Energy Group,Utilities,271.0,"{""cover_page"": [325849383, ""2026-06-30""], ""balance_sheet"": [325849383, ""2026-06-30""], ""diluted_weighted_avg"": [328600000, ""2026-06-30""], ""basic_weighted_avg"": [325700000, ""2026-06-30""]}",2025-06-30
+ACGL,947484,33000000000.0,Arch Capital Group,Financials,272.0,"{""cover_page"": [341229126, ""2026-07-30""], ""balance_sheet"": [359000000, ""2025-12-31""], ""diluted_weighted_avg"": [354200000, ""2026-06-30""], ""basic_weighted_avg"": [348200000, ""2026-06-30""]}",2025-06-30
+IR,1699150,33000000000.0,Ingersoll Rand,Industrials,273.0,"{""cover_page"": [387999429, ""2026-07-24""], ""balance_sheet"": [391121689, ""2025-12-31""], ""diluted_weighted_avg"": [391700000, ""2026-06-30""], ""basic_weighted_avg"": [389300000, ""2026-06-30""]}",2025-06-30
+EFX,33185,32108903494.0,Equifax,Industrials,274.0,"{""cover_page"": [117484896, ""2026-07-10""], ""balance_sheet"": [117600000, ""2026-06-30""], ""diluted_weighted_avg"": [119900000, ""2026-06-30""], ""basic_weighted_avg"": [119200000, ""2026-06-30""]}",2025-06-30
+DAL,27904,32100000000.0,Delta Air Lines,Industrials,275.0,"{""cover_page"": [657912380, ""2026-09-30""], ""diluted_weighted_avg"": [657000000, ""2026-09-30""], ""basic_weighted_avg"": [654000000, ""2026-09-30""]}",2025-06-30
+BRO,79282,31616025136.0,Brown & Brown,Financials,276.0,"{""cover_page"": [334610357, ""2026-07-24""], ""balance_sheet"": [330000000, ""2026-06-30""], ""diluted_weighted_avg"": [335000000, ""2026-06-30""], ""basic_weighted_avg"": [330000000, ""2026-06-30""]}",2025-06-30
+NUE,73309,31440000000.0,Nucor,Materials,277.0,"{""cover_page"": [226875676, ""2026-07-04""], ""diluted_weighted_avg"": [228900000, ""2026-07-04""], ""basic_weighted_avg"": [228600000, ""2026-07-04""]}",2025-06-03
+WAB,943452,31100000000.0,Wabtec,Industrials,278.0,"{""cover_page"": [168910851, ""2026-07-17""], ""balance_sheet"": [169100000, ""2026-06-30""], ""diluted_weighted_avg"": [170100000, ""2026-06-30""], ""basic_weighted_avg"": [169500000, ""2026-06-30""]}",2025-06-30
+XYL,1524472,31000000000.0,Xylem Inc.,Industrials,279.0,"{""cover_page"": [233486812, ""2026-07-24""], ""balance_sheet"": [243584000, ""2025-12-31""], ""diluted_weighted_avg"": [239967000, ""2026-06-30""], ""basic_weighted_avg"": [239534000, ""2026-06-30""]}",2025-06-30
+EXR,1289490,30991880775.0,Extra Space Storage,Real Estate,280.0,"{""cover_page"": [211269558, ""2026-07-24""], ""balance_sheet"": [211273076, ""2026-06-30""], ""diluted_weighted_avg"": [220343045, ""2026-06-30""], ""basic_weighted_avg"": [210929737, ""2026-06-30""]}",2025-06-30
+ODFL,878927,30418290020.0,Old Dominion,Industrials,281.0,"{""cover_page"": [207356622, ""2026-07-31""], ""balance_sheet"": [207471296, ""2026-06-30""], ""diluted_weighted_avg"": [209014000, ""2026-06-30""], ""basic_weighted_avg"": [207966000, ""2026-06-30""]}",2025-06-30
+STT,93751,30310000000.0,State Street Corporation,Financials,282.0,"{""cover_page"": [274701765, ""2026-07-28""], ""balance_sheet"": [274702550, ""2026-06-30""], ""diluted_weighted_avg"": [281963000, ""2026-06-30""], ""basic_weighted_avg"": [277286000, ""2026-06-30""]}",2025-06-30
+IT,749251,30300000000.0,Gartner,Information Technology,283.0,"{""cover_page"": [63148976, ""2026-07-31""], ""diluted_weighted_avg"": [68288000, ""2026-06-30""], ""basic_weighted_avg"": [68149000, ""2026-06-30""]}",2025-06-30
+WTW,1140536,29918279975.0,Willis Towers Watson,Financials,284.0,"{""cover_page"": [92871937, ""2026-07-27""], ""diluted_weighted_avg"": [95000000, ""2026-06-30""], ""basic_weighted_avg"": [95000000, ""2026-06-30""]}",2025-06-30
+IRM,1020569,29800000000.0,Iron Mountain,Real Estate,285.0,"{""cover_page"": [297702812, ""2026-07-24""], ""balance_sheet"": [297662013, ""2026-06-30""], ""diluted_weighted_avg"": [299342000, ""2026-06-30""], ""basic_weighted_avg"": [297295000, ""2026-06-30""]}",2025-06-30
+MTB,36270,29618092321.0,M&T Bank,Financials,286.0,"{""cover_page"": [144416262, ""2026-07-31""], ""diluted_weighted_avg"": [148424000, ""2026-06-30""], ""basic_weighted_avg"": [147549000, ""2026-06-30""]}",2025-06-30
+HUM,49071,29182689695.0,Humana,Health Care,287.0,"{""cover_page"": [120061500, ""2026-03-31""], ""diluted_weighted_avg"": [120652000, ""2026-03-31""], ""basic_weighted_avg"": [120332000, ""2026-03-31""]}",2025-06-30
+ROK,1024478,29100000000.0,Rockwell Automation,Industrials,288.0,"{""cover_page"": [111048676, ""2026-06-30""], ""balance_sheet"": [112400000, ""2025-09-30""], ""diluted_weighted_avg"": [112300000, ""2026-06-30""], ""basic_weighted_avg"": [111800000, ""2026-06-30""]}",2025-03-31
+MLM,916076,28822918628.0,Martin Marietta Materials,Materials,289.0,"{""cover_page"": [60065839, ""2026-07-27""], ""balance_sheet"": [60050859, ""2026-06-30""], ""diluted_weighted_avg"": [60300000, ""2026-06-30""], ""basic_weighted_avg"": [60200000, ""2026-06-30""]}",2025-06-30
+VTR,740260,28600000000.0,Ventas,Real Estate,290.0,"{""cover_page"": [512946359, ""2026-07-28""], ""balance_sheet"": [512946000, ""2026-06-30""], ""diluted_weighted_avg"": [492282000, ""2026-06-30""], ""basic_weighted_avg"": [482802000, ""2026-06-30""]}",2025-06-30
+RJF,720005,28106525241.0,Raymond James Financial,Financials,291.0,"{""cover_page"": [192361711, ""2026-08-03""], ""balance_sheet"": [192124666, ""2026-06-30""], ""diluted_weighted_avg"": [199100000, ""2026-06-30""], ""basic_weighted_avg"": [195700000, ""2026-06-30""]}",2025-03-31
+DTE,936340,27300000000.0,DTE Energy,Utilities,292.0,"{""cover_page"": [208028313, ""2026-03-31""], ""balance_sheet"": [208028313, ""2026-03-31""], ""diluted_weighted_avg"": [208000000, ""2026-03-31""], ""basic_weighted_avg"": [207000000, ""2026-03-31""]}",2025-06-30
+CNC,1071739,26700000000.0,Centene Corporation,Health Care,293.0,"{""cover_page"": [493995000, ""2026-07-24""], ""balance_sheet"": [493987000, ""2026-06-30""], ""diluted_weighted_avg"": [496605000, ""2026-06-30""], ""basic_weighted_avg"": [492949000, ""2026-06-30""]}",2025-06-30
+NRG,1013871,26643647974.0,NRG Energy,Utilities,294.0,"{""cover_page"": [210210483, ""2026-07-31""], ""balance_sheet"": [210307902, ""2026-06-30""], ""diluted_weighted_avg"": [210000000, ""2026-06-30""], ""basic_weighted_avg"": [209000000, ""2026-06-30""]}",2025-06-30
+A,1090872,26600000000.0,Agilent Technologies,Health Care,295.0,"{""cover_page"": [281928854, ""2026-08-26""], ""balance_sheet"": [281965813, ""2026-07-31""], ""diluted_weighted_avg"": [283000000, ""2026-07-31""], ""basic_weighted_avg"": [283000000, ""2026-07-31""]}",2025-04-30
+TPR,1116132,26530000000.0,"Tapestry, Inc.",Consumer Discretionary,296.0,"{""cover_page"": [199391678, ""2026-07-31""], ""balance_sheet"": [200400000, ""2026-06-27""], ""diluted_weighted_avg"": [210200000, ""2026-06-27""], ""basic_weighted_avg"": [204000000, ""2026-06-27""]}",2025-12-26
+IQV,1478242,26500000000.0,IQVIA,Health Care,297.0,"{""cover_page"": [166900000, ""2026-04-30""], ""balance_sheet"": [166900000, ""2026-03-31""], ""diluted_weighted_avg"": [169800000, ""2026-03-31""], ""basic_weighted_avg"": [168400000, ""2026-03-31""]}",2025-06-30
+EL,1001250,26000000000.0,Estée Lauder Companies (The),Consumer Staples,298.0,"{""diluted_weighted_avg"": [364800000, ""2026-06-30""], ""basic_weighted_avg"": [362300000, ""2026-06-30""]}",2025-12-31
+AEE,1002910,25948493142.0,Ameren,Utilities,299.0,"{""cover_page"": [276843251, ""2026-07-30""], ""balance_sheet"": [276800000, ""2026-06-30""], ""diluted_weighted_avg"": [278600000, ""2026-06-30""], ""basic_weighted_avg"": [276600000, ""2026-06-30""]}",2025-06-30
+BR,1383312,25945139278.0,Broadridge Financial Solutions,Industrials,300.0,"{""cover_page"": [114021798, ""2026-07-31""], ""balance_sheet"": [114000000, ""2026-06-30""], ""diluted_weighted_avg"": [117100000, ""2026-06-30""], ""basic_weighted_avg"": [116300000, ""2026-06-30""]}",2025-12-31

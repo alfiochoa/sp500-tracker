@@ -32,7 +32,7 @@ log = logging.getLogger("sp500")
 def universe_symbols(which: str) -> list[str]:
     f = DATA / ("ranking.csv" if which == "ranking" else "ranking_candidates.csv")
     if not f.exists():
-        raise SystemExit(f"{f.name} not found: build it first (scripts/build_ranking.py)")
+        return []
     return sorted(pd.read_csv(f).symbol)
 
 
@@ -51,6 +51,9 @@ def main(argv=None, now: datetime | None = None) -> int:
         print(f"US market closed on {now.date()} (weekend/holiday): nothing to fetch.")
         return 0
     symbols = universe_symbols(a.universe)
+    if not symbols:
+        print("::warning::data/ranking.csv not built yet (scripts/build_ranking.py); nothing to refresh.")
+        return 0
     target = last_complete_trading_day(now)
     old = pd.read_csv(LIVE_FILE) if LIVE_FILE.exists() else pd.DataFrame(columns=["symbol", "date", "close"])
     old = old[old.date <= target.isoformat()]
