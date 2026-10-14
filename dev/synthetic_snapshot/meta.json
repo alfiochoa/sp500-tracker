@@ -1,0 +1,5 @@
+{
+  "label": "SYNTHETIC test data (seeded random walks) - not market data, never shown in the deployed demo",
+  "as_of": "2026-10-12",
+  "generator": "dev/make_synthetic.py"
+}

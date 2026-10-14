@@ -1,0 +1,310 @@
+symbol,cik,shares,shares_date,shares_basis,public_float_usd,name,sector,float_rank
+NWSA,1564708,579000000,2013-06-30,balance_sheet,,News Corp (Class A),Communication Services,0.0
+SKYD,2041610,1071666977,2025-11-05,cover_page,,Skydance Corporation,Communication Services,0.0
+NWS,1564708,579000000,2013-06-30,balance_sheet,,News Corp (Class B),Communication Services,0.0
+XOM,2115436,4111911960,2026-06-30,cover_page,,ExxonMobil,Energy,0.0
+FOX,1754301,1,2019-03-18,cover_page,,Fox Corporation (Class B),Communication Services,0.0
+FOXA,1754301,1,2019-03-18,cover_page,,Fox Corporation (Class A),Communication Services,0.0
+FDXF,2082247,149518133,2026-08-03,cover_page,,FedEx Freight,Industrials,0.0
+HONA,2089271,316952725,2026-07-25,cover_page,,Honeywell Aerospace,Industrials,0.0
+AOS,91142,75732188,2015-08-05,cover_page,,A. O. Smith,Industrials,0.0
+NVDA,1045810,24100000000,2026-08-21,cover_page,4000000000000.0,Nvidia,Information Technology,1.0
+MSFT,789019,7425545491,2026-07-23,cover_page,3600000000000.0,Microsoft,Information Technology,2.0
+AAPL,320193,14594180000,2026-07-17,cover_page,3253431000000.0,Apple Inc.,Information Technology,3.0
+AMZN,1018724,10786313572,2026-07-22,cover_page,2118061430046.0,Amazon,Consumer Discretionary,4.0
+GOOG,1652044,12230000000,2026-06-30,balance_sheet,1900000000000.0,Alphabet Inc. (Class C),Communication Services,5.0
+GOOGL,1652044,12230000000,2026-06-30,balance_sheet,1900000000000.0,Alphabet Inc. (Class A),Communication Services,6.0
+META,1326801,2565000000,2026-06-30,diluted_weighted_avg,1600000000000.0,Meta Platforms,Communication Services,7.0
+AVGO,1730168,4773629865,2026-08-28,cover_page,939200000000.0,Broadcom,Information Technology,8.0
+BRK.B,1067983,941481,2011-04-29,cover_page,902700000000.0,Berkshire Hathaway,Financials,9.0
+TSLA,1318605,3949547394,2026-07-16,cover_page,892930000000.0,"Tesla, Inc.",Consumer Discretionary,10.0
+LLY,59478,941357065,2026-08-03,cover_page,807887000000.0,Lilly (Eli),Health Care,11.0
+JPM,19617,2658186195,2026-06-30,cover_page,794433813496.0,JPMorgan Chase,Financials,12.0
+V,1403161,469280842,2010-01-27,cover_page,601100000000.0,Visa Inc.,Financials,13.0
+NFLX,1065280,4163939676,2026-06-30,cover_page,565657747980.0,Netflix,Communication Services,14.0
+MA,1141391,122530193,2010-10-27,cover_page,505000000000.0,Mastercard,Financials,15.0
+COST,909832,443129349,2026-09-29,cover_page,451600000000.0,Costco,Consumer Staples,16.0
+WMT,104169,7933746241,2026-08-26,cover_page,391703475732.0,Walmart,Consumer Staples,17.0
+HD,354950,997689626,2026-08-18,cover_page,371800000000.0,Home Depot (The),Consumer Discretionary,18.0
+MU,723125,1131423212,2026-10-02,cover_page,368100000000.0,Micron Technology,Information Technology,19.0
+JNJ,200406,2409898597,2026-07-17,cover_page,367000000000.0,Johnson & Johnson,Health Care,20.0
+BAC,70858,6992748365,2026-07-30,cover_page,351903673230.0,Bank of America,Financials,21.0
+ORCL,1341439,3023736000,2026-09-07,cover_page,346760150000.0,Oracle Corporation,Information Technology,22.0
+PG,80424,2324433060,2026-07-31,cover_page,333000000000.0,Procter & Gamble,Consumer Staples,23.0
+ABBV,1551152,1767117285,2026-07-27,cover_page,325061294916.0,AbbVie,Health Care,24.0
+KO,21344,4302482418,2026-04-28,cover_page,300552956545.0,Coca-Cola Company (The),Consumer Staples,25.0
+PLTR,1321655,2402897000,2026-06-30,balance_sheet,299300000000.0,Palantir Technologies,Information Technology,26.0
+CSCO,858877,3942586873,2026-08-27,cover_page,294500000000.0,Cisco,Information Technology,27.0
+PM,1413329,1558613439,2026-07-17,cover_page,283000000000.0,Philip Morris International,Consumer Staples,28.0
+UNH,731766,897594847,2026-07-31,cover_page,281907836350.0,UnitedHealth Group,Health Care,29.0
+IBM,51143,942134390,2026-06-30,cover_page,274500000000.0,IBM,Information Technology,30.0
+GE,40545,1037562513,2026-06-30,cover_page,270200000000.0,GE Aerospace,Industrials,31.0
+WFC,72971,3023999336,2026-07-17,cover_page,257300000000.0,Wells Fargo,Financials,32.0
+CVX,93410,1975771274,2026-06-30,cover_page,247400000000.0,Chevron Corporation,Energy,33.0
+AMD,2488,1632475042,2026-07-29,cover_page,232300000000.0,Advanced Micro Devices,Information Technology,34.0
+ABT,1800,1741812429,2026-03-31,cover_page,232169255381.0,Abbott Laboratories,Health Care,35.0
+AXP,4962,675309833,2026-07-14,cover_page,221800000000.0,American Express,Financials,36.0
+LIN,1707925,460980163,2026-06-30,cover_page,220000000000.0,Linde plc,Materials,37.0
+ACN,1467373,637016143,2010-03-19,cover_page,218315987018.0,Accenture,Information Technology,38.0
+MS,895421,1570566292,2026-07-31,cover_page,217968854713.0,Morgan Stanley,Financials,39.0
+GS,886982,291171408,2026-07-17,cover_page,213200000000.0,Goldman Sachs,Financials,40.0
+MCD,63908,707641531,2026-06-30,cover_page,208464334129.0,McDonald's,Consumer Discretionary,41.0
+T,732717,6852385650,2026-07-16,cover_page,207000000000.0,AT&T,Communication Services,42.0
+MRK,310158,2467171638,2026-07-31,cover_page,198051000000.0,Merck & Co.,Health Care,43.0
+RTX,101829,1347758144,2026-06-30,cover_page,195405729090.0,RTX Corporation,Industrials,44.0
+ISRG,1035267,353278038,2026-07-16,cover_page,193900000000.0,Intuitive Surgical,Health Care,45.0
+CRM,1108524,823000000,2026-08-20,cover_page,191800000000.0,Salesforce,Information Technology,46.0
+TXN,97476,913247686,2026-07-15,cover_page,188509303179.0,Texas Instruments,Information Technology,47.0
+UBER,1543151,2042560121,2026-07-31,cover_page,187600000000.0,Uber,Industrials,48.0
+BKNG,1075531,751380500,2026-07-27,cover_page,187400000000.0,Booking Holdings,Consumer Discretionary,49.0
+VZ,732712,4154775202,2026-06-30,cover_page,182400000000.0,Verizon,Communication Services,50.0
+CAT,18230,459674889,2026-06-30,cover_page,180900000000.0,Caterpillar Inc.,Industrials,51.0
+PEP,77476,1362741092,2026-10-01,cover_page,179000000000.0,PepsiCo,Consumer Staples,52.0
+LRCX,707549,1251321000,2026-08-04,cover_page,178309002956.0,Lam Research,Information Technology,53.0
+DIS,1744489,1726686902,2026-07-29,cover_page,176600000000.0,Walt Disney Company (The),Communication Services,54.0
+NOW,1373715,1034000000,2026-06-30,cover_page,175700000000.0,ServiceNow,Information Technology,55.0
+QCOM,804328,1050000000,2026-07-27,cover_page,167900000000.0,Qualcomm,Information Technology,56.0
+SPGI,64040,296000000,2026-04-24,cover_page,161000000000.0,S&P Global,Financials,57.0
+KLAC,319201,1306546783,2026-08-03,cover_page,159300000000.0,KLA Corporation,Information Technology,58.0
+BLK,2012383,154926181,2025-04-30,cover_page,159000000000.0,BlackRock,Financials,59.0
+BSX,885725,1449229526,2026-07-30,cover_page,158700000000.0,Boston Scientific,Health Care,60.0
+BA,12927,790370020,2026-07-21,cover_page,158300000000.0,Boeing,Industrials,61.0
+SCHW,316709,1729335714,2026-07-31,cover_page,156300000000.0,Charles Schwab Corporation,Financials,62.0
+C,831001,1749319009,2026-01-31,cover_page,156200000000.0,Citigroup,Financials,63.0
+PGR,80661,581371770,2026-07-02,cover_page,155911082530.0,Progressive Corporation,Financials,64.0
+TMO,97745,369747286,2026-06-27,cover_page,154038987000.0,Thermo Fisher Scientific,Health Care,65.0
+AMGN,318154,540632005,2026-07-30,cover_page,150100000000.0,Amgen,Health Care,66.0
+HON,773840,316940010,2026-06-30,cover_page,145300000000.0,Honeywell Technologies,Industrials,67.0
+ADBE,796343,389200000,2026-09-18,cover_page,144940000000.0,Adobe Inc.,Information Technology,68.0
+SYK,310764,383573046,2026-06-30,cover_page,144306436547.0,Stryker Corporation,Health Care,69.0
+GEV,1996810,266333581,2026-06-30,cover_page,144000000000.0,GE Vernova,Industrials,70.0
+NEE,753308,2085341456,2026-03-31,cover_page,142860484569.0,NextEra Energy,Utilities,71.0
+TJX,109198,1099974061,2026-08-21,cover_page,140000000000.0,TJX Companies,Consumer Discretionary,72.0
+ETN,1551182,388400000,2026-06-30,cover_page,139000000000.0,Eaton Corporation,Industrials,73.0
+PFE,78003,5699673589,2026-07-29,cover_page,138000000000.0,Pfizer,Health Care,74.0
+UNP,100885,594075498,2026-07-17,cover_page,136100000000.0,Union Pacific Corporation,Industrials,75.0
+INTU,896878,267236000,2026-08-31,cover_page,135600000000.0,Intuit,Information Technology,76.0
+COF,927628,613484836,2026-06-30,cover_page,135200000000.0,Capital One,Financials,77.0
+CMCSA,1166691,2063073161,2009-12-31,cover_page,130745000000.0,Comcast,Communication Services,78.0
+LOW,60667,561054019,2026-08-25,cover_page,126900000000.0,Lowe's,Consumer Discretionary,79.0
+DHR,313616,702986054,2026-07-16,cover_page,125900000000.0,Danaher Corporation,Health Care,80.0
+DE,315189,269625412,2026-08-02,cover_page,124313866554.0,Deere & Company,Industrials,81.0
+PANW,1327567,818000000,2026-08-31,cover_page,123400000000.0,Palo Alto Networks,Information Technology,82.0
+AMAT,6951,793597443,2026-07-26,cover_page,121318219350.0,Applied Materials,Information Technology,83.0
+MDT,1613103,1279137890,2026-08-28,cover_page,120100000000.0,Medtronic,Health Care,84.0
+CB,896159,387860106,2026-04-21,cover_page,115000000000.0,Chubb Limited,Financials,85.0
+VRTX,875320,253460924,2026-07-31,cover_page,113400000000.0,Vertex Pharmaceuticals,Health Care,86.0
+TMUS,1283699,1072671613,2026-07-17,cover_page,112400000000.0,T-Mobile US,Communication Services,87.0
+COP,1163165,1201337479,2026-06-30,cover_page,112000000000.0,ConocoPhillips,Energy,88.0
+SBUX,829224,1140000000,2026-07-23,cover_page,111000000000.0,Starbucks,Consumer Discretionary,89.0
+PH,76334,126047469,2026-07-31,cover_page,110763388251.0,Parker Hannifin,Industrials,90.0
+CRWD,1535527,1023934842,2026-08-20,cover_page,109300000000.0,CrowdStrike,Information Technology,91.0
+BX,1393818,750625114,2026-07-31,cover_page,108900000000.0,Blackstone Inc.,Financials,92.0
+MRSH,62709,477211268,2026-07-16,cover_page,107422546097.0,Marsh McLennan,Financials,93.0
+LMT,936468,230790753,2026-07-20,cover_page,106500000000.0,Lockheed Martin,Industrials,94.0
+APH,820313,1232983457,2026-07-28,cover_page,106029000000.0,Amphenol,Information Technology,95.0
+ANET,1596532,1261224648,2026-07-30,cover_page,105600000000.0,Arista Networks,Information Technology,96.0
+ICE,1571949,561394487,2026-07-27,cover_page,104400000000.0,Intercontinental Exchange,Financials,97.0
+ADP,8670,397262737,2026-07-31,cover_page,103569897016.0,Automatic Data Processing,Industrials,98.0
+AMT,1053507,465960048,2026-07-21,cover_page,103400000000.0,American Tower,Real Estate,99.0
+GILD,882095,1239955155,2026-07-31,cover_page,103200000000.0,Gilead Sciences,Health Care,100.0
+APP,1751008,335291000,2026-06-30,balance_sheet,102700000000.0,AppLovin,Communication Services,101.0
+WELL,766704,705914450,2026-04-24,cover_page,102303567000.0,Welltower,Real Estate,102.0
+SO,92122,1127301098,2026-03-31,cover_page,101000000000.0,Southern Company,Utilities,103.0
+CEG,1868275,354307379,2026-07-31,cover_page,100560269473.0,Constellation Energy,Utilities,104.0
+INTC,50863,5044000000,2026-07-17,cover_page,99300000000.0,Intel,Information Technology,105.0
+CME,1156375,66643583,2010-02-17,cover_page,98900000000.0,CME Group,Financials,106.0
+MO,764180,1669743926,2026-07-22,cover_page,98000000000.0,Altria,Consumer Staples,107.0
+PLD,1045609,932338000,2026-04-28,cover_page,97322102425.0,Prologis,Real Estate,108.0
+TT,1466258,220023177,2026-07-24,cover_page,97200000000.0,Trane Technologies,Industrials,109.0
+MCK,927653,116590363,2026-07-31,cover_page,95300000000.0,McKesson,Health Care,110.0
+BMY,14272,2042714656,2026-07-22,cover_page,94188864457.0,Bristol Myers Squibb,Health Care,111.0
+FISV,798354,531766721,2026-07-31,cover_page,93881636110.0,Fiserv,Financials,112.0
+WM,823768,399715184,2026-07-24,cover_page,92000000000.0,Waste Management,Industrials,113.0
+DUK,1326160,779596217,2026-04-30,cover_page,91703190830.0,Duke Energy,Utilities,114.0
+KKR,1404912,897635601,2026-08-05,cover_page,91100000000.0,KKR & Co.,Financials,115.0
+DASH,1792789,440833000,2026-06-30,diluted_weighted_avg,90800000000.0,DoorDash,Consumer Discretionary,116.0
+CI,1739940,264240486,2026-07-24,cover_page,88000000000.0,Cigna,Health Care,117.0
+ELV,1156039,216869290,2026-07-10,cover_page,87349478366.0,Elevance Health,Health Care,118.0
+MDLZ,1103982,1743809975,2010-06-30,balance_sheet,87100000000.0,Mondelez International,Consumer Staples,119.0
+MCO,1059556,173200000,2026-06-30,cover_page,87000000000.0,Moody's Corporation,Financials,120.0
+CVS,64803,1278970369,2026-07-29,cover_page,86382523283.0,CVS Health,Health Care,121.0
+SHW,89800,242758151,2026-06-30,cover_page,85532942889.0,Sherwin-Williams,Materials,122.0
+CDNS,813672,271799000,2025-12-31,balance_sheet,83968000000.0,Cadence Design Systems,Information Technology,123.0
+ADI,6281,484565465,2026-08-01,cover_page,81121000000.0,Analog Devices,Information Technology,124.0
+MMM,66740,515722417,2026-06-30,cover_page,81100000000.0,3M,Industrials,125.0
+NKE,320187,855351589,2015-07-17,cover_page,80529120635.0,"Nike, Inc.",Consumer Discretionary,126.0
+RCL,884887,267452084,2026-07-24,cover_page,79100000000.0,Royal Caribbean Group,Consumer Discretionary,127.0
+EQIX,1101239,98671686,2026-07-28,cover_page,77800000000.0,Equinix,Real Estate,128.0
+RSG,1060391,306212978,2026-07-30,cover_page,77000000000.0,Republic Services,Industrials,129.0
+AON,315293,212125434,2026-07-28,cover_page,76965213677.0,Aon plc,Financials,130.0
+TDG,1260221,55276525,2026-07-31,cover_page,76426902522.0,TransDigm Group,Industrials,131.0
+HWM,4281,398801399,2026-08-03,cover_page,75000000000.0,Howmet Aerospace,Industrials,132.0
+CTAS,723254,397075093,2026-09-30,cover_page,74381019287.0,Cintas,Industrials,133.0
+UPS,1090727,713924267,2010-02-17,cover_page,74239665022.0,United Parcel Service,Industrials,134.0
+COIN,1679788,263782000,2026-06-30,balance_sheet,74200000000.0,Coinbase,Financials,135.0
+CL,21665,797172829,2026-06-30,cover_page,73400000000.0,Colgate-Palmolive,Consumer Staples,136.0
+PNC,713676,398943667,2026-07-20,cover_page,73200000000.0,PNC Financial Services,Financials,137.0
+ITW,49826,284800000,2026-06-30,cover_page,71900000000.0,Illinois Tool Works,Industrials,138.0
+NOC,1133421,142063026,2026-07-16,cover_page,71500000000.0,Northrop Grumman,Industrials,139.0
+HOOD,1783879,232609957,2021-06-30,balance_sheet,71300000000.0,Robinhood Markets,Financials,140.0
+PYPL,1633917,882105493,2026-04-29,cover_page,71300000000.0,PayPal,Financials,141.0
+AJG,354190,256300000,2026-06-30,cover_page,71117000000.0,Arthur J. Gallagher & Co.,Financials,142.0
+USB,36104,1558051446,2026-07-31,cover_page,70500000000.0,U.S. Bancorp,Financials,143.0
+GD,40533,270389759,2025-12-31,balance_sheet,69581612877.0,General Dynamics,Industrials,144.0
+ZTS,1555280,413223602,2026-07-31,cover_page,69233000000.0,Zoetis,Health Care,145.0
+WMB,107263,1223167472,2026-07-30,cover_page,67728227765.0,Williams Companies,Energy,146.0
+ECL,31462,280328603,2026-06-30,cover_page,67088288734.0,Ecolab,Materials,147.0
+APD,2969,222685530,2026-06-30,cover_page,65600000000.0,Air Products,Materials,148.0
+BDX,10795,272386800,2026-06-30,cover_page,65472902857.0,Becton Dickinson,Health Care,149.0
+VST,1692819,335635195,2026-08-03,cover_page,65311459773.0,Vistra Corp.,Utilities,150.0
+EOG,821189,524529176,2026-07-28,cover_page,65231000000.0,EOG Resources,Energy,151.0
+STX,1137789,226644518,2026-07-31,cover_page,65000000000.0,Seagate Technology,Information Technology,152.0
+FDX,1048911,236581188,2026-07-16,cover_page,64600000000.0,FedEx,Industrials,153.0
+ADSK,769397,209000000,2026-08-21,cover_page,64500000000.0,Autodesk,Information Technology,154.0
+BNY,1390777,678504142,2026-06-30,cover_page,64230991381.0,BNY Mellon,Financials,155.0
+MRVL,1835632,876900000,2026-08-21,cover_page,64119895583.0,Marvell Technology,Information Technology,156.0
+NEM,1164727,1053692271,2026-07-16,cover_page,64108664771.0,Newmont,Materials,157.0
+CMG,1058090,1265418000,2026-07-24,cover_page,64000000000.0,Chipotle Mexican Grill,Consumer Discretionary,158.0
+ORLY,898173,808960792,2026-08-03,cover_page,63300585790.0,O'Reilly Automotive,Consumer Discretionary,159.0
+HCA,860730,221839800,2026-04-27,cover_page,63269000000.0,HCA Healthcare,Health Care,160.0
+AXON,1069183,81237415,2026-07-31,cover_page,62200000000.0,Axon Enterprise,Industrials,161.0
+FCX,831259,1436017523,2026-07-31,cover_page,61900000000.0,Freeport-McMoRan,Materials,162.0
+CRH,849395,665284511,2026-07-20,cover_page,61825009498.0,CRH plc,Materials,163.0
+HLT,1585689,225064910,2026-07-23,cover_page,61525000000.0,Hilton Worldwide,Consumer Discretionary,164.0
+EMR,32604,557800000,2026-06-30,cover_page,61500000000.0,Emerson Electric,Industrials,165.0
+MAR,1048286,260766288,2026-07-27,cover_page,61232412426.0,Marriott International,Consumer Discretionary,166.0
+CSX,277948,1852474917,2026-06-30,cover_page,61000000000.0,CSX Corporation,Industrials,167.0
+MSI,68505,165493788,2026-07-31,cover_page,61000000000.0,Motorola Solutions,Information Technology,168.0
+ROP,882835,98900874,2026-07-28,cover_page,60800000000.0,Roper Technologies,Information Technology,169.0
+TRV,86312,208575022,2026-07-10,cover_page,59986121526.0,Travelers Companies (The),Financials,170.0
+SNPS,883241,191636646,2026-08-24,cover_page,59300000000.0,Synopsys,Information Technology,171.0
+DLR,1297996,351406070,2026-04-29,cover_page,59000000000.0,Digital Realty,Real Estate,172.0
+CARR,1783180,830580423,2026-04-15,cover_page,58500000000.0,Carrier Global,Industrials,173.0
+APO,1858681,590543159,2026-08-05,cover_page,58394760022.0,Apollo Global Management,Financials,174.0
+AZO,866787,16325355,2026-06-05,cover_page,57759306497.0,AutoZone,Consumer Discretionary,175.0
+NSC,702165,224608373,2026-06-30,cover_page,57481458868.0,Norfolk Southern,Industrials,176.0
+KMI,1506307,2226802089,2026-07-23,cover_page,57054291328.0,Kinder Morgan,Energy,177.0
+FTNT,1262039,733713653,2026-07-28,cover_page,56846175983.0,Fortinet,Information Technology,178.0
+MNST,865752,979525882,2026-07-31,cover_page,56505471480.0,Monster Beverage,Consumer Staples,179.0
+ABNB,1559720,602000000,2026-06-30,diluted_weighted_avg,56200000000.0,Airbnb,Consumer Discretionary,180.0
+AEP,4904,544104955,2026-05-05,cover_page,56119786438.0,American Electric Power,Utilities,181.0
+AFL,4977,501343298,2026-07-28,cover_page,56035389963.0,Aflac,Financials,182.0
+PWR,1050915,150343393,2026-07-27,cover_page,55800000000.0,Quanta Services,Industrials,183.0
+TFC,92230,1221626188,2026-06-30,cover_page,55400000000.0,Truist Financial,Financials,184.0
+REGN,872589,93955110,2012-07-13,cover_page,54800000000.0,Regeneron Pharmaceuticals,Health Care,185.0
+NXPI,1413447,252471079,2026-04-24,cover_page,54700000000.0,NXP Semiconductors,Information Technology,186.0
+MET,1099219,635476927,2026-07-31,cover_page,53600000000.0,MetLife,Financials,187.0
+ALL,899051,252857950,2026-07-16,cover_page,52830000000.0,Allstate,Financials,188.0
+JCI,833444,935500000,2016-09-02,balance_sheet,52600000000.0,Johnson Controls,Industrials,189.0
+O,726728,946218033,2026-07-30,cover_page,52600000000.0,Realty Income,Real Estate,190.0
+SPG,1063761,283301181,2009-09-30,cover_page,52048000000.0,Simon Property Group,Real Estate,191.0
+OKE,1039684,630369667,2026-07-27,cover_page,51100000000.0,Oneok,Energy,192.0
+MPC,1510295,280824763,2026-07-30,cover_page,50600000000.0,Marathon Petroleum,Energy,193.0
+AMP,820027,88333219,2026-07-24,cover_page,50300000000.0,Ameriprise Financial,Financials,194.0
+WDAY,1327811,220000000,2018-11-30,cover_page,49500000000.0,"Workday, Inc.",Information Technology,195.0
+SRE,1032208,653690046,2026-05-04,cover_page,49400000000.0,Sempra,Utilities,196.0
+PCAR,75362,526364953,2026-07-24,cover_page,49010000000.0,Paccar,Industrials,197.0
+VRT,1674101,384988173,2026-07-27,cover_page,48225235174.0,Vertiv,Industrials,198.0
+D,715957,879455403,2026-04-24,cover_page,48200000000.0,Dominion Energy,Utilities,199.0
+PSX,1534701,399020916,2026-06-30,cover_page,48200000000.0,Phillips 66,Energy,200.0
+CAH,721371,232575728,2026-07-31,cover_page,48192692777.0,Cardinal Health,Health Care,201.0
+FAST,815556,1147497573,2026-07-10,cover_page,48111881160.0,Fastenal,Industrials,202.0
+AIG,5272,522893169,2026-07-31,cover_page,47910000000.0,American International Group,Financials,203.0
+WDC,106040,360540944,2026-08-07,cover_page,47690000000.0,Western Digital,Information Technology,204.0
+TTWO,946581,186980443,2026-07-27,cover_page,47087317833.0,Take-Two Interactive,Communication Services,205.0
+GM,1467858,877451541,2026-07-10,cover_page,47000000000.0,General Motors,Consumer Discretionary,206.0
+KR,56873,590588700,2026-09-15,cover_page,46100000000.0,Kroger,Consumer Staples,207.0
+LHX,202058,186214616,2026-07-24,cover_page,46020545333.0,L3Harris,Industrials,208.0
+EW,1099800,576400000,2026-07-31,cover_page,45899189298.0,Edwards Lifesciences,Health Care,209.0
+SLB,87347,1484143231,2026-06-30,cover_page,45580000000.0,Schlumberger,Energy,210.0
+TGT,27419,454296736,2026-08-21,cover_page,45284343058.0,Target Corporation,Consumer Staples,211.0
+CMI,26172,137664487,2026-06-30,cover_page,45100000000.0,Cummins,Industrials,212.0
+GLW,24741,861388331,2026-07-24,cover_page,45000000000.0,Corning Inc.,Information Technology,213.0
+KDP,1418135,1360826038,2026-08-10,cover_page,44800000000.0,Keurig Dr Pepper,Consumer Staples,214.0
+CCI,1051470,425455439,2026-08-03,cover_page,44700000000.0,Crown Castle,Real Estate,215.0
+PSA,1393311,175621134,2026-07-21,cover_page,44239441000.0,Public Storage,Real Estate,216.0
+EXC,1109357,1023208142,2026-03-31,cover_page,43835664870.0,Exelon,Utilities,217.0
+CVNA,1690820,740174000,2026-06-30,diluted_weighted_avg,43800000000.0,Carvana,Consumer Discretionary,218.0
+ROST,745732,319453110,2026-08-14,cover_page,43685150538.0,Ross Stores,Consumer Discretionary,219.0
+MSCI,1408198,72700000,2026-07-14,cover_page,43149826814.0,MSCI,Financials,220.0
+DDOG,1561550,78180606,2018-12-31,balance_sheet,43000000000.0,Datadog,Information Technology,221.0
+IDXX,874716,78781116,2026-07-31,cover_page,42899749759.0,Idexx Laboratories,Health Care,222.0
+FERG,2011641,193452717,2026-08-03,cover_page,42870902857.0,Ferguson Enterprises,Industrials,223.0
+KMB,55785,332579038,2026-07-28,cover_page,42800000000.0,Kimberly-Clark,Consumer Staples,224.0
+URI,1067701,62646557,2026-04-20,cover_page,42700000000.0,United Rentals,Industrials,225.0
+VEEV,1393052,161908850,2026-08-25,cover_page,42600000000.0,Veeva Systems,Health Care,226.0
+VRSK,1442145,131021840,2026-04-24,cover_page,42587525686.0,Verisk Analytics,Industrials,227.0
+FIS,1136893,515705917,2026-07-31,cover_page,42560250917.0,Fidelity National Information Services,Financials,228.0
+F,37996,3727332952,2011-04-28,cover_page,42411872532.0,Ford Motor Company,Consumer Discretionary,229.0
+TEL,1385157,289513228,2026-07-20,cover_page,42200000000.0,TE Connectivity,Information Technology,230.0
+PEG,788784,498420030,2026-07-20,cover_page,41911658020.0,Public Service Enterprise Group,Utilities,231.0
+AME,1037868,229261244,2026-07-28,cover_page,41800000000.0,Ametek,Industrials,232.0
+VLO,1035002,287927461,2026-07-24,cover_page,41800000000.0,Valero Energy,Energy,233.0
+CBRE,1138118,289575298,2026-07-27,cover_page,41500000000.0,CBRE Group,Real Estate,234.0
+OXY,797468,999637371,2026-07-31,cover_page,41400000000.0,Occidental Petroleum,Energy,235.0
+GWW,277135,47100942,2026-07-28,cover_page,41053116330.0,W. W. Grainger,Industrials,236.0
+YUM,1041061,272901085,2026-07-30,cover_page,41000000000.0,Yum! Brands,Consumer Discretionary,237.0
+NDAQ,1120193,558977372,2026-07-16,cover_page,40600000000.0,"Nasdaq, Inc.",Financials,238.0
+SNDK,2023554,146419001,2026-08-07,cover_page,40500000000.0,Sandisk,Information Technology,239.0
+XEL,72903,624634306,2026-07-28,cover_page,40260845645.0,Xcel Energy,Utilities,240.0
+KVUE,1944048,1920773467,2026-07-31,cover_page,39600000000.0,Kenvue,Consumer Staples,241.0
+XYZ,1512673,597702000,2026-06-30,diluted_weighted_avg,39400000000.0,"Block, Inc.",Financials,242.0
+DELL,1571996,640000000,2026-07-31,balance_sheet,39200000000.0,Dell Technologies,Information Technology,243.0
+DHI,882184,279701267,2026-07-16,cover_page,39000000000.0,D. R. Horton,Consumer Discretionary,244.0
+OTIS,1781335,380669339,2026-07-15,cover_page,38824474742.0,Otis Worldwide,Industrials,245.0
+CTSH,1058290,473869469,2026-04-24,cover_page,38100000000.0,Cognizant,Information Technology,246.0
+COR,1140859,190827165,2026-07-31,cover_page,37887695618.0,Cencora,Health Care,247.0
+PRU,1137774,345000000,2026-07-31,cover_page,37810000000.0,Prudential Financial,Financials,248.0
+BKR,1701605,992674071,2026-07-23,cover_page,37733037083.0,Baker Hughes,Energy,249.0
+PCG,1004980,2680110496,2026-07-15,cover_page,37246000000.0,PG&E Corporation,Utilities,250.0
+CHTR,1091667,270927828,2016-06-30,cover_page,37100000000.0,Charter Communications,Communication Services,251.0
+ETR,65984,457832070,2026-03-31,cover_page,37100000000.0,Entergy,Utilities,252.0
+TRGP,1389170,214431021,2026-07-31,cover_page,37012700000.0,Targa Resources,Energy,253.0
+ED,1047862,368529705,2026-04-30,cover_page,36200000000.0,Consolidated Edison,Utilities,254.0
+FICO,814547,21597635,2026-07-17,cover_page,36060682209.0,Fair Isaac,Information Technology,255.0
+HIG,874766,270872002,2026-07-22,cover_page,36000000000.0,Hartford (The),Financials,256.0
+PAYX,723531,355980473,2026-08-31,cover_page,35959981648.0,Paychex,Industrials,257.0
+CPRT,900075,926330452,2026-09-25,cover_page,35722169296.0,Copart,Industrials,258.0
+SYY,96021,479096016,2026-08-04,cover_page,35217557254.0,Sysco,Consumer Staples,259.0
+RMD,943819,144252306,2026-08-10,cover_page,34917180979.0,ResMed|,Health Care,260.0
+EQT,33213,625516000,2026-07-14,cover_page,34700000000.0,EQT Corporation,Energy,261.0
+COHR,820318,195832246,2026-08-10,cover_page,34498305389.0,Coherent Corp.,Information Technology,262.0
+VMC,1396009,129754885,2026-04-21,cover_page,34416549004.0,Vulcan Materials Company,Materials,263.0
+VICI,1705696,1101077562,2026-07-28,cover_page,34400000000.0,Vici Properties,Real Estate,264.0
+GRMN,1121788,192856206,2026-04-24,cover_page,34219000000.0,Garmin,Consumer Discretionary,265.0
+DXCM,1093557,377360765,2026-07-23,cover_page,34200000000.0,Dexcom,Health Care,266.0
+EBAY,1065088,445000000,2026-07-31,cover_page,34086444146.0,eBay Inc.,Consumer Discretionary,267.0
+GEHC,1932393,456654068,2024-06-30,balance_sheet,34000000000.0,GE HealthCare,Health Care,268.0
+MCHP,827054,543008691,2026-07-28,cover_page,34000000000.0,Microchip Technology,Information Technology,269.0
+CSGP,1057352,405197588,2026-07-27,cover_page,33900000000.0,CoStar Group,Real Estate,270.0
+WEC,783325,325849383,2026-06-30,cover_page,33500000000.0,WEC Energy Group,Utilities,271.0
+ACGL,947484,341229126,2026-07-30,cover_page,33000000000.0,Arch Capital Group,Financials,272.0
+IR,1699150,387999429,2026-07-24,cover_page,33000000000.0,Ingersoll Rand,Industrials,273.0
+EFX,33185,117484896,2026-07-10,cover_page,32108903494.0,Equifax,Industrials,274.0
+DAL,27904,657912380,2026-09-30,cover_page,32100000000.0,Delta Air Lines,Industrials,275.0
+BRO,79282,334610357,2026-07-24,cover_page,31616025136.0,Brown & Brown,Financials,276.0
+NUE,73309,226875676,2026-07-04,cover_page,31440000000.0,Nucor,Materials,277.0
+WAB,943452,168910851,2026-07-17,cover_page,31100000000.0,Wabtec,Industrials,278.0
+XYL,1524472,233486812,2026-07-24,cover_page,31000000000.0,Xylem Inc.,Industrials,279.0
+EXR,1289490,211269558,2026-07-24,cover_page,30991880775.0,Extra Space Storage,Real Estate,280.0
+ODFL,878927,207356622,2026-07-31,cover_page,30418290020.0,Old Dominion,Industrials,281.0
+STT,93751,274701765,2026-07-28,cover_page,30310000000.0,State Street Corporation,Financials,282.0
+IT,749251,63148976,2026-07-31,cover_page,30300000000.0,Gartner,Information Technology,283.0
+WTW,1140536,92871937,2026-07-27,cover_page,29918279975.0,Willis Towers Watson,Financials,284.0
+IRM,1020569,297702812,2026-07-24,cover_page,29800000000.0,Iron Mountain,Real Estate,285.0
+MTB,36270,144416262,2026-07-31,cover_page,29618092321.0,M&T Bank,Financials,286.0
+HUM,49071,120061500,2026-03-31,cover_page,29182689695.0,Humana,Health Care,287.0
+ROK,1024478,111048676,2026-06-30,cover_page,29100000000.0,Rockwell Automation,Industrials,288.0
+MLM,916076,60065839,2026-07-27,cover_page,28822918628.0,Martin Marietta Materials,Materials,289.0
+VTR,740260,512946359,2026-07-28,cover_page,28600000000.0,Ventas,Real Estate,290.0
+RJF,720005,192361711,2026-08-03,cover_page,28106525241.0,Raymond James Financial,Financials,291.0
+DTE,936340,208028313,2026-03-31,cover_page,27300000000.0,DTE Energy,Utilities,292.0
+CNC,1071739,493995000,2026-07-24,cover_page,26700000000.0,Centene Corporation,Health Care,293.0
+NRG,1013871,210210483,2026-07-31,cover_page,26643647974.0,NRG Energy,Utilities,294.0
+A,1090872,281928854,2026-08-26,cover_page,26600000000.0,Agilent Technologies,Health Care,295.0
+TPR,1116132,199391678,2026-07-31,cover_page,26530000000.0,"Tapestry, Inc.",Consumer Discretionary,296.0
+IQV,1478242,166900000,2026-04-30,cover_page,26500000000.0,IQVIA,Health Care,297.0
+EL,1001250,364800000,2026-06-30,diluted_weighted_avg,26000000000.0,Estée Lauder Companies (The),Consumer Staples,298.0
+AEE,1002910,276843251,2026-07-30,cover_page,25948493142.0,Ameren,Utilities,299.0
+BR,1383312,114021798,2026-07-31,cover_page,25945139278.0,Broadridge Financial Solutions,Industrials,300.0

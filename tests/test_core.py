@@ -7,13 +7,13 @@ from sp500 import analytics as an
 from sp500.alerts import MockWebhook, Rules, evaluate
 from sp500.constituents import StructureChanged, detect_breakage, load_constituents, parse_table
 from sp500.http import RateLimiter
-from sp500.providers import LiveFileProvider, SnapshotProvider, TwelveDataProvider, YahooProvider, load_dashboard_prices, rotate
+from sp500.providers import LiveFileProvider, TwelveDataProvider, YahooProvider, load_real_prices, load_synthetic_prices
 from sp500.store import Store
 
 
-def demo_only():
-    """Snapshot only, ignoring any committed live file (hermetic)."""
-    return load_dashboard_prices(live=LiveFileProvider("/nonexistent/live.csv.gz"))
+def synth():
+    """Synthetic test snapshot (dev/synthetic_snapshot): hermetic, never real data."""
+    return load_synthetic_prices()
 
 
 def _table_html(n=500, drop=None):
@@ -53,27 +53,26 @@ def test_constituents_failure_falls_back_to_cache(tmp_path):
     assert len(load_constituents(p, refresh=True, session=Boom())) == 1
 
 
-def test_snapshot_is_valid_and_complete():
-    px, src, meta = demo_only()
-    assert px.shape[1] >= 480 and len(px) >= 250
-    assert (src == "demo").all() and "SIMULATED" in meta["label"]
+def test_synthetic_snapshot_is_valid_and_labelled():
+    uni, px, meta = synth()
+    assert px.shape[1] == 200 == len(uni) and len(px) >= 250
+    assert "SYNTHETIC" in meta["label"] and "never shown in the deployed demo" in meta["label"]
 
 
 def test_analytics_shapes_and_ranges():
-    px, _, _ = demo_only()
+    _, px, _ = synth()
     ret, sc = an.returns_table(px), an.scores(px)
     assert list(ret.columns) == ["1d", "1w", "1m", "YTD"]
     assert sc.range_pos.between(0, 100).all() and sc.momentum.between(0, 100).all()
     top, bot = an.movers(ret, "1d", 5)
     assert top.iloc[0, 0] >= top.iloc[-1, 0] and bot.iloc[0, 0] <= bot.iloc[-1, 0]
-    cm = an.correlation(px, ["AAPL", "MSFT", "JPM"])
+    cm = an.correlation(px, list(px.columns[:3]))
     assert cm.shape == (3, 3) and cm.values.diagonal().tolist() == [1.0] * 3
 
 
 def test_sector_weights_sum_to_100():
-    cons = pd.read_csv("data/constituents.csv", keep_default_na=False)
-    px, _, _ = demo_only()
-    d = an.sector_weights(cons, SnapshotProvider().market_caps(), "cap")
+    uni, px, _ = synth()
+    d = an.sector_weights(uni, uni.set_index("symbol").market_cap_usd_b, "cap")
     assert d.weight.sum() == pytest.approx(100)
     assert an.sector_summary(d, an.returns_table(px)).weight.sum() == pytest.approx(100)
 
@@ -133,15 +132,6 @@ def test_yahoo_is_off_by_default():
         YahooProvider()
 
 
-def test_rotation_wraps_and_covers_all_symbols():
-    syms = list("ABCDE")
-    seen, cur = [], 0
-    for _ in range(3):
-        b, cur = rotate(syms, cur, 2)
-        seen += b
-    assert seen == list("ABCDEA") and cur == 1
-
-
 def test_rate_limiter_spaces_calls():
     t = [0.0]
     slept = []
@@ -151,10 +141,13 @@ def test_rate_limiter_spaces_calls():
     assert slept == pytest.approx([7.5, 7.5])
 
 
-def test_live_file_overrides_demo(tmp_path):
-    f = tmp_path / "live.csv.gz"
-    pd.DataFrame({"symbol": ["AAPL"] * 3, "date": ["2026-10-08", "2026-10-09", "2026-10-12"],
-                  "close": [1.0, 2.0, 3.0]}).to_csv(f, index=False)
-    px, src, meta = load_dashboard_prices(live=LiveFileProvider(f))
-    assert src["AAPL"] == "live" and src["MSFT"] == "demo" and px["AAPL"].iloc[-1] == 3.0
+def test_load_real_prices_uses_only_ranked_symbols_and_never_invents(tmp_path):
+    f, r = tmp_path / "live.csv.gz", tmp_path / "ranking.csv"
+    pd.DataFrame({"symbol": ["AAA"] * 3 + ["ZZZ"] * 3, "date": ["2026-10-08", "2026-10-09", "2026-10-12"] * 2,
+                  "close": [1.0, 2.0, 3.0] * 2}).to_csv(f, index=False)
+    pd.DataFrame({"symbol": ["AAA", "BBB"], "name": ["A", "B"], "sector": ["Energy"] * 2, "market_cap_usd_b": [9, 8]}).to_csv(r, index=False)
+    uni, px, meta = load_real_prices(r, LiveFileProvider(f))
+    assert list(px.columns) == ["AAA"] and list(uni.symbol) == ["AAA"] and px["AAA"].iloc[-1] == 3.0  # BBB has no data: dropped, not faked
+    assert meta["mode"] == "real"
     json.dumps(meta)
+    assert load_real_prices(r, LiveFileProvider(tmp_path / "missing.csv.gz")) == (None, None, {})

@@ -15,8 +15,10 @@ from .models import PriceBar
 from .store import Store
 
 log = logging.getLogger("sp500")
-SNAPSHOT_DIR = Path(__file__).resolve().parent.parent / "data" / "snapshot"
-LIVE_FILE = Path(__file__).resolve().parent.parent / "data" / "live_prices.csv.gz"
+ROOT = Path(__file__).resolve().parent.parent
+SNAPSHOT_DIR = ROOT / "dev" / "synthetic_snapshot"   # synthetic, tests/offline dev only (SP500_SYNTHETIC=1)
+LIVE_FILE = ROOT / "data" / "live_prices.csv.gz"
+RANKING_FILE = ROOT / "data" / "ranking.csv"
 
 
 class PriceProvider(ABC):
@@ -39,7 +41,7 @@ def bars_from_wide(df: pd.DataFrame, symbols: Sequence[str] | None = None) -> di
 
 
 class SnapshotProvider(PriceProvider):
-    """Bundled synthetic snapshot: used by tests, CI and the demo when there is no key. Clearly demo data."""
+    """Synthetic snapshot (dev/synthetic_snapshot): tests, CI and offline dev ONLY. Never used by the deployed demo."""
     name, is_demo = "snapshot", True
 
     def __init__(self, directory: Path = SNAPSHOT_DIR):
@@ -49,8 +51,8 @@ class SnapshotProvider(PriceProvider):
         import json
         return json.loads((self.dir / "meta.json").read_text())
 
-    def market_caps(self) -> pd.Series:
-        return pd.read_csv(self.dir / "market_caps.csv").set_index("symbol")["market_cap_b"]
+    def universe(self) -> pd.DataFrame:
+        return pd.read_csv(self.dir / "universe.csv")
 
     def history(self, symbols, days=300):
         df = pd.read_csv(self.dir / "prices.csv.gz", index_col="date").tail(days)
@@ -162,23 +164,26 @@ def to_wide(by_symbol: dict[str, list[PriceBar]]) -> pd.DataFrame:
     return df.sort_index()
 
 
-def load_dashboard_prices(snapshot: SnapshotProvider | None = None, live: LiveFileProvider | None = None):
-    """Snapshot as base; symbols present in the live file replace their demo series entirely.
+def load_real_prices(ranking: Path = RANKING_FILE, live: LiveFileProvider | None = None):
+    """Real data only: the ranked universe (data/ranking.csv) and its committed Twelve Data closes.
 
-    Returns (wide closes, Series symbol->'live'|'demo', meta dict). Never empty: the snapshot is bundled.
+    Returns (universe df, wide closes, meta dict) or (None, None, {}) when no real data exists - nothing is ever invented.
     """
-    snap = snapshot or SnapshotProvider()
-    base = to_wide(snap.history(list(pd.read_csv(snap.dir / "market_caps.csv").symbol)))
-    source = pd.Series("demo", index=base.columns)
-    meta = snap.meta()
     lv = live or LiveFileProvider()
-    if lv.available():
-        live_bars = lv.history(list(base.columns))
-        if live_bars:
-            lw = to_wide(live_bars)
-            base = base.reindex(base.index.union(lw.index)).sort_index()
-            for s in lw.columns:
-                base[s] = lw[s]
-            source[list(lw.columns)] = "live"
-            meta["live_through"] = str(lw.index.max().date())
-    return base, source, meta
+    if not Path(ranking).exists() or not lv.available():
+        return None, None, {}
+    uni = pd.read_csv(ranking)
+    bars = lv.history(list(uni.symbol))
+    if not bars:
+        return None, None, {}
+    px = to_wide(bars)
+    uni = uni[uni.symbol.isin(px.columns)].reset_index(drop=True)
+    return uni, px, {"mode": "real"}
+
+
+def load_synthetic_prices(snapshot: SnapshotProvider | None = None):
+    """SYNTHETIC test data (seeded random walks) - only when SP500_SYNTHETIC=1."""
+    snap = snapshot or SnapshotProvider()
+    uni = snap.universe()
+    px = to_wide(snap.history(list(uni.symbol)))
+    return uni, px, {**snap.meta(), "mode": "synthetic"}

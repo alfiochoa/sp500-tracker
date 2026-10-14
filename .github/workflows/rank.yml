@@ -1,0 +1,37 @@
+name: Rebuild ranking
+# Manual (or quarterly): rebuild the top-200 market-cap ranking. Spends Twelve Data credits only for candidates without
+# a stored close, within the same 320/day budget; if the budget runs out, re-run the workflow the next UTC day.
+on:
+  schedule: [{ cron: "0 14 1 1,4,7,10 *" }]
+  workflow_dispatch:
+    inputs:
+      skip_sec: { description: "Reuse data/ranking_candidates.csv instead of re-querying SEC EDGAR", type: boolean, default: false }
+concurrency: refresh
+permissions: { contents: write }
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: SEC EDGAR shares outstanding and public float (no key)
+        if: ${{ !inputs.skip_sec }}
+        run: python scripts/build_ranking.py sec
+      - name: Real closes for the candidates (budget-limited)
+        env: { TWELVE_DATA_API_KEY: "${{ secrets.TWELVE_DATA_API_KEY }}" }
+        run: python scripts/refresh.py --universe candidates --force
+      - name: Rank (fails loudly if any candidate still lacks real closes)
+        id: rank
+        continue-on-error: true
+        run: python scripts/build_ranking.py rank
+      - name: Commit data files
+        run: |
+          git config user.name "sp500-tracker-bot"; git config user.email "bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || (git commit -m "chore(data): rebuild ranking inputs" && git pull -q --rebase && git push)
+      - name: Fail if ranking is incomplete
+        if: steps.rank.outcome == 'failure'
+        run: echo "::error::Ranking incomplete (credit budget); re-run after the next UTC midnight." && exit 1

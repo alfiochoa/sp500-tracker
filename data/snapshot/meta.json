@@ -1,6 +1,0 @@
-{
-  "label": "SIMULATED demo prices - not real market data",
-  "as_of": "2026-10-12",
-  "generator": "scripts/make_snapshot.py (seeded)",
-  "market_caps": "illustrative orders of magnitude"
-}

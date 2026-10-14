@@ -1,23 +1,25 @@
 name: Refresh prices
 on:
-  schedule: [{ cron: "10 */3 * * 1-5" }]   # 8 runs/weekday x 40 symbols = 320 calls (< 800/day free tier)
+  schedule: [{ cron: "30 22 * * 1-5" }]   # once per weekday after the US close (17:30 New York in both EST and EDT)
   workflow_dispatch:
+    inputs:
+      force: { description: "Run even if the US market is closed today", type: boolean, default: false }
 concurrency: refresh
 permissions: { contents: write }
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - run: pip install -r requirements.txt
-      - name: Refresh next batch (skips cleanly if the secret is absent)
+      - name: Fetch only stale symbols (skips on weekends/holidays; <= 320 credits per day; skips cleanly without the secret)
         env: { TWELVE_DATA_API_KEY: "${{ secrets.TWELVE_DATA_API_KEY }}" }
-        run: python scripts/refresh.py --batch 40
+        run: python scripts/refresh.py ${{ inputs.force && '--force' || '' }}
       - name: Commit data files
         run: |
           git config user.name "sp500-tracker-bot"; git config user.email "bot@users.noreply.github.com"
-          git add data/live_prices.csv.gz data/refresh_state.json data/constituents.csv
-          git diff --cached --quiet || (git commit -m "chore(data): refresh price batch" && git push)
+          git add data/live_prices.csv.gz data/refresh_state.json data/refresh_status.json
+          git diff --cached --quiet || (git commit -m "chore(data): refresh closes" && git pull -q --rebase && git push)

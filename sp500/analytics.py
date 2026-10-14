@@ -65,7 +65,8 @@ def correlation(px: pd.DataFrame, symbols: list[str], window: int = 126) -> pd.D
     return px[symbols].pct_change().tail(window).corr()
 
 
-def to_export(cons: pd.DataFrame, ret: pd.DataFrame, sc: pd.DataFrame, source: pd.Series) -> pd.DataFrame:
+def to_export(cons: pd.DataFrame, ret: pd.DataFrame, sc: pd.DataFrame, caps: pd.Series | None = None) -> pd.DataFrame:
     out = cons.set_index("symbol")[["name", "sector"]].join(ret).join(sc[["price", "momentum", "volatility", "range_pos"]])
-    out["data_source"] = source
+    if caps is not None:
+        out["market_cap_usd_b"] = caps
     return out.round(2).reset_index()
