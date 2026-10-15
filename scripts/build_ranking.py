@@ -82,7 +82,7 @@ def phase_anchor() -> int:
     guard, used = AccountGuard(lambda: fetch_usage(key)), 0
     if unresolved:
         try:
-            allowed = guard.start(len(unresolved))
+            allowed = guard.start(2 * len(unresolved))  # one retry per symbol after a rate-limit wait
         except UsageUnavailable as e:
             print(f"::warning::Twelve Data api_usage unavailable ({e}); failing closed, no anchor credits spent.")
             return 0
@@ -105,7 +105,9 @@ def phase_anchor() -> int:
     if used:
         guard.finish()
         (DATA / "refresh_state.json").write_text(json.dumps(record_usage(state, today, used)))
-    pd.DataFrame(rows, columns=["symbol", "float_date", "date", "close"]).to_csv(DATA / "float_anchor_prices.csv", index=False)
+    prev = pd.read_csv(DATA / "float_anchor_prices.csv") if (DATA / "float_anchor_prices.csv").exists() else pd.DataFrame()
+    new = pd.DataFrame(rows, columns=["symbol", "float_date", "date", "close"])
+    pd.concat([prev, new]).drop_duplicates("symbol", keep="last").to_csv(DATA / "float_anchor_prices.csv", index=False)
     print(f"anchors for {len(rows)}/{len(unresolved)} unresolved symbols; credits used {used}")
     return 0
 
