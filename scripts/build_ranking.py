@@ -88,7 +88,11 @@ def phase_anchor() -> int:
             return 0
     else:
         allowed = 0
+    have = pd.read_csv(DATA / "float_anchor_prices.csv") if (DATA / "float_anchor_prices.csv").exists() else pd.DataFrame(columns=["symbol", "float_date"])
+    done = set(zip(have.symbol, have.float_date))
     for r in cand[cand.symbol.isin(unresolved)].itertuples():
+        if (r.symbol, r.public_float_date) in done:
+            continue
         if used >= allowed or remaining(state, today) - used <= 0 or not isinstance(r.public_float_date, str):
             continue
         prov = TwelveDataProvider(key)
