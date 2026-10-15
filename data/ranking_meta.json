@@ -1,0 +1,17 @@
+{
+ "as_of": "2026-10-13",
+ "generated_at": "2026-10-15T00:08:20+00:00",
+ "top_n": 200,
+ "candidates": 308,
+ "method": "Market cap = shares outstanding x Twelve Data close on one common date. Shares: SEC EDGAR XBRL, the freshest (<= 200 days) of dei:EntityCommonStockSharesOutstanding (10-K/10-Q cover, all classes summed), us-gaap CommonStockSharesOutstanding, diluted then basic weighted-average shares; for the few companies with none (typically multi-class), an estimate = SEC public float / close on the float date (shares_basis=public_float_proxy). Candidates were pre-selected as the 300 largest by SEC dei:EntityPublicFloat (so only they need a price); the final ranking is by market cap.",
+ "max_float_rank_in_top": 277,
+ "unresolved_shares": [
+  "C"
+ ],
+ "cutoff_market_cap_usd_b": 56.79,
+ "sources": [
+  "SEC EDGAR XBRL API (data.sec.gov)",
+  "Twelve Data time_series (1day close)",
+  "Wikipedia List of S&P 500 companies (CC BY-SA 4.0)"
+ ]
+}
