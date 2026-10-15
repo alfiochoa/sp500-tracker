@@ -8,6 +8,7 @@ from datetime import date
 from pathlib import Path
 
 import pandas as pd
+import requests
 from pydantic import ValidationError
 
 from .http import RateLimiter, make_session
@@ -102,6 +103,8 @@ class TwelveDataProvider(PriceProvider):
             r.raise_for_status()
             payload = r.json()
         except Exception as e:  # noqa: BLE001
+            if isinstance(e, requests.exceptions.RetryError) or getattr(getattr(e, "response", None), "status_code", None) == 429:
+                self.last_code = 429  # rate limited (shared key): the caller waits and retries once
             log.warning("event=fetch_failed provider=twelvedata symbol=%s err=%s", symbol, type(e).__name__)
             return []
         if payload.get("status") == "error" or "values" not in payload:

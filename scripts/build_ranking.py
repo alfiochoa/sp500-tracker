@@ -91,8 +91,14 @@ def phase_anchor() -> int:
     for r in cand[cand.symbol.isin(unresolved)].itertuples():
         if used >= allowed or remaining(state, today) - used <= 0 or not isinstance(r.public_float_date, str):
             continue
-        bars = TwelveDataProvider(key).fetch_one(r.symbol, 450)
+        prov = TwelveDataProvider(key)
+        bars = prov.fetch_one(r.symbol, 450)
         used += 1
+        if not bars and prov.last_code == 429:  # shared key, per-minute limit: wait once and retry once
+            import time
+            time.sleep(62)
+            bars = prov.fetch_one(r.symbol, 450)
+            used += 1
         prior = [b for b in bars if b.date.isoformat() <= r.public_float_date]
         if prior:
             rows.append({"symbol": r.symbol, "float_date": r.public_float_date, "date": prior[-1].date.isoformat(), "close": prior[-1].close})

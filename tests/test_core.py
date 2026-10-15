@@ -151,3 +151,13 @@ def test_load_real_prices_uses_only_ranked_symbols_and_never_invents(tmp_path):
     assert meta["mode"] == "real"
     json.dumps(meta)
     assert load_real_prices(r, LiveFileProvider(tmp_path / "missing.csv.gz")) == (None, None, {})
+
+
+def test_twelvedata_marks_rate_limiting_so_callers_can_wait_and_retry():
+    import requests
+
+    class Limited:
+        def get(self, *a, **k):
+            raise requests.exceptions.RetryError("too many 429 responses")
+    p = TwelveDataProvider("k", session=Limited(), limiter=RateLimiter(60000))
+    assert p.fetch_one("AAA", 5) == [] and p.last_code == 429
