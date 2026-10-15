@@ -115,6 +115,8 @@ def phase_anchor() -> int:
 def phase_rank() -> int:
     cand = pd.read_csv(DATA / "ranking_candidates.csv")
     live = pd.read_csv(LIVE_FILE)
+    saved = pd.read_csv(DATA / "ranking_closes.csv") if (DATA / "ranking_closes.csv").exists() else pd.DataFrame(columns=live.columns)
+    live = pd.concat([live, saved]).drop_duplicates(["symbol", "date"])  # closes of candidates pruned from the live file on a previous rank
     live = live[live.symbol.isin(cand.symbol)]
     missing = sorted(set(cand.symbol) - set(live.symbol))
     if missing:
@@ -136,6 +138,8 @@ def phase_rank() -> int:
             "sources": ["SEC EDGAR XBRL API (data.sec.gov)", "Twelve Data time_series (1day close)",
                         "Wikipedia List of S&P 500 companies (CC BY-SA 4.0)"]}
     (DATA / "ranking_meta.json").write_text(json.dumps(meta, indent=1))
+    # keep the one close per candidate that the ranking used, so a rerun never needs to refetch the pruned symbols
+    live[live.date == as_of.isoformat()][["symbol", "date", "close"]].to_csv(DATA / "ranking_closes.csv", index=False)
     live[live.symbol.isin(top.symbol)].to_csv(LIVE_FILE, index=False, compression={"method": "gzip", "mtime": 0})
     print("no fresh share count for:", unresolved)
     print(f"ranked top {len(top)} as of {as_of}; #200 cap ${meta['cutoff_market_cap_usd_b']}B; "

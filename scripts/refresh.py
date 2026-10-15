@@ -62,6 +62,10 @@ def main(argv=None, now: datetime | None = None, guard: AccountGuard | None = No
     old = pd.read_csv(LIVE_FILE) if LIVE_FILE.exists() else pd.DataFrame(columns=["symbol", "date", "close"])
     old = old[old.date <= target.isoformat()]
     last = old.groupby("symbol").date.max().to_dict()
+    if a.universe == "candidates" and (DATA / "ranking_closes.csv").exists():  # closes kept by the last ranking count as fresh
+        for r in pd.read_csv(DATA / "ranking_closes.csv").itertuples():
+            if r.date <= target.isoformat() and r.date > last.get(r.symbol, ""):
+                last[r.symbol] = r.date
     last_dates = {s: (date.fromisoformat(last[s]) if s in last else None) for s in symbols}
     today = now.strftime("%Y-%m-%d")
     state = load_state(STATE)
