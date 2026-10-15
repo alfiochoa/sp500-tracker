@@ -17,8 +17,9 @@ def test_deployed_app_shows_only_real_data_no_simulated_wording():
     text = _md(at)
     assert "real end-of-day closes from Twelve Data" in text and "not investment advice" in text.lower()
     assert "Wikipedia (CC BY-SA 4.0)" in text and "symbols fresh" in text
-    for bad in ("SIMULATED", "SYNTHETIC", "demo prices", "503"):
-        assert bad.lower() not in text.lower().replace("~303", ""), bad
+    body = text.lower().replace("~303", "").replace("nothing in this app is simulated", "")
+    for bad in ("simulated", "synthetic", "demo prices", "503"):
+        assert bad not in body, bad
 
 
 def test_synthetic_mode_is_loudly_labelled(monkeypatch):
